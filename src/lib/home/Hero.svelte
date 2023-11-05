@@ -15,9 +15,9 @@
 			Learn to Think and Code Better.
 		</p>
 		<div class="flex flex-wrap gap-3 mt-4 justify-center md:justify-start">
-			<Button size="lg">
+			<Button size="lg" href="/roadmap/dsa">
 				<GitPullRequest strokeWidth="1.3" size="22" class="mr-1" />
-				Roadmap</Button
+				Coding Roadmap</Button
 			>
 			<Button variant="outline" size="lg">
 				<GitCompare strokeWidth="1.3" size="22" class="mr-1" />
