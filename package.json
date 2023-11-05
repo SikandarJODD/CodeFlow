@@ -33,9 +33,11 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@xyflow/svelte": "^0.0.26",
 		"bits-ui": "^0.9.0",
 		"clsx": "^2.0.0",
 		"cmdk-sv": "^0.0.5",
+		"lucide-svelte": "^0.292.0",
 		"mode-watcher": "^0.0.7",
 		"radix-icons-svelte": "^1.2.1",
 		"tailwind-merge": "^2.0.0",

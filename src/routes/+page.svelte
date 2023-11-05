@@ -1,6 +1,7 @@
 <script>
+	import Hero from '$lib/home/Hero.svelte';
 </script>
 
 <main>
-	<h1>Hello</h1>
+	<Hero />
 </main>

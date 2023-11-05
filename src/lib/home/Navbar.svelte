@@ -1,6 +1,7 @@
 <script>
 	import { fly, scale, slide } from 'svelte/transition';
 	import ThemeMode from './ThemeMode.svelte';
+	import { Pi } from 'lucide-svelte';
 
 	let isFlyoutOpen = false;
 	let isMobileFlyoutOpen = true;
@@ -60,11 +61,13 @@
 </script>
 
 <header class="bg-white dark:bg-gray-900">
-	<nav class="mx-auto flex max-w-7xl items-center justify-between h-16 lg:px-8" aria-label="Global">
+	<nav
+		class="mx-auto flex max-w-7xl items-center px-6 py-8 justify-between h-16 lg:px-8"
+		aria-label="Global"
+	>
 		<div class="flex lg:flex-1">
 			<a href="/" class="-m-1.5 p-1.5">
 				<span class="sr-only">Your Company</span>
-				<!-- <img class="h-8 w-auto" src={navData.img} alt="" /> -->
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
@@ -176,16 +179,12 @@
 		<!-- Background backdrop, show/hide based on slide-over state. -->
 		<div class="{isMenuBarOpen ? 'backdrop-blur-sm' : ''} fixed inset-0 z-10" />
 		<div
-			class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+			class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
 		>
 			<div class="flex items-center justify-between">
 				<a href="/" class="-m-1.5 p-1.5">
 					<span class="sr-only">Your Company</span>
-					<img
-						class="h-8 w-auto"
-						src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-						alt=""
-					/>
+					<Pi />
 				</a>
 				<button
 					type="button"
@@ -205,68 +204,70 @@
 					</svg>
 				</button>
 			</div>
-			<div class="mt-6 flow-root">
-				<div class="-my-6 divide-y divide-gray-500/10">
-					<div class="space-y-2 py-6">
-						<div class="-mx-3">
-							<button
-								type="button"
-								class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-								aria-controls="disclosure-1"
-								aria-expanded="false"
-								on:click={() => (isMobileFlyoutOpen = !isMobileFlyoutOpen)}
-							>
-								Product
-								<!--
+			{#key isMenuBarOpen}
+				<div class="mt-6 flow-root" in:slide>
+					<div class="-my-6 divide-y divide-gray-500/10">
+						<div class="space-y-2 py-6">
+							<div class="-mx-3">
+								<button
+									type="button"
+									class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white hover:dark:bg-gray-800"
+									aria-controls="disclosure-1"
+									aria-expanded="false"
+									on:click={() => (isMobileFlyoutOpen = !isMobileFlyoutOpen)}
+								>
+									Product
+									<!--
                     Expand/collapse icon, toggle classes based on menu open state.
   
                     Open: "rotate-180", Closed: ""
                   -->
-								<svg
-									class=" {isMobileFlyoutOpen
-										? 'rotate-180 transition-all duration-300'
-										: 'transition-all duration-300'} h-5 w-5 flex-none"
-									viewBox="0 0 20 20"
-									fill="currentColor"
-									aria-hidden="true"
+									<svg
+										class=" {isMobileFlyoutOpen
+											? 'rotate-180 transition-all duration-300'
+											: 'transition-all duration-300'} h-5 w-5 flex-none"
+										viewBox="0 0 20 20"
+										fill="currentColor"
+										aria-hidden="true"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</button>
+								<!-- 'Product' sub-menu, show/hide based on menu state. -->
+								{#key isMobileFlyoutOpen}
+									<div
+										in:slide={{ duration: 400 }}
+										class="{isMobileFlyoutOpen ? 'hidden' : 'visible'} mt-2 space-y-2"
+										id="disclosure-1"
+									>
+										{#each navData.products as item}
+											<a
+												href={item.link}
+												class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white hover:dark:bg-gray-800"
+												>{item.name}</a
+											>
+										{/each}
+									</div>
+								{/key}
+							</div>
+							{#each navData.navs as item}
+								<a
+									href={item.link}
+									class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white hover:dark:bg-gray-800"
+									>{item.name}</a
 								>
-									<path
-										fill-rule="evenodd"
-										d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-										clip-rule="evenodd"
-									/>
-								</svg>
-							</button>
-							<!-- 'Product' sub-menu, show/hide based on menu state. -->
-							{#key isMobileFlyoutOpen}
-								<div
-									in:slide={{ duration: 400 }}
-									class="{isMobileFlyoutOpen ? 'hidden' : 'visible'} mt-2 space-y-2"
-									id="disclosure-1"
-								>
-									{#each navData.products as item}
-										<a
-											href={item.link}
-											class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-											>{item.name}</a
-										>
-									{/each}
-								</div>
-							{/key}
+							{/each}
 						</div>
-						{#each navData.navs as item}
-							<a
-								href={item.link}
-								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-								>{item.name}</a
-							>
-						{/each}
-					</div>
-					<div class="py-6">
-						<ThemeMode />
+						<div class="py-6">
+							<ThemeMode />
+						</div>
 					</div>
 				</div>
-			</div>
+			{/key}
 		</div>
 	</div>
 </header>
