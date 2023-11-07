@@ -1,30 +1,69 @@
 <script lang="ts">
 	import { writable } from 'svelte/store';
-	import { SvelteFlow, Controls, Background, BackgroundVariant } from '@xyflow/svelte';
+	import {
+		SvelteFlow,
+		Controls,
+		Background,
+		BackgroundVariant,
+		type Node,
+		type Edge
+	} from '@xyflow/svelte';
 
+	// NodeTypes :
+	const nodeTypes = {
+		simple: HomeCode,
+		end: BottomEnd,
+		top: TopEnd
+	};
 	// 👇 this is important! You need to import the styles for Svelte Flow to work
 	import '@xyflow/svelte/dist/style.css';
-
-	// We are using writables for the nodes and edges to sync them easily. When a user drags a node for example, Svelte Flow updates its position.
-	const nodes = writable([
-		{
-			id: '1',
-			type: 'input',
-			data: { label: 'Learn' },
-			position: { x: 0, y: 0 }
-		},
-		{
+	import Simple from '$lib/diagrams/sv/Simple.svelte';
+	import BottomEnd from '$lib/diagrams/sv/BottomEnd.svelte';
+	import { Blocks, BracketsIcon, CircleDot, ScrollText, Terminal } from 'lucide-svelte';
+	import TopEnd from '$lib/diagrams/sv/TopEnd.svelte';
+	import { Home } from 'radix-icons-svelte';
+	import HomeCode from './HomeCode.svelte';
+	/*
+	{
 			id: '2',
 			type: 'default',
 			data: { label: 'CodeFlow' },
 			position: { x: 50, y: 150 },
 			style: 'background:#010612FF; color:white;'
 		},
+	 */
+	// We are using writables for the nodes and edges to sync them easily. When a user drags a node for example, Svelte Flow updates its position.
+	const nodes = writable([
+		{
+			id: '1',
+			type: 'top',
+			position: { x: 0, y: 40 },
+			data: {
+				label: 'Learn',
+				icon: ScrollText,
+				link: '/roadmap/dsa'
+			}
+		},
+		{
+			id: '2',
+			type: 'simple',
+			data: {
+				label: 'CodeFlow',
+				style: 'background:#010612FF; color:white;',
+				icon: CircleDot,
+				link: '/roadmap/dsa'
+			},
+			position: { x: 90, y: 150 }
+		},
 		{
 			id: '3',
-			type: 'default',
-			data: { label: 'Practice' },
-			position: { x: 0, y: 300 }
+			type: 'end',
+			position: { x: 0, y: 270 },
+			data: {
+				label: 'Practice',
+				icon: Terminal,
+				link: '/roadmap/dsa'
+			}
 		}
 	]);
 
@@ -61,6 +100,7 @@
 		style="background:#45ADF7FF;"
 		{nodes}
 		{edges}
+		{nodeTypes}
 		fitView
 		on:nodeclick={(event) => console.log('on node click', event.detail.node)}
 	>

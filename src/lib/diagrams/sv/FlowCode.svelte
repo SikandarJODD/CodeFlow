@@ -7,8 +7,8 @@
 
 	import '@xyflow/svelte/dist/style.css';
 	import {
-	BarChartIcon,
-	BinaryIcon,
+		BarChartIcon,
+		BinaryIcon,
 		BracketsIcon,
 		CombineIcon,
 		Files,
@@ -20,10 +20,12 @@
 		SearchCode,
 		SearchCodeIcon
 	} from 'lucide-svelte';
+	import SheetFlow from './SheetFlow.svelte';
 
 	const nodeTypes = {
 		simple: Simple,
-		end: BottomEnd
+		end: BottomEnd,
+		sheet:SheetFlow
 	};
 
 	const fitViewOptions = {
@@ -35,7 +37,7 @@
 	const nodes = writable<Node[]>([
 		{
 			id: '1',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 700, y: 40 },
 			data: {
 				label: 'Array & Hashing',
@@ -149,7 +151,7 @@
 			position: { x: 780, y: 520 },
 			data: {
 				label: 'Graphs',
-				icon:BarChartIcon
+				icon: BarChartIcon
 			}
 		},
 		{
@@ -173,10 +175,10 @@
 		{
 			id: '17',
 			type: 'simple',
-			position: { x: 1200, y: 640 },
+			position: { x: 1100, y: 640 },
 			data: {
 				label: 'Bit Manipulation',
-				icon:BinaryIcon
+				icon: BinaryIcon
 			}
 		},
 		{
@@ -342,7 +344,7 @@
 
 <div style="height:91.4vh">
 	<SvelteFlow {nodes} {edges} {nodeTypes} maxZoom={3} fitView>
-		<Controls buttonBgColor="white" buttonBgColorHover="#eee" />
+		<Controls />
 		<Background class="dark:bg-gray-900 bg-gray-100" />
 	</SvelteFlow>
 </div>

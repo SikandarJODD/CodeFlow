@@ -6,7 +6,7 @@
 
 <div class="flex flex-col md:flex-row w-full justify-around items-center h-[90vh] gap-10 md:gap-0">
 	<div
-		class="flex flex-col text-center md:text-left gap-4 w-full lg:w-1/3 h-96 md:h-full justify-center lg:pb-24"
+		class="flex flex-col text-center md:text-left gap-4 w-full lg:w-1/3 h-80 md:h-full justify-center lg:pb-24"
 	>
 		<h1 class="text-4xl font-bold lg:text-3xl xl:text-6xl">CodeFlow</h1>
 		<p
