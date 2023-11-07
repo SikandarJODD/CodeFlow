@@ -67,11 +67,12 @@
 		},
 		{
 			id: '4',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 476, y: 260 },
 			data: {
 				label: 'Binary Search',
-				icon: SearchCodeIcon
+				icon: SearchCodeIcon,
+				problems: webdata[3].problems
 			}
 		},
 		{
@@ -79,25 +80,28 @@
 			type: 'end',
 			position: { x: 643, y: 260 },
 			data: {
-				label: 'Sliding Window'
+				label: 'Sliding Window',
+				problems: webdata[4].problems
 			}
 		},
 		{
 			id: '6',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 814, y: 260 },
 			data: {
 				label: 'Linked List',
-				icon: GitBranchIcon
+				icon: GitBranchIcon,
+				problems: webdata[5].problems
 			}
 		},
 		{
 			id: '7',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 600, y: 360 },
 			data: {
 				label: 'Tree',
-				icon: NetworkIcon
+				icon: NetworkIcon,
+				problems: webdata[6].problems
 			}
 		},
 		{
@@ -105,24 +109,27 @@
 			type: 'end',
 			position: { x: 460, y: 430 },
 			data: {
-				label: 'Tries'
+				label: 'Tries',
+				problems: webdata[7].problems
 			}
 		},
 		{
 			id: '9',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 546, y: 520 },
 			data: {
-				label: 'Heap/ Priority Queue'
+				label: 'Heap/ Priority Queue',
+				problems: webdata[9].problems
 			}
 		},
 		{
 			id: '10',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 880, y: 430 },
 			data: {
 				label: 'Backtracking',
-				icon: CombineIcon
+				icon: CombineIcon,
+				problems: webdata[8].problems
 			}
 		},
 		{
@@ -130,7 +137,8 @@
 			type: 'end',
 			position: { x: 450, y: 640 },
 			data: {
-				label: 'Intervals'
+				label: 'Intervals',
+				problems: webdata[12].problems
 			}
 		},
 		{
@@ -138,7 +146,8 @@
 			type: 'end',
 			position: { x: 600, y: 640 },
 			data: {
-				label: 'Greedy'
+				label: 'Greedy',
+				problems: webdata[13].problems
 			}
 		},
 		{
@@ -146,25 +155,28 @@
 			type: 'end',
 			position: { x: 740, y: 640 },
 			data: {
-				label: 'Advance Graphs'
+				label: 'Advance Graphs',
+				problems: webdata[14].problems
 			}
 		},
 		{
 			id: '14',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 780, y: 520 },
 			data: {
 				label: 'Graphs',
-				icon: BarChartIcon
+				icon: BarChartIcon,
+				problems: webdata[10].problems
 			}
 		},
 		{
 			id: '15',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 1000, y: 520 },
 			data: {
 				label: '1 DP',
-				icon: GitPullRequestCreate
+				icon: GitPullRequestCreate,
+				problems: webdata[11].problems
 			}
 		},
 		{
@@ -173,16 +185,18 @@
 			position: { x: 980, y: 640 },
 			data: {
 				label: '2 DP',
-				icon: GitCompareIcon
+				icon: GitCompareIcon,
+				problems: webdata[17].problems
 			}
 		},
 		{
 			id: '17',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 1100, y: 640 },
 			data: {
 				label: 'Bit Manipulation',
-				icon: BinaryIcon
+				icon: BinaryIcon,
+				problems: webdata[16].problems
 			}
 		},
 		{
@@ -190,7 +204,8 @@
 			type: 'end',
 			position: { x: 890, y: 720 },
 			data: {
-				label: 'Math Geometry'
+				label: 'Math Geometry',
+				problems: webdata[15].problems
 			}
 		}
 	]);

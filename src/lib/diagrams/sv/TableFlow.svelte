@@ -35,6 +35,7 @@
 	];
 </script>
 
+<!-- <div class="mint"> -->
 <Table.Root>
 	<!-- <Table.Caption>A list of your recent invoices.</Table.Caption> -->
 	<Table.Header>
@@ -45,14 +46,19 @@
 			<Table.Head class="text-right">Code</Table.Head>
 		</Table.Row>
 	</Table.Header>
+	<!-- bg-green-400/20 -->
 	<Table.Body>
 		{#each problems as code, i (i)}
-			<Table.Row>
+			<Table.Row
+				class={code.status ? 'bg-green-400/80 hover:bg-green-400 dark:bg-cyan-500/20 dark:hover:bg-cyan-500/30' : ''}
+			>
 				<Table.Cell class="font-medium">
 					<Checkbox id="terms" bind:checked={code.status} />
 				</Table.Cell>
 				<Table.Cell>
-					<a href={code.link} target="_blank">{code.problem}</a>
+					<a href={code.link} target="_blank" class="capitalize font-bold text-primary"
+						>{code.problem}</a
+					>
 				</Table.Cell>
 				<Table.Cell>
 					<DiffBadge difficulty={code.difficulty} />
@@ -62,3 +68,11 @@
 		{/each}
 	</Table.Body>
 </Table.Root>
+<!-- </div> -->
+
+<!-- <style>
+	.mint {
+		height: 400px !important;
+		overflow: auto;
+	}
+</style> -->
