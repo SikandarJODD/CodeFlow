@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { Handle, Position, type NodeProps } from '@xyflow/svelte';
 	import * as Sheet from '$ui/ui/sheet';
+	import TableFlow from './TableFlow.svelte';
 	type $$Props = NodeProps;
 
 	export let data: $$Props['data'];
 
-	const { label, icon, style, link } = data;
+	const { label, icon, style, problems } = data;
 </script>
 
 <Handle type="target" position={Position.Top} />
@@ -24,8 +25,14 @@
 		<Sheet.Content>
 			<Sheet.Header>
 				<Sheet.Title class="text-center">{label}</Sheet.Title>
-				<Sheet.Description class="text-center">List of Questions for Solving and <span class="text-primary">Improving </span></Sheet.Description>
-				<div>code</div>
+				<Sheet.Description class="text-center"
+					>List of Questions for Solving and <span class="text-primary"
+						>Improving
+					</span></Sheet.Description
+				>
+				<div class="mt-5">
+					<TableFlow {problems} />
+				</div>
 			</Sheet.Header>
 		</Sheet.Content>
 	</Sheet.Root>

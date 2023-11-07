@@ -21,11 +21,12 @@
 		SearchCodeIcon
 	} from 'lucide-svelte';
 	import SheetFlow from './SheetFlow.svelte';
+	import { webdata } from '$lib';
 
 	const nodeTypes = {
 		simple: Simple,
 		end: BottomEnd,
-		sheet:SheetFlow
+		sheet: SheetFlow
 	};
 
 	const fitViewOptions = {
@@ -41,15 +42,17 @@
 			position: { x: 700, y: 40 },
 			data: {
 				label: 'Array & Hashing',
-				icon: BracketsIcon
+				icon: BracketsIcon,
+				problems: webdata[0].problems
 			}
 		},
 		{
 			id: '2',
-			type: 'simple',
+			type: 'sheet',
 			position: { x: 650, y: 140 },
 			data: {
-				label: 'Two Pointers'
+				label: 'Two Pointers',
+				problems: webdata[1].problems
 			}
 		},
 		{
@@ -58,7 +61,8 @@
 			position: { x: 800, y: 140 },
 			data: {
 				label: 'Stack',
-				icon: FilesIcon
+				icon: FilesIcon,
+				problems: webdata[2].problems
 			}
 		},
 		{
