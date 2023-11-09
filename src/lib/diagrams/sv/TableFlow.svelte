@@ -50,13 +50,15 @@
 	<Table.Body>
 		{#each problems as code, i (i)}
 			<Table.Row
-				class={code.status ? 'bg-green-400/80 hover:bg-green-400 dark:bg-cyan-500/20 dark:hover:bg-cyan-500/30' : ''}
+				class={code.status
+					? 'bg-green-400/80 hover:bg-green-400 dark:bg-cyan-500/20 dark:hover:bg-cyan-500/30'
+					: ''}
 			>
 				<Table.Cell class="font-medium">
 					<Checkbox id="terms" bind:checked={code.status} />
 				</Table.Cell>
 				<Table.Cell>
-					<a href={code.link} target="_blank" class="capitalize font-bold text-primary"
+					<a href={code.link} target="_blank" class="capitalize font-semibold text-primary"
 						>{code.problem}</a
 					>
 				</Table.Cell>
