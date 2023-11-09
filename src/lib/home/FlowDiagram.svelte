@@ -96,13 +96,11 @@
 	class=" shadow-xl shadow-gray-600/30 dark:shadow-gray-950 overflow-hidden h-full lg:h-5/6 rounded-2xl m-4 lg:m-0"
 >
 	<SvelteFlow
-		class="h-full w-full text-gray-900"
 		style="background:#45ADF7FF;"
 		{nodes}
 		{edges}
 		{nodeTypes}
 		fitView
-		on:nodeclick={(event) => console.log('on node click', event.detail.node)}
 	>
 		<!-- <Controls /> -->
 		<Background patternColor="#051F40FF" variant={BackgroundVariant.Dots} />
