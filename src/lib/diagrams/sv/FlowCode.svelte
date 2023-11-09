@@ -18,7 +18,10 @@
 		GitPullRequestCreate,
 		NetworkIcon,
 		SearchCode,
-		SearchCodeIcon
+		SearchCodeIcon,
+
+		Sparkles
+
 	} from 'lucide-svelte';
 	import SheetFlow from './SheetFlow.svelte';
 	import { webdata } from '$lib';
@@ -42,7 +45,7 @@
 			position: { x: 700, y: 40 },
 			data: {
 				label: 'Array & Hashing',
-				icon: BracketsIcon,
+				icon: Sparkles,
 				problems: webdata[0].problems
 			}
 		},
