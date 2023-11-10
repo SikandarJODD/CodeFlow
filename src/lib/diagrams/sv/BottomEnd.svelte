@@ -2,11 +2,14 @@
 	import { Handle, Position, type NodeProps } from '@xyflow/svelte';
 	import * as Sheet from '$ui/ui/sheet';
 	import TableFlow from './TableFlow.svelte';
+	import { webdata } from '$lib';
 	type $$Props = NodeProps;
 
 	export let data: $$Props['data'];
 
-	const { label, icon, style, problems, link } = data;
+	const { label, icon, style, link, id } = data;
+	// $: console.log(id, 'END');
+	let problems= $webdata[id].problems;
 </script>
 
 <Handle type="target" position={Position.Top} />

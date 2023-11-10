@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import * as Table from '$lib/components/ui/table';
-	import Checkbox from '$ui/checkbox/checkbox.svelte';
-	import Badge from '$ui/badge/badge.svelte';
 	import DiffBadge from './DiffBadge.svelte';
+	import Checkbox from '$ui/checkbox/checkbox.svelte';
 	export let problems = [
 		{
+			id: 0,
 			status: false,
 			problem: 'Set matrix Zeros',
 			link: 'https://leetcode.com/problems/set-matrix-zeroes/description/',
@@ -12,6 +12,7 @@
 			code: 'C++'
 		},
 		{
+			id: 1,
 			status: false,
 			problem: `Kadane's Algorithm`,
 			link: 'https://leetcode.com/problems/maximum-subarray/description/',
@@ -19,6 +20,7 @@
 			code: 'C++'
 		},
 		{
+			id: 2,
 			status: false,
 			problem: `Sort an Array of 0's, 1's and 2's`,
 			link: 'https://leetcode.com/problems/sort-colors/description/',
@@ -26,6 +28,7 @@
 			code: 'C++'
 		},
 		{
+			id: 3,
 			status: false,
 			problem: 'Stock Buy and Sell',
 			link: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/',
@@ -33,9 +36,34 @@
 			code: 'C++'
 		}
 	];
+	export let question = {
+		min: 0,
+		max: problems.length,
+		value: problems.filter((n: any) => n.status).length
+	};
+	import { webdata } from '$lib';
+	import QuestionProgress from './QuestionProgress.svelte';
+
+	let changeStatus = (id: any) => {
+		// console.log(id, 'ID');
+		let res = $webdata.map((k) =>
+			k.problems.filter((que) => {
+				if (que.id === id) {
+					// console.log(que, 'QUE');
+					que.status = !que.status;
+					return que;
+				}
+				return k;
+			})
+		);
+		$webdata = $webdata;
+	};
+	
 </script>
 
-<!-- <div class="mint"> -->
+<div>
+	<QuestionProgress {question} />
+</div>
 <Table.Root>
 	<!-- <Table.Caption>A list of your recent invoices.</Table.Caption> -->
 	<Table.Header>
@@ -46,7 +74,6 @@
 			<Table.Head class="text-right">Code</Table.Head>
 		</Table.Row>
 	</Table.Header>
-	<!-- bg-green-400/20 -->
 	<Table.Body>
 		{#each problems as code, i (i)}
 			<Table.Row
@@ -55,7 +82,7 @@
 					: ''}
 			>
 				<Table.Cell class="font-medium">
-					<Checkbox id="terms" bind:checked={code.status} />
+					<Checkbox id="terms" bind:checked={code.status} on:click={() => changeStatus(code.id)} />
 				</Table.Cell>
 				<Table.Cell>
 					<a href={code.link} target="_blank" class="capitalize font-semibold text-primary"
@@ -70,11 +97,4 @@
 		{/each}
 	</Table.Body>
 </Table.Root>
-<!-- </div> -->
 
-<!-- <style>
-	.mint {
-		height: 400px !important;
-		overflow: auto;
-	}
-</style> -->

@@ -1,5 +1,5 @@
 <script>
-	import FlowCode from '$lib/diagrams/sv/FlowCode.svelte';
+	import FlowCode from '$lib/diagrams/sv/FlowCods.svelte';
 </script>
 
 <FlowCode />
