@@ -2,7 +2,7 @@
 	import Badge from '$ui/badge/badge.svelte';
 	export let difficulty = '';
 	let innerWidth = 0;
-	$: console.log(innerWidth);
+	// $: console.log(innerWidth);
 </script>
 
 <svelte:window bind:innerWidth />

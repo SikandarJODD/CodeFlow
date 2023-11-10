@@ -2,11 +2,19 @@
 	import { Handle, Position, type NodeProps } from '@xyflow/svelte';
 	import * as Sheet from '$ui/ui/sheet';
 	import TableFlow from './TableFlow.svelte';
+	import { webdata } from '$lib';
 	type $$Props = NodeProps;
 
 	export let data: $$Props['data'];
 
-	const { label, icon, style, problems } = data;
+	const { label, icon, style, id } = data;
+	let problems = $webdata[id].problems;
+	$: question = {
+		min: 0,
+		max: $webdata[id].problems.length,
+		value: $webdata[id].problems.filter((n: any) => n.status).length
+	};
+	// $: console.log(id, 'CHANGING');
 </script>
 
 <Handle type="target" position={Position.Top} />
@@ -31,7 +39,7 @@
 					</span></Sheet.Description
 				>
 				<div class="mt-5">
-					<TableFlow {problems} />
+					<TableFlow {problems} {question} />
 				</div>
 			</Sheet.Header>
 		</Sheet.Content>
