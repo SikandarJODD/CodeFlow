@@ -1,6 +1,13 @@
 <script lang="ts">
 	import { writable } from 'svelte/store';
-	import { SvelteFlow, Controls, Background, type Node, type Edge } from '@xyflow/svelte';
+	import {
+		SvelteFlow,
+		Controls,
+		Background,
+		type Node,
+		type Edge,
+		MarkerType
+	} from '@xyflow/svelte';
 
 	import Simple from './Simple.svelte';
 	import BottomEnd from './BottomEnd.svelte';
@@ -10,11 +17,15 @@
 		BarChartIcon,
 		BinaryIcon,
 		CombineIcon,
+		DraftingCompass,
 		FilesIcon,
+		FrameIcon,
 		GitBranchIcon,
 		GitCompareIcon,
 		GitPullRequestCreate,
+		LandPlot,
 		NetworkIcon,
+		Pyramid,
 		SearchCode,
 		SearchCodeIcon,
 		Sparkles
@@ -35,7 +46,7 @@
 			data: {
 				id: 0,
 				label: 'Array & Hashing',
-				icon: Sparkles,
+				icon: Sparkles
 			}
 		},
 		{
@@ -49,7 +60,8 @@
 			type: 'end',
 			position: { x: 800, y: 140 },
 			data: { id: '2', label: 'Stack', icon: FilesIcon }
-		},{
+		},
+		{
 			id: '4',
 			type: 'sheet',
 			position: { x: 490, y: 240 },
@@ -109,7 +121,8 @@
 			data: {
 				id: 9,
 				label: 'Heap/ Priority Queue',
-				problems: $webdata[9].problems
+				problems: $webdata[9].problems,
+				icon: Pyramid
 			}
 		},
 		{
@@ -126,7 +139,7 @@
 		{
 			id: '11',
 			type: 'end',
-			position: { x: 480, y: 600 },
+			position: { x: 500, y: 600 },
 			data: {
 				id: 12,
 				label: 'Intervals',
@@ -136,17 +149,18 @@
 		{
 			id: '12',
 			type: 'end',
-			position: { x: 600, y: 600 },
+			position: { x: 570, y: 660 },
 			data: {
 				id: 13,
 				label: 'Greedy',
-				problems: $webdata[13].problems
+				problems: $webdata[13].problems,
+				icon: LandPlot
 			}
 		},
 		{
 			id: '13',
 			type: 'end',
-			position: { x: 710, y: 600 },
+			position: { x: 650, y: 600 },
 			data: {
 				id: 14,
 				label: 'Advance Graphs',
@@ -178,7 +192,7 @@
 		{
 			id: '16',
 			type: 'end',
-			position: { x: 910, y: 600 },
+			position: { x: 860, y: 600 },
 			data: {
 				id: 17,
 				label: '2 DP',
@@ -189,7 +203,7 @@
 		{
 			id: '17',
 			type: 'sheet',
-			position: { x: 1050, y: 600 },
+			position: { x: 980, y: 600 },
 			data: {
 				id: 16,
 				label: 'Bit Manipulation',
@@ -200,11 +214,12 @@
 		{
 			id: '18',
 			type: 'end',
-			position: { x: 810, y: 660 },
+			position: { x: 750, y: 660 },
 			data: {
 				id: 15,
 				label: 'Math Geometry',
-				problems: $webdata[15].problems
+				problems: $webdata[15].problems,
+				icon: DraftingCompass
 			}
 		}
 	]);
@@ -215,147 +230,147 @@
 			source: '1',
 			target: '2',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF'
 		},
 		{
 			id: '1-3',
 			source: '1',
 			target: '3',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '2-4',
 			source: '2',
 			target: '4',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: ' stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '2-5',
 			source: '2',
 			target: '5',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: ' stroke-width: 2px;stroke: #1C77FFFF;'
 		},
 		{
 			id: '2-6',
 			source: '2',
 			target: '6',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '4-7',
 			source: '4',
 			target: '7',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '6-7',
 			source: '6',
 			target: '7',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px;stroke: #1C77FFFF;'
 		},
 		{
 			id: '7-8',
 			source: '7',
 			target: '8',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px;stroke: #1C77FFFF;'
 		},
 		{
 			id: '7-9',
 			source: '7',
 			target: '9',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '7-10',
 			source: '7',
 			target: '10',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '9-11',
 			source: '9',
 			target: '11',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '9-12',
 			source: '9',
 			target: '12',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '9-13',
 			source: '9',
 			target: '13',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '10-14',
 			source: '10',
 			target: '14',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '10-15',
 			source: '10',
 			target: '15',
 			animated: true,
-			style: 'stroke: #FFF50FFF;'
+			style: 'stroke-width: 2px; stroke: #FF008CFF;'
 		},
 		{
 			id: '14-13',
 			source: '14',
 			target: '13',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '15-16',
 			source: '15',
 			target: '16',
 			animated: true,
-			style: 'stroke:#FFF50FFF;'
+			style: 'stroke-width: 2px; stroke:#FF008CFF;'
 		},
 		{
 			id: '15-17',
 			source: '15',
 			target: '17',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '17-18',
 			source: '17',
 			target: '18',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '14-18',
 			source: '14',
 			target: '18',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		},
 		{
 			id: '14-16',
 			source: '14',
 			target: '16',
 			animated: false,
-			style: 'stroke: #1C77FFFF;'
+			style: 'stroke-width: 2px; stroke: #1C77FFFF;'
 		}
 	]);
 </script>

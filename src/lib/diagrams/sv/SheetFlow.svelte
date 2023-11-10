@@ -8,7 +8,7 @@
 	export let data: $$Props['data'];
 
 	const { label, icon, style, id } = data;
-	let problems = $webdata[id].problems;
+	$: problems = $webdata[id].problems;
 	$: question = {
 		min: 0,
 		max: $webdata[id].problems.length,
@@ -18,8 +18,8 @@
 
 <Handle type="target" position={Position.Top} />
 
-<div>
-	<Sheet.Root>
+<div >
+	<Sheet.Root >
 		<Sheet.Trigger class="outline-none border-none">
 			<div
 				{style}
@@ -37,7 +37,7 @@
 						>Improving
 					</span></Sheet.Description
 				>
-				<div class="mt-5">
+				<div class="mt-5 mx-0 px-0">
 					<TableFlow {problems} {question} />
 				</div>
 			</Sheet.Header>

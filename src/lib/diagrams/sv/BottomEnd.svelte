@@ -8,9 +8,9 @@
 	export let data: $$Props['data'];
 
 	const { label, icon, id = 0, style } = data;
-	$: console.log(label, id, 'Working');
+	// $: console.log(label, id, 'Working');
 
-	let problems = $webdata[id].problems;
+	$: problems = $webdata[id].problems;
 	$: question = {
 		min: 0,
 		max: $webdata[id].problems.length,

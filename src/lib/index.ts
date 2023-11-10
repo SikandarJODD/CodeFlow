@@ -8,7 +8,7 @@ export let webdata = writable(
             problems: [
                 {
                     id: 1,
-                    status: true,
+                    status: false,
                     problem: 'Contains Duplicate',
                     link: 'https://leetcode.com/problems/contains-duplicate/',
                     difficulty: 'easy',
@@ -17,7 +17,7 @@ export let webdata = writable(
                 },
                 {
                     id: 2,
-                    status: true,
+                    status: false,
                     problem: `Valid Anagram`,
                     link: 'https://leetcode.com/problems/valid-anagram/',
                     difficulty: 'easy',
@@ -26,7 +26,7 @@ export let webdata = writable(
                 },
                 {
                     id: 3,
-                    status: true,
+                    status: false,
                     problem: `Two Sum`,
                     link: 'https://leetcode.com/problems/two-sum/',
                     difficulty: 'medium',
@@ -35,7 +35,7 @@ export let webdata = writable(
                 },
                 {
                     id: 4,
-                    status: true,
+                    status: false,
                     problem: 'Group Anagrams',
                     link: 'https://leetcode.com/problems/group-anagrams/',
                     difficulty: 'medium',
