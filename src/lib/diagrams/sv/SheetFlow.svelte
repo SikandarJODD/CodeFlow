@@ -14,7 +14,6 @@
 		max: $webdata[id].problems.length,
 		value: $webdata[id].problems.filter((n: any) => n.status).length
 	};
-	// $: console.log(id, 'CHANGING');
 </script>
 
 <Handle type="target" position={Position.Top} />

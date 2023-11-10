@@ -27,7 +27,7 @@
 		end: BottomEnd,
 		sheet: SheetFlow
 	};
-	$: nodescode = writable([
+	let nodescode = writable<Node[]>([
 		{
 			id: '1',
 			type: 'sheet',
@@ -36,22 +36,20 @@
 				id: 0,
 				label: 'Array & Hashing',
 				icon: Sparkles,
-				problems: $webdata[0].problems
 			}
 		},
 		{
 			id: '2',
 			type: 'sheet',
 			position: { x: 650, y: 140 },
-			data: { id: 1, label: 'Two Pointers', problems: $webdata[1].problems }
+			data: { id: 1, label: 'Two Pointers' }
 		},
 		{
 			id: '3',
 			type: 'end',
 			position: { x: 800, y: 140 },
-			data: { id: 2, label: 'Stack', icon: FilesIcon, problems: $webdata[2].problems }
-		},
-		{
+			data: { id: '2', label: 'Stack', icon: FilesIcon }
+		},{
 			id: '4',
 			type: 'sheet',
 			position: { x: 490, y: 240 },
@@ -109,7 +107,7 @@
 			type: 'sheet',
 			position: { x: 546, y: 480 },
 			data: {
-				id: 8,
+				id: 9,
 				label: 'Heap/ Priority Queue',
 				problems: $webdata[9].problems
 			}
@@ -119,7 +117,7 @@
 			type: 'sheet',
 			position: { x: 800, y: 400 },
 			data: {
-				id: 9,
+				id: 8,
 				label: 'Backtracking',
 				icon: CombineIcon,
 				problems: $webdata[8].problems
@@ -130,7 +128,7 @@
 			type: 'end',
 			position: { x: 480, y: 600 },
 			data: {
-				id: 10,
+				id: 12,
 				label: 'Intervals',
 				problems: $webdata[12].problems
 			}
@@ -140,7 +138,7 @@
 			type: 'end',
 			position: { x: 600, y: 600 },
 			data: {
-				id: 11,
+				id: 13,
 				label: 'Greedy',
 				problems: $webdata[13].problems
 			}
@@ -150,7 +148,7 @@
 			type: 'end',
 			position: { x: 710, y: 600 },
 			data: {
-				id: 12,
+				id: 14,
 				label: 'Advance Graphs',
 				problems: $webdata[14].problems
 			}
@@ -160,7 +158,7 @@
 			type: 'sheet',
 			position: { x: 790, y: 500 },
 			data: {
-				id: 13,
+				id: 10,
 				label: 'Graphs',
 				icon: BarChartIcon,
 				problems: $webdata[10].problems
@@ -171,7 +169,7 @@
 			type: 'sheet',
 			position: { x: 930, y: 500 },
 			data: {
-				id: 14,
+				id: 11,
 				label: '1 DP',
 				icon: GitPullRequestCreate,
 				problems: $webdata[11].problems
@@ -182,7 +180,7 @@
 			type: 'end',
 			position: { x: 910, y: 600 },
 			data: {
-				id: 15,
+				id: 17,
 				label: '2 DP',
 				icon: GitCompareIcon,
 				problems: $webdata[17].problems
@@ -204,14 +202,14 @@
 			type: 'end',
 			position: { x: 810, y: 660 },
 			data: {
-				id: 17,
+				id: 15,
 				label: 'Math Geometry',
 				problems: $webdata[15].problems
 			}
 		}
 	]);
 
-	$: edges = writable([
+	let edges = writable<Edge[]>([
 		{
 			id: '1-2',
 			source: '1',
