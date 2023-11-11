@@ -96,12 +96,14 @@
 		</div>
 		<div>
 			<Datatable {handler} search={false} rowsPerPage={false} rowCount={true} pagination={true}>
-				<Table.Root class="border-separate border-spacing-0">
+				<Table.Root>
 					<Table.Header>
 						<Table.Row>
-							<Th {handler} orderBy="id" class="w-20"><Table.Head>Id</Table.Head></Th>
-							<Th {handler} orderBy="status" class="w-20"><Table.Head>Status</Table.Head></Th>
-							<Th {handler} orderBy="problem" class="w-4/6"><Table.Head>Problem</Table.Head></Th>
+							<Th {handler} orderBy="id" class="hidden md:block  "><Table.Head>Id</Table.Head></Th>
+							<Th {handler} orderBy="status" class=" "><Table.Head>Status</Table.Head></Th>
+							<Th {handler} orderBy="problem" class="w-full md:w-4/6"
+								><Table.Head>Problem</Table.Head></Th
+							>
 							<Th {handler} orderBy=""><Table.Head>Code</Table.Head></Th>
 						</Table.Row>
 					</Table.Header>
@@ -112,12 +114,12 @@
 									? 'dark:bg-cyan-800/30 bg-green-400/60'
 									: ''}"
 							>
-								<Table.Cell class="text-center">{row.id}</Table.Cell>
-								<Table.Cell class="text-center ">
+								<Table.Cell class="pl-8 hidden md:block  ">{row.id}</Table.Cell>
+								<Table.Cell class="pl-10  ">
 									<Checkbox bind:checked={row.status} on:click={() => changeStatus(row.id)} />
 									<!-- <QueStatus i={row.id} status={row.status} /> -->
 								</Table.Cell>
-								<Table.Cell class="capitalize  pl-8">
+								<Table.Cell class="capitalize md:font-medium text-md  md:pl-8">
 									<a href={row.link} target="_blank">{row.problem}</a>
 								</Table.Cell>
 								<Table.Cell class="pl-8">{row.code}</Table.Cell>
