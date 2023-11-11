@@ -1,4 +1,4 @@
-import { writable } from "svelte/store";
+import { writable, derived } from "svelte/store";
 
 // place files you want to import through the `$lib` alias in this folder.
 export let webdata = writable(
@@ -79,7 +79,7 @@ export let webdata = writable(
                     isblind: true
                 },
             ]
-    
+
         },
         {
             title: 'Two Pointers',
@@ -188,7 +188,7 @@ export let webdata = writable(
                     code: 'C++',
                     isblind: true
                 },
-    
+
             ]
         },
         {
@@ -560,7 +560,7 @@ export let webdata = writable(
                     code: 'C++',
                     isblind: true
                 },
-    
+
             ]
         },
         {
@@ -593,10 +593,10 @@ export let webdata = writable(
                     code: 'C++',
                     isblind: true
                 },
-    
+
             ]
-    
-        }, 
+
+        },
         {
             title: 'Backtracking',
             problems: [
@@ -714,7 +714,7 @@ export let webdata = writable(
                     isblind: true
                 },
                 {
-                    id: 671,
+                    id: 71,
                     status: false,
                     problem: 'Kth Largest Element in an Array',
                     link: 'https://leetcode.com/problems/k-closest-points-to-origin/',
@@ -844,7 +844,7 @@ export let webdata = writable(
                     code: 'C++',
                     isblind: true
                 },
-    
+
             ]
         },
         {
@@ -958,7 +958,7 @@ export let webdata = writable(
                     code: 'C++',
                     isblind: true
                 },
-    
+
             ]
         },
         {
@@ -1376,8 +1376,17 @@ export let webdata = writable(
                     code: 'C++',
                     isblind: true
                 },
-    
+
             ]
         }
     ]
 )
+export let qdata = derived(webdata, ($webdata) => {
+    let ans: any = [];
+    $webdata.map((k) =>
+        k.problems.map((q) => {
+            ans.push(q);
+        })
+    );
+    return ans;
+});

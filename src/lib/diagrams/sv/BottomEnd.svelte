@@ -8,8 +8,6 @@
 	export let data: $$Props['data'];
 
 	const { label, icon, id = 0, style } = data;
-	// $: console.log(label, id, 'Working');
-
 	$: problems = $webdata[id].problems;
 	$: question = {
 		min: 0,
