@@ -107,7 +107,11 @@
 					</Table.Header>
 					<Table.Body>
 						{#each $rows as row, i (i)}
-							<Table.Row class="h-10 hover:bg-gray-100 hover:dark:bg-gray-900 ">
+							<Table.Row
+								class="h-10 hover:bg-gray-100 hover:dark:bg-gray-900 {row.status
+									? 'dark:bg-cyan-800/30 bg-green-400/60'
+									: ''}"
+							>
 								<Table.Cell class="text-center">{row.id}</Table.Cell>
 								<Table.Cell class="text-center ">
 									<Checkbox bind:checked={row.status} on:click={() => changeStatus(row.id)} />
