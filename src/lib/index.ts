@@ -1249,7 +1249,7 @@ export let webdata = writable(
             title: 'Math & Geometry',
             problems: [
                 {
-                    id: 100,
+                    id: 132,
                     status: false,
                     problem: 'Happy Number',
                     link: 'https://leetcode.com/problems/happy-number/',
@@ -1259,7 +1259,7 @@ export let webdata = writable(
                     tags: 'hash table,math,two pointers'
                 },
                 {
-                    id: 100,
+                    id: 133,
                     status: false,
                     problem: 'Plus One',
                     link: 'https://leetcode.com/problems/plus-one/',
@@ -1269,7 +1269,7 @@ export let webdata = writable(
                     tags: 'array,math'
                 },
                 {
-                    id: 100,
+                    id: 134,
                     status: false,
                     problem: 'Rotate Image',
                     link: 'https://leetcode.com/problems/rotate-image/',
@@ -1279,7 +1279,7 @@ export let webdata = writable(
                     tags: 'array,math,matrix'
                 },
                 {
-                    id: 100,
+                    id: 135,
                     status: false,
                     problem: 'spiral matrix',
                     link: 'https://leetcode.com/problems/spiral-matrix/',
@@ -1289,7 +1289,7 @@ export let webdata = writable(
                     tags: 'array,matrix,simulation'
                 },
                 {
-                    id: 100,
+                    id: 136,
                     status: false,
                     problem: 'set matrix zeros',
                     link: 'https://leetcode.com/problems/set-matrix-zeroes/',
@@ -1299,7 +1299,7 @@ export let webdata = writable(
                     tags: 'array,hash table,matrix'
                 },
                 {
-                    id: 100,
+                    id: 137,
                     status: false,
                     problem: 'pow (x,n)',
                     link: 'https://leetcode.com/problems/powx-n/',
@@ -1309,7 +1309,7 @@ export let webdata = writable(
                     tags: 'math,recursion'
                 },
                 {
-                    id: 100,
+                    id: 138,
                     status: false,
                     problem: 'Multiply strings',
                     link: 'https://leetcode.com/problems/multiply-strings/',
@@ -1319,7 +1319,7 @@ export let webdata = writable(
                     tags: 'string,math,simulation'
                 },
                 {
-                    id: 100,
+                    id: 139,
                     status: false,
                     problem: 'detect square',
                     link: 'https://leetcode.com/problems/detect-squares/',
