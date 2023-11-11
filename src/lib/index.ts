@@ -296,7 +296,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,Dynamic programming'
+                    tags: 'array,Dynamic programming,Dp'
                 },
                 {
                     id: 27,
@@ -606,7 +606,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'Dynamic Programming,Tree,Depth-First Search,Binary Tree'
+                    tags: 'Dynamic programming,Dp,Tree,Depth-First Search,Binary Tree'
                 },
                 {
                     id: 55,
@@ -729,7 +729,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming,backtracking'
+                    tags: 'string,dynamic programming,dp,backtracking'
                 },
                 {
                     id: 66,
@@ -935,7 +935,7 @@ export let webdata = writable(
             ]
         },
         {
-            title: '1-D Dynamic Programming',
+            title: '1-D Dynamic programming,Dp',
             problems: [
                 {
                     id: 85,
@@ -945,7 +945,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'math,dynamic programming,memoization'
+                    tags: 'math,dynamic programming,dp,memoization'
                 },
                 {
                     id: 86,
@@ -955,7 +955,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming'
+                    tags: 'array,dynamic programming,dp'
                 },
                 {
                     id: 87,
@@ -965,7 +965,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming'
+                    tags: 'array,dynamic programming,dp'
                 },
                 {
                     id: 88,
@@ -975,7 +975,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming'
+                    tags: 'array,dynamic programming,dp'
                 },
                 {
                     id: 89,
@@ -985,7 +985,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming'
+                    tags: 'string,dynamic programming,dp'
                 },
                 {
                     id: 90,
@@ -995,7 +995,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming'
+                    tags: 'string,dynamic programming,dp'
                 },
                 {
                     id: 91,
@@ -1005,7 +1005,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming'
+                    tags: 'string,dynamic programming,dp'
                 },
                 {
                     id: 92,
@@ -1015,7 +1015,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming,breadth-first search'
+                    tags: 'array,dynamic programming,dp,breadth-first search'
                 },
                 {
                     id: 93,
@@ -1025,7 +1025,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming'
+                    tags: 'array,dynamic programming,dp'
                 },
                 {
                     id: 94,
@@ -1035,7 +1035,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming,string,hash table,trie,memoization'
+                    tags: 'array,dynamic programming,dp,string,hash table,trie,memoization'
                 },
                 {
                     id: 95,
@@ -1045,7 +1045,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming,binary seach'
+                    tags: 'array,dynamic programming,dp,binary seach'
                 },
                 {
                     id: 96,
@@ -1055,7 +1055,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming'
+                    tags: 'array,dynamic programming,dp'
                 },
 
             ]
@@ -1091,7 +1091,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,sorting,dynamic programming,greddy'
+                    tags: 'array,sorting,dynamic programming,dp,greddy'
                 },
                 {
                     id: 100,
@@ -1116,7 +1116,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,divide and conquer,dynamic programming'
+                    tags: 'array,divide and conquer,dynamic programming,dp'
                 },
                 {
                     id: 102,
@@ -1126,7 +1126,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,greedy,dynamic programming'
+                    tags: 'array,greedy,dynamic programming,dp'
                 },
                 {
                     id: 103,
@@ -1136,7 +1136,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,greedy,dynamic programming'
+                    tags: 'array,greedy,dynamic programming,dp'
                 },
                 {
                     id: 104,
@@ -1186,7 +1186,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming,stack,greedy'
+                    tags: 'string,dynamic programming,dp,stack,greedy'
                 },
             ]
         },
@@ -1241,7 +1241,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'dynamic programming,depth-first search, breadth-first search,graph,heap,shortest path'
+                    tags: 'dynamic programming,dp,depth-first search, breadth-first search,graph,heap,shortest path'
                 },
             ]
         },
@@ -1361,7 +1361,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'dynamic programming,bit manipluation'
+                    tags: 'dynamic programming,dp,bit manipluation'
                 },
                 {
                     id: 117,
@@ -1406,7 +1406,7 @@ export let webdata = writable(
             ]
         },
         {
-            title: '2-D Dynamic Programming',
+            title: '2-D Dynamic programming,Dp',
             problems: [
                 {
                     id: 121,
@@ -1416,7 +1416,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'math,array,dynamic programming'
+                    tags: 'math,array,dynamic programming,dp'
                 },
                 {
                     id: 122,
@@ -1426,7 +1426,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming'
+                    tags: 'string,dynamic programming,dp'
                 },
                 {
                     id: 123,
@@ -1436,7 +1436,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming'
+                    tags: 'array,dynamic programming,dp'
                 },
                 {
                     id: 124,
@@ -1446,7 +1446,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming'
+                    tags: 'array,dynamic programming,dp'
                 },
                 {
                     id: 125,
@@ -1456,7 +1456,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming,backtracking'
+                    tags: 'array,dynamic programming,dp,backtracking'
                 },
                 {
                     id: 126,
@@ -1466,7 +1466,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming'
+                    tags: 'string,dynamic programming,dp'
                 },
                 {
                     id: 127,
@@ -1476,7 +1476,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming'
+                    tags: 'string,dynamic programming,dp'
                 },
                 {
                     id: 128,
@@ -1486,7 +1486,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'Array,Graph,Dynamic Programming,Depth-First Search,Breadth-First Search,Topological Sort,Memoization,Matrix'
+                    tags: 'Array,Graph,Dynamic programming,Dp,Depth-First Search,Breadth-First Search,Topological Sort,Memoization,Matrix'
                 },
                 {
                     id: 129,
@@ -1496,7 +1496,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming'
+                    tags: 'string,dynamic programming,dp'
                 },
                 {
                     id: 130,
@@ -1506,7 +1506,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,dynamic programming'
+                    tags: 'array,dynamic programming,dp'
                 },
                 {
                     id: 131,
@@ -1516,7 +1516,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'string,dynamic programming,recursion'
+                    tags: 'string,dynamic programming,dp,recursion'
                 },
 
             ]

@@ -69,9 +69,9 @@
 	<Table.Header>
 		<Table.Row>
 			<Table.Head class="w-[100px]">Status</Table.Head>
-			<Table.Head class="w-3/5">Problem</Table.Head>
+			<Table.Head class="w-3/5">Title</Table.Head>
 			<Table.Head>Difficulty</Table.Head>
-			<Table.Head class="text-right">Code</Table.Head>
+			<Table.Head class="text-right ">Code</Table.Head>
 		</Table.Row>
 	</Table.Header>
 	<Table.Body>

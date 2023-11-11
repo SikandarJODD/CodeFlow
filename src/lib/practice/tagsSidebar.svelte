@@ -7,10 +7,25 @@
 		'DP',
 		'Linked List',
 		'Graph',
-		'Tree',
 		'Recursion',
-		'Backtracking'
+		'Backtracking',
+		'Depth-first Search',
+		'Tree',
+		'Sorting',
+		'Hash Table',
+		'Breadth-first Search',
+		'Binary Tree'
 	];
+	import { qdata } from '$lib';
+	let queData = $qdata;
+	import { DataHandler, Datatable, Th, check } from '@vincjo/datatables';
+	import Button from '$ui/button/button.svelte';
+
+	export let handler = new DataHandler(queData, { rowsPerPage: 31 });
+	let filterTopic = (filterText: string) => {
+		console.log('working');
+		handler.filter(filterText, 'tags');
+	};
 </script>
 
 <Card.Root class="md:sticky md:top-5 w-full md:w-fit">
@@ -21,10 +36,12 @@
 	<Card.Content>
 		<div class="flex flex-wrap gap-2">
 			{#each allTags as item}
-				<Badge
+				<Button
+					size="sm"
+					on:click={() => filterTopic(item.toLowerCase())}
 					variant="outline"
-					class="px-3 py-2 bg-gray-900 text-white dark:hover:bg-gray-800/80 dark:bg-gray-900/40 "
-					>{item}</Badge
+					class="px-3 py-2 bg-gray-900 text-white dark:hover:bg-gray-800/80 dark:bg-gray-900/40 dark:focus:bg-white dark:focus:text-black"
+					>{item}</Button
 				>
 			{/each}
 		</div>

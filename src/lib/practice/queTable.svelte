@@ -4,15 +4,14 @@
 	import * as Table from '$ui/table/';
 	let queData = $qdata;
 
-	import { DataHandler, Datatable, Th, check } from '@vincjo/datatables';
+	import { DataHandler, Datatable, Th} from '@vincjo/datatables';
 	import Checkbox from '$ui/checkbox/checkbox.svelte';
 	import Input from '$ui/ui/input/input.svelte';
 	import Button from '$ui/button/button.svelte';
-	import { Search, SearchCodeIcon } from 'lucide-svelte';
-	import { split } from 'postcss/lib/list';
 	import Badge from '$ui/badge/badge.svelte';
+	import { fade } from 'svelte/transition';
 
-	let handler = new DataHandler(queData, { rowsPerPage: 31 });
+	export let handler = new DataHandler(queData, { rowsPerPage: 31 });
 	let rows = handler.getRows();
 	let value1 = '';
 	let value2 = '';
@@ -49,6 +48,7 @@
 		// $qdata = $qdata;
 	};
 	let innerWidth = 0;
+	let isTagsVisible = true;
 </script>
 
 <svelte:window bind:innerWidth />
@@ -59,7 +59,7 @@
 			<Input
 				type="text"
 				class="w-full md:w-96 dark:border-sky-400/80 border-primary"
-				placeholder="Question Name, Number, Tags - Array, String..."
+				placeholder="Name, Tags - Array, String..."
 				bind:value={value1}
 				on:input={() => {
 					handler.search(value1, ['id', 'problem', 'tags']);
@@ -75,6 +75,14 @@
 				>
 					Clear</Button
 				>
+				<Button
+					size="sm"
+					on:click={() => {
+						isTagsVisible = !isTagsVisible;
+					}}
+				>
+					{isTagsVisible ? 'Remove' : 'Show'} Tags</Button
+				>
 			</div>
 		</div>
 		<div>
@@ -86,7 +94,7 @@
 								<Th {handler} orderBy="id"><Table.Head>Id</Table.Head></Th>
 								<Th {handler} orderBy="status"><Table.Head>Status</Table.Head></Th>
 							{/if}
-							<Th {handler} orderBy="problem"><Table.Head>Problem</Table.Head></Th>
+							<Th {handler} orderBy="problem"><Table.Head>Title</Table.Head></Th>
 							<Th {handler} orderBy=""><Table.Head>Code</Table.Head></Th>
 						</Table.Row>
 					</Table.Header>
@@ -110,13 +118,15 @@
 									<div>
 										<a href={row.link} target="_blank">{row.problem}</a>
 									</div>
-									<div class="hidden md:flex gap-x-1.5 mt-1">
-										{#each String(row.tags).split(',').slice(0, 4) as item}
-											<Badge variant="outline">{item}</Badge>
-										{/each}
-									</div>
+									{#if isTagsVisible}
+										<div transition:fade={{ duration: 200 }} class="hidden md:flex gap-x-1.5 mt-1">
+											{#each String(row.tags).split(',').slice(0, 4) as item}
+												<Badge variant="outline">{item}</Badge>
+											{/each}
+										</div>
+									{/if}
 								</Table.Cell>
-								<Table.Cell class="pl-8">{row.code}</Table.Cell>
+								<Table.Cell class="pl-8 text-gray-700 cursor-progress">{row.code}</Table.Cell>
 							</Table.Row>
 						{/each}
 					</Table.Body>
