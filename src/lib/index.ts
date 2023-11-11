@@ -669,7 +669,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: ''
+                    tags: 'array,backtracking,bit manipluation'
                 },
                 {
                     id: 60,
@@ -679,7 +679,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,backtracking'
                 },
                 {
                     id: 61,
@@ -689,7 +689,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,backtracking'
                 },
                 {
                     id: 62,
@@ -699,7 +699,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,backtracking,bit manipluation'
                 },
                 {
                     id: 63,
@@ -709,7 +709,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,backtracking'
                 },
                 {
                     id: 64,
@@ -719,7 +719,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,backtracking,matrix'
                 },
                 {
                     id: 65,
@@ -729,7 +729,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming,backtracking'
                 },
                 {
                     id: 66,
@@ -739,7 +739,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'hash table,string,backtracking'
                 },
                 {
                     id: 67,
@@ -749,7 +749,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,backtracking'
                 },
             ]
         },
@@ -839,7 +839,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,depth-first search,breadth-first search,union find,matrix'
                 },
                 {
                     id: 76,
@@ -849,7 +849,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'depth-first search,breadth-first search, graph,hash table'
                 },
                 {
                     id: 77,
@@ -859,7 +859,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,depth-first search,breadth-first search,union find,matrix'
                 },
                 {
                     id: 78,
@@ -869,7 +869,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,depth-first search,breadth-first search,matrix'
                 },
                 {
                     id: 79,
@@ -879,7 +879,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,depth-first search,breadth-first search,union find,matrix'
                 },
                 {
                     id: 80,
@@ -889,7 +889,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,matrix,breadth-first search'
                 },
                 {
                     id: 81,
@@ -899,7 +899,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'depth-first search,breadth-first search,grpah, topological sort'
                 },
                 {
                     id: 82,
@@ -909,7 +909,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'depth-first search,breadth-first search,graph'
                 },
                 {
                     id: 83,
@@ -919,7 +919,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'depth-first search,breadth-first search,graph,union find'
                 },
                 {
                     id: 84,
@@ -929,7 +929,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'hash table,string,bread-first search'
                 },
 
             ]
@@ -945,7 +945,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'math,dynamic programming,memoization'
                 },
                 {
                     id: 86,
@@ -955,7 +955,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming'
                 },
                 {
                     id: 87,
@@ -965,7 +965,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming'
                 },
                 {
                     id: 88,
@@ -975,7 +975,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming'
                 },
                 {
                     id: 89,
@@ -985,7 +985,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming'
                 },
                 {
                     id: 90,
@@ -995,7 +995,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming'
                 },
                 {
                     id: 91,
@@ -1005,7 +1005,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming'
                 },
                 {
                     id: 92,
@@ -1015,7 +1015,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming,breadth-first search'
                 },
                 {
                     id: 93,
@@ -1025,7 +1025,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming'
                 },
                 {
                     id: 94,
@@ -1035,7 +1035,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming,string,hash table,trie,memoization'
                 },
                 {
                     id: 95,
@@ -1045,7 +1045,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming,binary seach'
                 },
                 {
                     id: 96,
@@ -1055,7 +1055,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming'
                 },
 
             ]
@@ -1071,7 +1071,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array'
                 },
                 {
                     id: 98,
@@ -1081,7 +1081,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,sorting'
                 },
                 {
                     id: 99,
@@ -1091,7 +1091,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,sorting,dynamic programming,greddy'
                 },
                 {
                     id: 100,
@@ -1101,7 +1101,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,binary search,sorting,heap,line sweep'
                 },
             ]
         },
@@ -1116,7 +1116,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,divide and conquer,dynamic programming'
                 },
                 {
                     id: 102,
@@ -1126,7 +1126,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,greedy,dynamic programming'
                 },
                 {
                     id: 103,
@@ -1136,7 +1136,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,greedy,dynamic programming'
                 },
                 {
                     id: 104,
@@ -1146,7 +1146,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,greedy'
                 },
                 {
                     id: 105,
@@ -1156,7 +1156,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,hash table,sorting,greedy'
                 },
                 {
                     id: 106,
@@ -1166,7 +1166,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,greedy'
                 },
                 {
                     id: 107,
@@ -1176,7 +1176,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'hash table,string,greedy'
                 },
                 {
                     id: 108,
@@ -1186,7 +1186,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming,stack,greedy'
                 },
             ]
         },
@@ -1201,7 +1201,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'graph,depth-first search,eulerian circuit'
                 },
                 {
                     id: 110,
@@ -1211,7 +1211,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,union find,graph,minimum spanning tree'
                 },
                 {
                     id: 111,
@@ -1221,7 +1221,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'depth-first search,breadth-first seach,graph,heap,shortedt path'
                 },
                 {
                     id: 112,
@@ -1231,7 +1231,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,binary search,depth-first search,breadth-first seach,union find,heap,matrix'
                 },
                 {
                     id: 113,
@@ -1241,7 +1241,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'dynamic programming,depth-first search, breadth-first search,graph,heap,shortest path'
                 },
             ]
         },
@@ -1256,7 +1256,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'hash table,math,two pointers'
                 },
                 {
                     id: 100,
@@ -1266,7 +1266,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,math'
                 },
                 {
                     id: 100,
@@ -1276,7 +1276,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,math,matrix'
                 },
                 {
                     id: 100,
@@ -1286,7 +1286,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,matrix,simulation'
                 },
                 {
                     id: 100,
@@ -1296,17 +1296,17 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,hash table,matrix'
                 },
                 {
                     id: 100,
                     status: false,
-                    problem: 'pow(x,n)',
+                    problem: 'pow (x,n)',
                     link: 'https://leetcode.com/problems/powx-n/',
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'math,recursion'
                 },
                 {
                     id: 100,
@@ -1316,7 +1316,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,math,simulation'
                 },
                 {
                     id: 100,
@@ -1326,7 +1326,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,hash table,counting,design'
                 },
             ]
         },
@@ -1341,7 +1341,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,bit manipluation'
                 },
                 {
                     id: 115,
@@ -1351,7 +1351,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'divide and conquer,bit manipluation'
                 },
                 {
                     id: 116,
@@ -1361,7 +1361,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'dynamic programming,bit manipluation'
                 },
                 {
                     id: 117,
@@ -1371,7 +1371,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'divide and conquer,bit manipluation'
                 },
                 {
                     id: 118,
@@ -1381,7 +1381,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,bit manipluation,hash table,math,binary search,sorting'
                 },
                 {
                     id: 119,
@@ -1391,7 +1391,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'math,bit manipluation'
                 },
                 {
                     id: 120,
@@ -1401,7 +1401,7 @@ export let webdata = writable(
                     difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'math'
                 },
             ]
         },
@@ -1416,7 +1416,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'math,array,dynamic programming'
                 },
                 {
                     id: 122,
@@ -1426,7 +1426,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming'
                 },
                 {
                     id: 123,
@@ -1436,7 +1436,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming'
                 },
                 {
                     id: 124,
@@ -1446,7 +1446,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming'
                 },
                 {
                     id: 125,
@@ -1456,7 +1456,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming,backtracking'
                 },
                 {
                     id: 126,
@@ -1466,7 +1466,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming'
                 },
                 {
                     id: 127,
@@ -1476,7 +1476,7 @@ export let webdata = writable(
                     difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming'
                 },
                 {
                     id: 128,
@@ -1486,7 +1486,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'Array,Graph,Dynamic Programming,Depth-First Search,Breadth-First Search,Topological Sort,Memoization,Matrix'
                 },
                 {
                     id: 129,
@@ -1496,7 +1496,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming'
                 },
                 {
                     id: 130,
@@ -1506,7 +1506,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'array,dynamic programming'
                 },
                 {
                     id: 131,
@@ -1516,7 +1516,7 @@ export let webdata = writable(
                     difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
-                    tags: 'array,hash table,sorting'
+                    tags: 'string,dynamic programming,recursion'
                 },
 
             ]
