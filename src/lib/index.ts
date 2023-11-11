@@ -13,7 +13,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/contains-duplicate/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 2,
@@ -22,7 +23,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/valid-anagram/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,string,sorting'
                 },
                 {
                     id: 3,
@@ -31,7 +33,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/two-sum/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table'
                 },
                 {
                     id: 4,
@@ -40,7 +43,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/group-anagrams/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting,string'
                 },
                 {
                     id: 5,
@@ -49,7 +53,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/top-k-frequent-elements/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,Heap,Sorting'
                 },
                 {
                     id: 6,
@@ -58,7 +63,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/product-of-array-except-self/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,prefix sum'
                 },
                 {
                     id: 7,
@@ -67,7 +73,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/valid-sudoku/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,Matrix'
                 },
                 {
                     id: 8,
@@ -76,7 +83,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/longest-consecutive-sequence/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,Union Find'
                 },
             ]
 
@@ -91,7 +99,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/valid-palindrome/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'two pointers,string'
                 },
                 {
                     id: 10,
@@ -100,7 +109,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,two pointers, binary search'
                 },
                 {
                     id: 11,
@@ -109,7 +119,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/3sum/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,two pointers,sorting'
                 },
                 {
                     id: 12,
@@ -118,7 +129,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/container-with-most-water/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,two pointers,greedy'
                 },
                 {
                     id: 13,
@@ -127,7 +139,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/trapping-rain-water/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,two pointers, dp,stack,monotonic stack'
                 },
             ]
         },
@@ -141,7 +154,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/valid-parentheses/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'string,stack'
                 },
                 {
                     id: 14,
@@ -150,7 +164,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/min-stack/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'stack,design'
                 },
                 {
                     id: 15,
@@ -159,7 +174,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/evaluate-reverse-polish-notation/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'string,daynamic programming,backtracking'
                 },
                 {
                     id: 16,
@@ -168,7 +184,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/daily-temperatures/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,stack,monotonic stack'
                 },
                 {
                     id: 17,
@@ -177,7 +194,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/car-fleet/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,stack,sorting,monotonic stack'
                 },
                 {
                     id: 18,
@@ -186,7 +204,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/largest-rectangle-in-histogram/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,stack,monotonic stack'
                 },
 
             ]
@@ -201,7 +220,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/binary-search/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,binary search'
                 },
                 {
                     id: 21,
@@ -210,7 +230,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/search-a-2d-matrix/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,binary search,matrix'
                 },
                 {
                     id: 22,
@@ -219,7 +240,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/koko-eating-bananas/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,binary search'
                 },
                 {
                     id: 23,
@@ -228,7 +250,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,binary search'
                 },
                 {
                     id: 24,
@@ -237,7 +260,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/search-in-rotated-sorted-array/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,binary search'
                 },
                 {
                     id: 25,
@@ -246,7 +270,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/time-based-key-value-store/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,design,binary search'
                 },
                 {
                     id: 19,
@@ -255,7 +280,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/median-of-two-sorted-arrays/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,binary search, divide and conquer'
                 },
             ]
         },
@@ -269,7 +295,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,Dynamic programming'
                 },
                 {
                     id: 27,
@@ -278,7 +305,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/longest-substring-without-repeating-characters/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'hash table,string,sliding window'
                 },
                 {
                     id: 28,
@@ -287,7 +315,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/longest-repeating-character-replacement/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'hash table,string,sliding window'
                 },
                 {
                     id: 29,
@@ -296,7 +325,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/permutation-in-string/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'hast table,two pointer,string,sliding window'
                 },
                 {
                     id: 30,
@@ -305,7 +335,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/minimum-window-substring/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'hast table,string,sliding window'
                 },
                 {
                     id: 31,
@@ -314,7 +345,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/sliding-window-maximum/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,queue,sliding widnwo,heap'
                 },
             ]
         },
@@ -328,7 +360,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/reverse-linked-list/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'linked list,recursion'
                 },
                 {
                     id: 33,
@@ -337,7 +370,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/merge-two-sorted-lists/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'linked list,recursion'
                 },
                 {
                     id: 34,
@@ -346,7 +380,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/reorder-list/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'linked list,recursion,two pointer, stack'
                 },
                 {
                     id: 35,
@@ -355,7 +390,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/remove-nth-node-from-end-of-list/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'linked list,two pointer'
                 },
                 {
                     id: 36,
@@ -364,7 +400,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/copy-list-with-random-pointer/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'hash table,linked list'
                 },
                 {
                     id: 37,
@@ -373,7 +410,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/add-two-numbers/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'linked list,recursion,Math'
                 },
                 {
                     id: 38,
@@ -382,7 +420,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/linked-list-cycle/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'linked list,two pointers, hash table'
                 },
                 {
                     id: 39,
@@ -391,7 +430,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/find-the-duplicate-number/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,two pointer, binary search'
                 },
                 {
                     id: 40,
@@ -400,7 +440,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/lru-cache/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'linked list,hash table, doubly-linked list'
                 },
                 {
                     id: 41,
@@ -409,7 +450,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/merge-k-sorted-lists/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'linked list,heap,merge sort,divide and conquer'
                 },
                 {
                     id: 42,
@@ -418,7 +460,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/reverse-nodes-in-k-group/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'linked list,recursion'
                 },
             ]
         },
@@ -432,7 +475,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/invert-binary-tree/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,breadth-first search,binary tree'
                 },
                 {
                     id: 44,
@@ -441,7 +485,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/maximum-depth-of-binary-tree/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,breadth-first search,binary tree'
                 },
                 {
                     id: 45,
@@ -450,7 +495,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/diameter-of-binary-tree/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,binary tree'
                 },
                 {
                     id: 46,
@@ -459,7 +505,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/balanced-binary-tree/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,binary tree'
                 },
                 {
                     id: 47,
@@ -468,7 +515,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/same-tree/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,breadth-first search,binary tree'
                 },
                 {
                     id: 141,
@@ -477,7 +525,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/subtree-of-another-tree/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,string matching,binary tree'
                 },
                 {
                     id: 142,
@@ -486,7 +535,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,BST,binary tree'
                 },
                 {
                     id: 48,
@@ -495,7 +545,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/binary-tree-level-order-traversal/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,breadth-first search, binary tree'
                 },
                 {
                     id: 49,
@@ -504,7 +555,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/binary-tree-right-side-view/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,breadth-first search,binary tree'
                 },
                 {
                     id: 50,
@@ -513,7 +565,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/count-good-nodes-in-binary-tree/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,breadth-first search,binary tree'
                 },
                 {
                     id: 51,
@@ -522,7 +575,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/validate-binary-search-tree/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 52,
@@ -531,7 +585,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/kth-smallest-element-in-a-bst/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,depth-first seach,breadth-first search,binary tree'
                 },
                 {
                     id: 53,
@@ -540,7 +595,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array, hash table,tree,binary tree,divide and conquer'
                 },
                 {
                     id: 54,
@@ -549,7 +605,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/binary-tree-maximum-path-sum/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'Dynamic Programming,Tree,Depth-First Search,Binary Tree'
                 },
                 {
                     id: 55,
@@ -558,7 +615,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/serialize-and-deserialize-binary-tree/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'String,Tree,depth-first search,breadth-first search,binary tree'
                 },
 
             ]
@@ -573,7 +631,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/implement-trie-prefix-tree/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'hash table,string,trie,design'
                 },
                 {
                     id: 57,
@@ -582,7 +641,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/design-add-and-search-words-data-structure/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'depth-first search,string,trie,design'
                 },
                 {
                     id: 58,
@@ -591,7 +651,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/word-search-ii/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'string,array,backtracking,trie,matrix'
                 },
 
             ]
@@ -607,7 +668,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/subsets/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: ''
                 },
                 {
                     id: 60,
@@ -616,7 +678,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/combination-sum/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 61,
@@ -625,7 +688,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/permutations/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 62,
@@ -634,7 +698,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/subsets-ii/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 63,
@@ -643,7 +708,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/combination-sum-ii/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 64,
@@ -652,7 +718,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/word-search/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 65,
@@ -661,7 +728,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/palindrome-partitioning/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 66,
@@ -670,7 +738,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/letter-combinations-of-a-phone-number/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 67,
@@ -679,7 +748,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/n-queens/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
             ]
         },
@@ -693,7 +763,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/kth-largest-element-in-a-stream/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'tree,design,binary search tree,heap'
                 },
                 {
                     id: 69,
@@ -702,7 +773,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/last-stone-weight/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,heap'
                 },
                 {
                     id: 70,
@@ -711,7 +783,8 @@ export let webdata = writable(
                     link: '',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,math,sorting,heap'
                 },
                 {
                     id: 71,
@@ -720,7 +793,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/k-closest-points-to-origin/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,sorting,heap,divide and conquer'
                 },
                 {
                     id: 72,
@@ -729,7 +803,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/task-scheduler/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,greedy,sorting,heap,countng'
                 },
                 {
                     id: 73,
@@ -738,7 +813,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/design-twitter/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'hash table,linked list, design, heap'
                 },
                 {
                     id: 74,
@@ -747,7 +823,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/find-median-from-data-stream/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'sorting,heap,two pointers,design'
                 },
             ]
         },
@@ -761,7 +838,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/number-of-islands/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 76,
@@ -770,7 +848,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/clone-graph/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 77,
@@ -779,7 +858,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/max-area-of-island/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 78,
@@ -788,7 +868,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/pacific-atlantic-water-flow/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 79,
@@ -797,7 +878,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/surrounded-regions/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 80,
@@ -806,7 +888,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/rotting-oranges/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 81,
@@ -815,7 +898,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/course-schedule/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 82,
@@ -824,7 +908,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/course-schedule-ii/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 83,
@@ -833,7 +918,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/redundant-connection/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 84,
@@ -842,7 +928,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/word-ladder/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
 
             ]
@@ -857,7 +944,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/climbing-stairs/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 86,
@@ -866,7 +954,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/min-cost-climbing-stairs/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 87,
@@ -875,7 +964,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/house-robber/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 88,
@@ -884,7 +974,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/house-robber-ii/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 89,
@@ -893,7 +984,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/longest-palindromic-substring/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 90,
@@ -902,7 +994,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/palindromic-substrings/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 91,
@@ -911,7 +1004,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/decode-ways/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 92,
@@ -920,7 +1014,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/coin-change/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 93,
@@ -929,7 +1024,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/maximum-product-subarray/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 94,
@@ -938,7 +1034,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/word-break/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 95,
@@ -947,7 +1044,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/longest-increasing-subsequence/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 96,
@@ -956,7 +1054,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/partition-equal-subset-sum/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
 
             ]
@@ -971,7 +1070,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/insert-interval/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 98,
@@ -980,7 +1080,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/merge-intervals/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 99,
@@ -989,7 +1090,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/non-overlapping-intervals/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 100,
@@ -998,7 +1100,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/minimum-interval-to-include-each-query/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
             ]
         },
@@ -1012,7 +1115,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/maximum-subarray/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 102,
@@ -1021,7 +1125,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/jump-game/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 103,
@@ -1030,7 +1135,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/jump-game-ii/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 104,
@@ -1039,7 +1145,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/gas-station/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 105,
@@ -1048,7 +1155,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/hand-of-straights/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 106,
@@ -1057,7 +1165,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/merge-triplets-to-form-target-triplet/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 107,
@@ -1066,7 +1175,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/partition-labels/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 108,
@@ -1075,7 +1185,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/valid-parenthesis-string/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
             ]
         },
@@ -1089,7 +1200,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/reconstruct-itinerary/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 110,
@@ -1098,7 +1210,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/min-cost-to-connect-all-points/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 111,
@@ -1107,7 +1220,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/network-delay-time/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 112,
@@ -1116,7 +1230,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/swim-in-rising-water/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 113,
@@ -1125,7 +1240,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/cheapest-flights-within-k-stops/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
             ]
         },
@@ -1139,7 +1255,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/happy-number/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 100,
@@ -1148,7 +1265,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/plus-one/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 100,
@@ -1157,7 +1275,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/rotate-image/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 100,
@@ -1166,7 +1285,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/spiral-matrix/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 100,
@@ -1175,7 +1295,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/set-matrix-zeroes/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 100,
@@ -1184,7 +1305,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/powx-n/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 100,
@@ -1193,7 +1315,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/multiply-strings/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 100,
@@ -1202,7 +1325,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/detect-squares/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
             ]
         },
@@ -1216,7 +1340,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/single-number/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 115,
@@ -1225,7 +1350,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/number-of-1-bits/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 116,
@@ -1234,7 +1360,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/counting-bits/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 117,
@@ -1243,7 +1370,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/reverse-bits/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 118,
@@ -1252,7 +1380,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/missing-number/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 119,
@@ -1261,7 +1390,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/sum-of-two-integers/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 120,
@@ -1270,7 +1400,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/reverse-integer/',
                     difficulty: 'easy',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
             ]
         },
@@ -1284,7 +1415,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/unique-paths/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 122,
@@ -1293,7 +1425,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/longest-common-subsequence/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 123,
@@ -1302,7 +1435,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 124,
@@ -1311,7 +1445,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/coin-change-ii/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 125,
@@ -1320,7 +1455,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/target-sum/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 126,
@@ -1329,7 +1465,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/interleaving-string/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 127,
@@ -1338,7 +1475,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/edit-distance/',
                     difficulty: 'medium',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 128,
@@ -1347,7 +1485,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/longest-increasing-path-in-a-matrix/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 129,
@@ -1356,7 +1495,8 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/distinct-subsequences/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
                     id: 130,
@@ -1365,16 +1505,18 @@ export let webdata = writable(
                     link: 'https://leetcode.com/problems/burst-balloons/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
                 {
-                    id: 140,
+                    id: 131,
                     status: false,
                     problem: 'regular expression matching',
                     link: 'https://leetcode.com/problems/regular-expression-matching/',
                     difficulty: 'hard',
                     code: 'C++',
-                    isblind: true
+                    isblind: true,
+                    tags: 'array,hash table,sorting'
                 },
 
             ]

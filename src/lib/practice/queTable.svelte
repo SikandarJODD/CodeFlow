@@ -9,6 +9,8 @@
 	import Input from '$ui/ui/input/input.svelte';
 	import Button from '$ui/button/button.svelte';
 	import { Search, SearchCodeIcon } from 'lucide-svelte';
+	import { split } from 'postcss/lib/list';
+	import Badge from '$ui/badge/badge.svelte';
 
 	let handler = new DataHandler(queData, { rowsPerPage: 31 });
 	let rows = handler.getRows();
@@ -48,30 +50,6 @@
 	};
 </script>
 
-<!-- <table>
-					<thead>
-						<tr>
-							<Th {handler} orderBy="first_name">First Name</Th>
-							<Th {handler} orderBy="last_name">Last Name</Th>
-							<Th {handler} orderBy="email">Email</Th>
-						</tr>
-						<tr>
-							<ThFilter {handler} filterBy="first_name" />
-							<ThFilter {handler} filterBy="last_name" />
-							<ThFilter {handler} filterBy="email" />
-						</tr>
-					</thead>
-					<tbody>
-						{#each $rows as row}
-							<tr>
-								<td>{row.first_name}</td>
-								<td>{row.last_name}</td>
-								<td>{row.email}</td>
-							</tr>
-						{/each}
-					</tbody>
-				</table> -->
-
 <Card.Root>
 	<Card.Content class="py-2 ">
 		<div class="flex items-center gap-x-4 mt-2">
@@ -81,7 +59,7 @@
 				placeholder="Question Name, Number"
 				bind:value={value1}
 				on:input={() => {
-					handler.search(value1, ['id', 'problem']);
+					handler.search(value1, ['id', 'problem', 'tags']);
 				}}
 			/>
 			<Button
@@ -99,11 +77,9 @@
 				<Table.Root>
 					<Table.Header>
 						<Table.Row>
-							<Th {handler} orderBy="id" class="hidden md:block  "><Table.Head>Id</Table.Head></Th>
-							<Th {handler} orderBy="status" class=" "><Table.Head>Status</Table.Head></Th>
-							<Th {handler} orderBy="problem" class="w-full md:w-4/6"
-								><Table.Head>Problem</Table.Head></Th
-							>
+							<Th {handler} orderBy="id"><Table.Head>Id</Table.Head></Th>
+							<Th {handler} orderBy="status"><Table.Head>Status</Table.Head></Th>
+							<Th {handler} orderBy="problem"><Table.Head>Problem</Table.Head></Th>
 							<Th {handler} orderBy=""><Table.Head>Code</Table.Head></Th>
 						</Table.Row>
 					</Table.Header>
@@ -114,13 +90,22 @@
 									? 'dark:bg-cyan-800/30 bg-green-400/60'
 									: ''}"
 							>
-								<Table.Cell class="pl-8 hidden md:block  ">{row.id}</Table.Cell>
-								<Table.Cell class="pl-10  ">
+								<Table.Cell class="pl-8  w-20">{row.id}</Table.Cell>
+								<Table.Cell class="pl-10  w-20">
 									<Checkbox bind:checked={row.status} on:click={() => changeStatus(row.id)} />
 									<!-- <QueStatus i={row.id} status={row.status} /> -->
 								</Table.Cell>
-								<Table.Cell class="capitalize md:font-medium text-md  md:pl-8">
-									<a href={row.link} target="_blank">{row.problem}</a>
+								<Table.Cell
+									class="capitalize md:font-medium text-md md:pl-7 flex items-center gap-x-6 justify-between"
+								>
+									<div>
+										<a href={row.link} target="_blank">{row.problem}</a>
+									</div>
+									<div class="flex gap-x-1.5 mt-1">
+										{#each String(row.tags).split(',') as item}
+											<Badge variant="outline">{item}</Badge>
+										{/each}
+									</div>
 								</Table.Cell>
 								<Table.Cell class="pl-8">{row.code}</Table.Cell>
 							</Table.Row>
