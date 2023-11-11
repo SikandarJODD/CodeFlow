@@ -46,7 +46,7 @@
 		navs: [
 			{
 				name: 'Practice',
-				link: '/'
+				link: '/practice'
 			},
 			{
 				name: 'Marketplace',
