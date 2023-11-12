@@ -17,10 +17,10 @@ Learn to Think and Code Better.
 | Svelte-Flow -Draggable | ✅     |
 | Programming Roadmap    | ✅     |
 | Dark/Light Mode        | ✅     |
-| Add Features Section   | ❌     |
-| Add Progress bar       | ❌     |
-| Sort using Difficulty  | ❌     |
-| Add Practice Page      | ❌     |
+| Add Features Section   | ✅     |
+| Add Progress bar       | ✅     |
+| Sort using Difficulty  | ✅     |
+| Add Practice Page      | ✅     |
 
 ## Frameworks & Library
 
