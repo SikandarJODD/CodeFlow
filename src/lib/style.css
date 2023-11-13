@@ -7,13 +7,11 @@
 	/* color: var(--text-color); */
 }
 
-
 .svelte-flow__edge .svelte-flow__edge-path {
 	stroke-width: 1.4;
 	/* stroke-opacity: 0.75; */
 	stroke: #296dff;
 }
-
 
 .svelte-flow__controls button {
 	background-color: var(--bg-color);

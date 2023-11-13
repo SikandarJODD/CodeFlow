@@ -3,6 +3,8 @@ import CenterName from "./centerName.svelte";
 import TopName from "./topName.svelte";
 import BottomName from "./bottomName.svelte";
 import { writable } from "svelte/store";
+import { BarChart3, Brackets, Database, DatabaseZap, Layers, LayoutList, LibrarySquare, NetworkIcon, TreesIcon, Waypoints } from "lucide-svelte";
+import DataStructure from "./desc/dataStructure.svelte";
 export let nodeTypes = {
     center: CenterName,
     top: TopName,
@@ -13,19 +15,23 @@ export let initialnode = [
         id: '1', // required and needs to be a string,
         type: 'bottom',
         position: { x: 650, y: 50 }, // required
-        data: { label: 'Data Structure' }, // required
+        data: {
+            label: 'Data Structure',
+            icon: DatabaseZap,
+            desc: DataStructure
+        },
     },
     {
         id: '2',
         type: 'center',
         position: { x: 430, y: 170 },
-        data: { label: 'Linear Data Structure' }
+        data: { label: 'Linear Data Structure', icon: LibrarySquare, desc: DataStructure }
     },
     {
         id: '3',
         type: 'center',
-        position: { x: 870, y: 170 },
-        data: { label: 'Non-Linear Data Structure' }
+        position: { x: 800, y: 170 },
+        data: { label: 'Non-Linear Data Structure', icon: NetworkIcon }
     },
     {
         id: '4',
@@ -43,37 +49,37 @@ export let initialnode = [
         id: '6',
         type: 'top',
         position: { x: 315, y: 400 },
-        data: { label: 'Array' }
+        data: { label: 'Array', icon: Brackets }
     },
     {
         id: '7',
         type: 'top',
         position: { x: 470, y: 400 },
-        data: { label: 'Queue' }
+        data: { label: 'Queue', icon: LayoutList }
     },
     {
         id: '8',
         type: 'top',
         position: { x: 590, y: 400 },
-        data: { label: 'Stack' }
+        data: { label: 'Stack', icon: Layers }
     },
     {
         id: '9',
         type: 'top',
         position: { x: 710, y: 400 },
-        data: { label: 'Linked List' }
+        data: { label: 'Linked List', icon: Waypoints }
     },
     {
         id: '10',
         type: 'top',
-        position: { x: 850, y: 280 },
+        position: { x: 800, y: 280 },
         data: { label: 'Tree' }
     },
     {
         id: '11',
         type: 'top',
-        position: { x: 1000, y: 280 },
-        data: { label: 'Graph' }
+        position: { x: 930, y: 280 },
+        data: { label: 'Graph', icon: BarChart3 }
     }
 ];
 export let initialEdges: Edge[] = [
@@ -123,68 +129,68 @@ export let initialEdges: Edge[] = [
 export let mobile: Node[] = [
     {
         id: '1', // required and needs to be a string,
-        type: 'center',
+        type: 'bottom',
         position: { x: 150, y: 30 }, // required
-        data: { label: 'Data Structure' } // required
+        data: { label: 'Data Structure', desc: DataStructure } // required
     },
     {
         id: '2',
         type: 'center',
         position: { x: 6, y: 150 },
-        data: { label: 'Linear Data Structure' }
+        data: { label: 'Linear Data Structure', }
     },
     {
         id: '3',
         type: 'center',
-        position: { x: 190, y: 150 },
-        data: { label: 'Non-Linear Data Structure' }
+        position: { x: 220, y: 150 },
+        data: { label: 'Non-Linear Data Structure', }
     },
     {
         id: '4',
         type: 'center',
-        position: { x: 6, y: 240 },
+        position: { x: 6, y: 260 },
         data: { label: 'Static Data Structure' }
     },
     {
         id: '5',
         type: 'center',
-        position: { x: 100, y: 320 },
+        position: { x: 150, y: 320 },
         data: { label: 'Dynamic Data Structure' }
     },
     {
         id: '6',
-        type: 'center',
+        type: 'top',
         position: { x: 10, y: 400 },
         data: { label: 'Array' }
     },
     {
         id: '7',
-        type: 'center',
-        position: { x: 65, y: 450 },
+        type: 'top',
+        position: { x: 90, y: 450 },
         data: { label: 'Queue' }
     },
     {
         id: '8',
-        type: 'center',
-        position: { x: 150, y: 450 },
+        type: 'top',
+        position: { x: 210, y: 450 },
         data: { label: 'Stack' }
     },
     {
         id: '9',
-        type: 'center',
-        position: { x: 230, y: 450 },
+        type: 'top',
+        position: { x: 320, y: 450 },
         data: { label: 'Linked List' }
     },
     {
         id: '10',
-        type: 'center',
-        position: { x: 210, y: 240 },
+        type: 'top',
+        position: { x: 250, y: 240 },
         data: { label: 'Tree' }
     },
     {
         id: '11',
-        type: 'center',
-        position: { x: 300, y: 240 },
+        type: 'top',
+        position: { x: 330, y: 240 },
         data: { label: 'Graph' }
     }
 ]
