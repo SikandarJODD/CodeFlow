@@ -5,6 +5,10 @@ import BottomName from "./bottomName.svelte";
 import { writable } from "svelte/store";
 import { BarChart3, Brackets, Database, DatabaseZap, Layers, LayoutList, LibrarySquare, NetworkIcon, TreesIcon, Waypoints } from "lucide-svelte";
 import DataStructure from "./desc/dataStructure.svelte";
+import Lineards from "./desc/lineards.svelte";
+import Nonlineards from "./desc/nonlineards.svelte";
+import Staticds from "./desc/staticds.svelte";
+import Dynamicds from "./desc/dynamicds.svelte";
 export let nodeTypes = {
     center: CenterName,
     top: TopName,
@@ -25,25 +29,25 @@ export let initialnode = [
         id: '2',
         type: 'center',
         position: { x: 430, y: 170 },
-        data: { label: 'Linear Data Structure', icon: LibrarySquare, desc: DataStructure }
+        data: { label: 'Linear Data Structure', icon: LibrarySquare, desc: Lineards }
     },
     {
         id: '3',
         type: 'center',
         position: { x: 800, y: 170 },
-        data: { label: 'Non-Linear Data Structure', icon: NetworkIcon }
+        data: { label: 'Non-Linear Data Structure', icon: NetworkIcon, desc: Nonlineards }
     },
     {
         id: '4',
         type: 'center',
         position: { x: 280, y: 280 },
-        data: { label: 'Static Data Structure' }
+        data: { label: 'Static Data Structure', desc: Staticds }
     },
     {
         id: '5',
         type: 'center',
         position: { x: 544, y: 280 },
-        data: { label: 'Dynamic Data Structure' }
+        data: { label: 'Dynamic Data Structure', desc: Dynamicds }
     },
     {
         id: '6',
@@ -137,25 +141,25 @@ export let mobile: Node[] = [
         id: '2',
         type: 'center',
         position: { x: 6, y: 150 },
-        data: { label: 'Linear Data Structure', }
+        data: { label: 'Linear Data Structure', desc: Lineards }
     },
     {
         id: '3',
         type: 'center',
         position: { x: 220, y: 150 },
-        data: { label: 'Non-Linear Data Structure', }
+        data: { label: 'Non-Linear Data Structure', desc: Nonlineards }
     },
     {
         id: '4',
         type: 'center',
         position: { x: 6, y: 260 },
-        data: { label: 'Static Data Structure' }
+        data: { label: 'Static Data Structure', desc: Staticds }
     },
     {
         id: '5',
         type: 'center',
         position: { x: 150, y: 320 },
-        data: { label: 'Dynamic Data Structure' }
+        data: { label: 'Dynamic Data Structure', desc: Dynamicds }
     },
     {
         id: '6',

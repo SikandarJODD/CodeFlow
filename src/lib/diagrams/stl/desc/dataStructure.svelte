@@ -7,7 +7,14 @@
 		A data structure is a storage that is used to store and organize data. It is a way of arranging
 		data on a computer so that it can be accessed and updated efficiently.
 	</p>
-	<div class="my-4">
+	<div class="my-4 border-2 border-primary/30 dark:border-none rounded-3xl overflow-hidden">
 		<img src={DataStructureLightImg} alt="" class="rounded-lg" />
+	</div>
+	<h3 class="text-xl my-2 font-semibold">Types of Data Strucuture</h3>
+	<div class="md:px-6">
+		<ol class="list-decimal">
+			<li>Linear Data Structure</li>
+			<li>Non-Linear Structure</li>
+		</ol>
 	</div>
 </main>
