@@ -2,8 +2,9 @@
 	import { fly, slide } from 'svelte/transition';
 	import ThemeMode from './ThemeMode.svelte';
 	import { Flame, GitPullRequest, GoalIcon, Menu, Pi, X } from 'lucide-svelte';
-	import SvelteLogo from '$lib/sveltelogo.svg';
-	import CppLogo from '$lib/cpplogo.svg';
+	import SvelteLogo from '$lib/images/sveltelogo.svg';
+	import CppLogo from '$lib/images/cpplogo.svg';
+	import DSALogo from '$lib/images/dsa-stl.png';
 	console.clear();
 
 	let isFlyoutOpen = false;
@@ -12,40 +13,23 @@
 	let navData = {
 		img: 'https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600',
 		products: [
-			{
-				name: 'Svelte',
-				desc: 'Get a better understanding of Svelte',
-				mobileIcon: SvelteLogo,
-				icon: `<svg xmlns="http://www.w3.org/2000/svg" width="107" height="128" viewBox="0 0 107 128"><title>svelte-logo</title><path d="M94.1566,22.8189c-10.4-14.8851-30.94-19.2971-45.7914-9.8348L22.2825,29.6078A29.9234,29.9234,0,0,0,8.7639,49.6506a31.5136,31.5136,0,0,0,3.1076,20.2318A30.0061,30.0061,0,0,0,7.3953,81.0653a31.8886,31.8886,0,0,0,5.4473,24.1157c10.4022,14.8865,30.9423,19.2966,45.7914,9.8348L84.7167,98.3921A29.9177,29.9177,0,0,0,98.2353,78.3493,31.5263,31.5263,0,0,0,95.13,58.117a30,30,0,0,0,4.4743-11.1824,31.88,31.88,0,0,0-5.4473-24.1157" style="fill:#ff3e00"/><path d="M45.8171,106.5815A20.7182,20.7182,0,0,1,23.58,98.3389a19.1739,19.1739,0,0,1-3.2766-14.5025,18.1886,18.1886,0,0,1,.6233-2.4357l.4912-1.4978,1.3363.9815a33.6443,33.6443,0,0,0,10.203,5.0978l.9694.2941-.0893.9675a5.8474,5.8474,0,0,0,1.052,3.8781,6.2389,6.2389,0,0,0,6.6952,2.485,5.7449,5.7449,0,0,0,1.6021-.7041L69.27,76.281a5.4306,5.4306,0,0,0,2.4506-3.631,5.7948,5.7948,0,0,0-.9875-4.3712,6.2436,6.2436,0,0,0-6.6978-2.4864,5.7427,5.7427,0,0,0-1.6.7036l-9.9532,6.3449a19.0329,19.0329,0,0,1-5.2965,2.3259,20.7181,20.7181,0,0,1-22.2368-8.2427,19.1725,19.1725,0,0,1-3.2766-14.5024,17.9885,17.9885,0,0,1,8.13-12.0513L55.8833,23.7472a19.0038,19.0038,0,0,1,5.3-2.3287A20.7182,20.7182,0,0,1,83.42,29.6611a19.1739,19.1739,0,0,1,3.2766,14.5025,18.4,18.4,0,0,1-.6233,2.4357l-.4912,1.4978-1.3356-.98a33.6175,33.6175,0,0,0-10.2037-5.1l-.9694-.2942.0893-.9675a5.8588,5.8588,0,0,0-1.052-3.878,6.2389,6.2389,0,0,0-6.6952-2.485,5.7449,5.7449,0,0,0-1.6021.7041L37.73,51.719a5.4218,5.4218,0,0,0-2.4487,3.63,5.7862,5.7862,0,0,0,.9856,4.3717,6.2437,6.2437,0,0,0,6.6978,2.4864,5.7652,5.7652,0,0,0,1.602-.7041l9.9519-6.3425a18.978,18.978,0,0,1,5.2959-2.3278,20.7181,20.7181,0,0,1,22.2368,8.2427,19.1725,19.1725,0,0,1,3.2766,14.5024,17.9977,17.9977,0,0,1-8.13,12.0532L51.1167,104.2528a19.0038,19.0038,0,0,1-5.3,2.3287" style="fill:#fff"/></svg>`,
-				link: '/roadmap/svelte'
-			},
+			// {
+			// 	name: 'Svelte',
+			// 	desc: 'Get a better understanding of Svelte',
+			// 	mobileIcon: SvelteLogo,
+			// 	link: '/roadmap/svelte'
+			// },
 			{
 				name: 'Competitive Programming',
 				desc: 'Simple Roadmap for Progress',
 				mobileIcon: CppLogo,
-				icon: `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="306px" height="344.35px" viewBox="0 0 306 344.35" enable-background="new 0 0 306 344.35" xml:space="preserve">
-<path fill="#00599C" d="M302.107,258.262c2.401-4.159,3.893-8.845,3.893-13.053V99.14c0-4.208-1.49-8.893-3.892-13.052L153,172.175
-	L302.107,258.262z"/>
-<path fill="#004482" d="M166.25,341.193l126.5-73.034c3.644-2.104,6.956-5.737,9.357-9.897L153,172.175L3.893,258.263
-	c2.401,4.159,5.714,7.793,9.357,9.896l126.5,73.034C147.037,345.401,158.963,345.401,166.25,341.193z"/>
-<path fill="#659AD2" d="M302.108,86.087c-2.402-4.16-5.715-7.793-9.358-9.897L166.25,3.156c-7.287-4.208-19.213-4.208-26.5,0
-	L13.25,76.19C5.962,80.397,0,90.725,0,99.14v146.069c0,4.208,1.491,8.894,3.893,13.053L153,172.175L302.108,86.087z"/>
-<g>
-	<path fill="#FFFFFF" d="M153,274.175c-56.243,0-102-45.757-102-102s45.757-102,102-102c36.292,0,70.139,19.53,88.331,50.968
-		l-44.143,25.544c-9.105-15.736-26.038-25.512-44.188-25.512c-28.122,0-51,22.878-51,51c0,28.121,22.878,51,51,51
-		c18.152,0,35.085-9.776,44.191-25.515l44.143,25.543C223.142,254.644,189.294,274.175,153,274.175z"/>
-</g>
-<g>
-	<polygon fill="#FFFFFF" points="255,166.508 243.666,166.508 243.666,155.175 232.334,155.175 232.334,166.508 221,166.508 
-		221,177.841 232.334,177.841 232.334,189.175 243.666,189.175 243.666,177.841 255,177.841 	"/>
-</g>
-<g>
-	<polygon fill="#FFFFFF" points="297.5,166.508 286.166,166.508 286.166,155.175 274.834,155.175 274.834,166.508 263.5,166.508 
-		263.5,177.841 274.834,177.841 274.834,189.175 286.166,189.175 286.166,177.841 297.5,177.841 	"/>
-</g>
-</svg>`,
 				link: '/roadmap/dsa'
+			},
+			{
+				name: 'Data Structure and STL',
+				desc: 'Roadmap of Data Structures and STL (C++)',
+				mobileIcon: DSALogo,
+				link: '/roadmap/stl'
 			}
 		],
 		navs: [
@@ -54,14 +38,7 @@
 				link: '/practice',
 				icon: Flame
 			}
-			// {
-			// 	name: 'Marketplace',
-			// 	link: '/'
-			// },
-			// {
-			// 	name: 'Company',
-			// 	link: '/'
-			// }
+			
 		]
 	};
 </script>
@@ -107,7 +84,7 @@
 					type="button"
 					class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 border-none outline-none dark:text-white"
 					aria-expanded="false"
-					on:click={() => (isFlyoutOpen = !isFlyoutOpen)}
+					on:mouseenter={() => (isFlyoutOpen = true)}
 				>
 					Roadmap
 					<svg
@@ -126,7 +103,9 @@
 					</svg>
 				</button>
 				{#key isFlyoutOpen}
+					<!-- svelte-ignore a11y-no-static-element-interactions -->
 					<div
+						on:mouseleave={() => (isFlyoutOpen = false)}
 						in:fly={{ duration: 300, y: 30 }}
 						out:fly={{ duration: 300, y: 30 }}
 						class="{isFlyoutOpen
@@ -141,13 +120,12 @@
 									on:click={() => (isFlyoutOpen = !isFlyoutOpen)}
 									class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-indigo-100 z-50"
 								>
-									<div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
-										{@html item.icon}
-									</div>
+									<img src={item.mobileIcon} alt="" class="h-12" />
+
 									<div class="flex-auto">
 										<a
 											href={item.link}
-											class="block font-semibold text-gray-900 group-hover:text-indigo-600 lg:text-[1.03rem]"
+											class="block font-semibold text-gray-800 group-hover:text-gray-950 lg:text-[1.03rem]"
 										>
 											{item.name}
 											<span class="absolute inset-0" />
