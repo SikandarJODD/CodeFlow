@@ -375,9 +375,9 @@
 	]);
 </script>
 
-<div style="height:91.4vh">
+<div style="height:90.7vh">
 	<SvelteFlow nodes={nodescode} {edges} {nodeTypes} maxZoom={3} fitView>
-		<Controls />
+		<Controls showLock={false}  />
 		<Background class="dark:bg-gray-900 bg-gray-100" />
 	</SvelteFlow>
 </div>
