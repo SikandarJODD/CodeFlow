@@ -11,7 +11,7 @@
 		<img src={DataStructureLightImg} alt="" class="rounded-lg" />
 	</div>
 	<h3 class="text-xl my-2 font-semibold">Types of Data Strucuture</h3>
-	<div class="md:px-6">
+	<div class="md:px-6 px-5">
 		<ol class="list-decimal">
 			<li>Linear Data Structure</li>
 			<li>Non-Linear Structure</li>

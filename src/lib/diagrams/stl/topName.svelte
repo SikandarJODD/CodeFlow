@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { Handle, Position, type NodeProps } from '@xyflow/svelte';
 	import * as Sheet from '$ui/ui/sheet';
+	import DataDesc from './desc/DataDesc.svelte';
 	type $$Props = NodeProps;
 
 	export let data: $$Props['data'];
 
-	const { label, style, icon, desc } = data;
+	const { label, style, icon, structName } = data;
 </script>
 
 <!-- class="h-2 w-6 rounded-sm bg-blue-400 dark:bg-white border border-primary dark:border-black dak:border-white" -->
@@ -25,7 +26,7 @@
 			<Sheet.Title class="md:text-3xl md:font-bold">{label}</Sheet.Title>
 		</Sheet.Header>
 		<div class="my-4">
-			<svelte:component this={desc} />
+			<DataDesc {structName} />
 		</div>
 	</Sheet.Content>
 </Sheet.Root>

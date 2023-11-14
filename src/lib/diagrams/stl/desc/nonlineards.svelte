@@ -13,8 +13,8 @@
 	</div>
 
 	<h3 class="text-xl my-2 font-semibold">Examples of Non Linear Data Strucuture</h3>
-	<div class="md:px-6">
-		<ol class="list-decimal">
+	<div class=" md:px-6">
+		<ol class="list-decimal pl-4">
 			<li>Tree</li>
 			<li>Binary Search Tree</li>
 			<li>Graph</li>
