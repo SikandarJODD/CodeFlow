@@ -212,7 +212,7 @@
 											<a
 												on:click={() => (isMenuBarOpen = false)}
 												href={item.link}
-												class="flex justify-start items-center gap-2 rounded-lg py-2 pl-5 bg-gray-800 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white hover:dark:bg-gray-800"
+												class="flex justify-start items-center gap-2 rounded-lg py-2 pl-5 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white dark:bg-gray-800 bg-sky-100"
 											>
 												<img src={item.mobileIcon} class="h-6" alt="" />
 												{item.name}</a
