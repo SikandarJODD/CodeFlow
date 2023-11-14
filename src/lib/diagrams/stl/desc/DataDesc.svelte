@@ -1,5 +1,6 @@
 <script>
 	import DataStructureLightImg from '$lib/images/allsvgs/ds-light.svg';
+	import Badge from '$ui/badge/badge.svelte';
 	export let structName = {
 		name: 'A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.',
 		img: DataStructureLightImg,

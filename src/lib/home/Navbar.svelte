@@ -27,8 +27,8 @@
 				link: '/roadmap/dsa'
 			},
 			{
-				name: 'Data Structure and STL',
-				desc: 'Roadmap of Data Structures and STL (C++)',
+				name: 'Data Structures',
+				desc: 'Roadmap of Data Structures in Detail',
 				mobileIcon: DSALogo,
 				link: '/roadmap/stl'
 			}
@@ -41,7 +41,6 @@
 			}
 		]
 	};
-	
 </script>
 
 <header class="bg-white dark:bg-gray-900 border-b dark:border-primary">

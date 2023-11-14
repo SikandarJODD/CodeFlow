@@ -45,7 +45,7 @@ export const sheetVariants = tv({
 			bottom: "inset-x-0 bottom-0 border-t",
 			left: "inset-y-0 left-0 h-full w-3/4 border-r sm:max-w-sm",
 			right: "inset-y-0 right-0 px-2 md:px-8 h-full w-full border-l sm:w-4/5 overflow-auto",
-			codestl: "inset-y-0 right-0 px-2 md:px-8 h-full w-full border-l sm:w-2/5 overflow-auto",
+			codestl: "inset-y-0 right-0 px-2 md:px-8 h-full w-full border-l sm:w-3/6 overflow-auto",
 		}
 	},
 	defaultVariants: {
