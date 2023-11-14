@@ -19,7 +19,6 @@
 	let isShow = false;
 	let width = 0;
 	onMount(() => {
-		console.log(width);
 		isShow = true;
 		if (width < 600) {
 			nodes.set(mobile);
@@ -34,7 +33,7 @@
 {#if isShow}
 	<main>
 		<SvelteFlow {nodes} {edges} {nodeTypes} fitView={width > 600 ? false : true}>
-			<Background class="dark:bg-gray-900 bg-sky-100" patternColor="#69A0FFFF" gap={25} />
+			<Background class="dark:bg-gray-900 bg-sky-100" patternColor="#42B7FFFF" gap={25} />
 			<Controls showLock={false} />
 		</SvelteFlow>
 	</main>

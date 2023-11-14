@@ -10,7 +10,7 @@
 
 <main class="px-2 mt-2 md:px-0">
 	<p class="dark:text-gray-300">
-		{structName.name}
+		{@html structName.name}
 	</p>
 	<div class="my-4 border-2 border-primary/30 dark:border-none rounded-3xl overflow-hidden">
 		<img src={structName.img} alt="" class="rounded-lg" />
