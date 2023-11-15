@@ -1,3 +1,4 @@
+import { onMount } from "svelte";
 import { writable, derived } from "svelte/store";
 
 // place files you want to import through the `$lib` alias in this folder.
@@ -148,7 +149,7 @@ export let webdata = writable(
             title: 'Stack',
             problems: [
                 {
-                    id: 13,
+                    id: 140,
                     status: false,
                     problem: 'Valid Parantheses',
                     link: 'https://leetcode.com/problems/valid-parentheses/',
@@ -214,7 +215,7 @@ export let webdata = writable(
             title: 'Binary Seach',
             problems: [
                 {
-                    id: 20,
+                    id: 19,
                     status: false,
                     problem: 'Binary Search',
                     link: 'https://leetcode.com/problems/binary-search/',
@@ -224,7 +225,7 @@ export let webdata = writable(
                     tags: 'array,binary search'
                 },
                 {
-                    id: 21,
+                    id: 20,
                     status: false,
                     problem: 'Search a 2D Matrix',
                     link: 'https://leetcode.com/problems/search-a-2d-matrix/',
@@ -234,7 +235,7 @@ export let webdata = writable(
                     tags: 'array,binary search,matrix'
                 },
                 {
-                    id: 22,
+                    id: 21,
                     status: false,
                     problem: 'Koko Eating Banans',
                     link: 'https://leetcode.com/problems/koko-eating-bananas/',
@@ -244,7 +245,7 @@ export let webdata = writable(
                     tags: 'array,binary search'
                 },
                 {
-                    id: 23,
+                    id: 22,
                     status: false,
                     problem: 'Find Minimum in Rotated Sorted Array',
                     link: 'https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/',
@@ -254,7 +255,7 @@ export let webdata = writable(
                     tags: 'array,binary search'
                 },
                 {
-                    id: 24,
+                    id: 23,
                     status: false,
                     problem: 'Search in Rotated Sorted Array',
                     link: 'https://leetcode.com/problems/search-in-rotated-sorted-array/',
@@ -264,7 +265,7 @@ export let webdata = writable(
                     tags: 'array,binary search'
                 },
                 {
-                    id: 25,
+                    id: 24,
                     status: false,
                     problem: 'Time Based Key Value Store',
                     link: 'https://leetcode.com/problems/time-based-key-value-store/',
@@ -274,7 +275,7 @@ export let webdata = writable(
                     tags: 'array,hash table,design,binary search'
                 },
                 {
-                    id: 19,
+                    id: 25,
                     status: false,
                     problem: 'Median of Two Sorted Arrays',
                     link: 'https://leetcode.com/problems/median-of-two-sorted-arrays/',
@@ -1532,3 +1533,4 @@ export let qdata = derived(webdata, ($webdata) => {
     );
     return ans;
 });
+

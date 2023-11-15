@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { qdata, webdata } from '$lib';
+	import { webdata } from '$lib';
 	export let status = false;
 	let originalStatus = status;
 	export let i = 0;
 	import Checkbox from '$ui/checkbox/checkbox.svelte';
 	let changeStatus = (i: any) => {
-		// $qdata[i].status = $qdata[i].status;
 		$webdata.map((n) => {
 			n.problems.filter((k) => {
 				if (k.id === i) {
@@ -15,7 +14,8 @@
 				return n;
 			});
 		});
-		// $qdata = $qdata;
+		localStorage.setItem('que', JSON.stringify($webdata));
+		$webdata = $webdata;
 	};
 </script>
 

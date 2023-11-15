@@ -2,11 +2,9 @@
 	import { fly, slide } from 'svelte/transition';
 	import ThemeMode from './ThemeMode.svelte';
 	import { Flame, GitPullRequest, Menu, Pi, X } from 'lucide-svelte';
-	import SvelteLogo from '$lib/images/sveltelogo.svg';
 	import CppLogo from '$lib/images/cpplogo.svg';
 	import DSALogo from '$lib/images/dsa-stl.png';
-	import { writable } from 'svelte/store';
-	console.clear();
+	// console.clear();
 
 	let isFlyoutOpen = false;
 	let isMobileFlyoutOpen = true;

@@ -5,13 +5,13 @@
 </script>
 
 <div
-	class="flex flex-col md:flex-row w-full justify-around items-center h-[90vh] gap-10 md:gap-0 bg-sky-100 dark:bg-gray-950"
+	class="flex flex-col md:flex-row w-full justify-around items-center h-full lg:h-[90vh] gap-10 md:gap-0 bg-sky-100 dark:bg-gray-950"
 >
 	<div
 		class="flex flex-col text-center md:text-left w-full lg:w-5/12 h-80 md:h-full justify-center lg:pb-24 mt-10 px-4 md:px-0 md:mt-0"
 	>
 		<div
-			class="gap-4 flex flex-col bg-sky-700/10 lg:border border-gray-500 dark:border-gray-300/50 lg:rounded-xl dark:bg-gradient-to-r dark:from-gray-950/10 dark:to-gray-900/90 dark:shadow-lg px-8 py-8 w-full group"
+			class="gap-4 flex flex-col bg-sky-700/10 lg:border border-gray-500 dark:border-gray-300/50 rounded-2xl lg:rounded-xl dark:bg-gradient-to-r dark:from-gray-950/10 dark:to-gray-900/90 dark:shadow-lg px-8 py-8 w-full group"
 		>
 			<h1
 				class="text-4xl font-bold lg:text-3xl xl:text-6xl text-left drop-shadow-md dark:group-hover:text-sky-500 transition-all duration-150"
@@ -38,7 +38,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-full h-96 md:h-full lg:w-1/3 lg:h-4/5 md:mb-5">
+	<div class="w-full h-64 md:h-full lg:w-1/3 lg:h-4/5 md:mb-5">
 		<FlowDiagram />
 	</div>
 </div>

@@ -56,9 +56,9 @@
 				return k;
 			})
 		);
+		localStorage.setItem('que', JSON.stringify($webdata));
 		$webdata = $webdata;
 	};
-	
 </script>
 
 <div>
@@ -97,4 +97,3 @@
 		{/each}
 	</Table.Body>
 </Table.Root>
-

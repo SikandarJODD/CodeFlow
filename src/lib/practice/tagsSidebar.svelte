@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Badge from '$ui/badge/badge.svelte';
 	import * as Card from '$ui/card';
 	let allTags = [
 		'Array',

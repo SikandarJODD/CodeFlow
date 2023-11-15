@@ -15,13 +15,11 @@
 		end: BottomEnd,
 		top: TopEnd
 	};
-	// 👇 this is important! You need to import the styles for Svelte Flow to work
 	import '@xyflow/svelte/dist/style.css';
 	import Simple from '$lib/diagrams/sv/Simple.svelte';
 	import BottomEnd from '$lib/diagrams/sv/BottomEnd.svelte';
 	import { Blocks, BracketsIcon, CircleDot, ScrollText, Terminal } from 'lucide-svelte';
 	import TopEnd from '$lib/diagrams/sv/TopEnd.svelte';
-	import { Home } from 'radix-icons-svelte';
 	import HomeCode from './HomeCode.svelte';
 	/*
 	{
@@ -93,15 +91,9 @@
     style="background: #041133FF;"
  -->
 <div
-	class=" shadow-xl shadow-gray-600/30 dark:shadow-gray-950 overflow-hidden h-full lg:h-5/6 rounded-2xl m-4 lg:m-0"
+	class="shadow-xl shadow-gray-600/30 dark:shadow-gray-950 overflow-hidden h-64 lg:h-5/6 rounded-2xl m-4 lg:m-0"
 >
-	<SvelteFlow
-		style="background:#45ADF7FF;"
-		{nodes}
-		{edges}
-		{nodeTypes}
-		fitView
-	>
+	<SvelteFlow style="background:#45ADF7FF;" {nodes} {edges} {nodeTypes} fitView>
 		<!-- <Controls /> -->
 		<Background patternColor="#051F40FF" variant={BackgroundVariant.Dots} />
 	</SvelteFlow>
