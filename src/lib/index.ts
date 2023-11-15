@@ -1519,6 +1519,26 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'string,dynamic programming,dp,recursion'
                 },
+                {
+                    id: 132,
+                    status: false,
+                    problem: 'Wildcard Matching',
+                    link: 'https://leetcode.com/problems/wildcard-matching/description/',
+                    difficulty: 'hard',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'string,dynamic programming,recursion'
+                },
+                {
+                    id: 133,
+                    status: false,
+                    problem: '2-Keys keyboard',
+                    link: 'https://leetcode.com/problems/2-keys-keyboard/description/',
+                    difficulty: 'Medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'Math,dynamic programming,recursion'
+                },
 
             ]
         }
