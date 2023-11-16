@@ -3,10 +3,95 @@ import { writable, derived } from "svelte/store";
 
 // place files you want to import through the `$lib` alias in this folder.
 export let webdata = writable(
-    [
+    [    
+        {
+            title:'Game theory',
+            problems:[
+                {
+                    id: 181,
+                    status: false,
+                    problem: 'sun game',
+                    link: 'https://leetcode.com/problems/sum-game/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,greedy'
+                },
+                {
+                    id: 182,
+                    status: false,
+                    problem: 'guess number higher or lower II',
+                    link: 'https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,dynamic programming'
+                },
+                {
+                    id: 183,
+                    status: false,
+                    problem: 'remove colored pieces',
+                    link: 'https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,string'
+                },
+                {
+                    id: 184,
+                    status: false,
+                    problem: 'chalkboard-xor-game',
+                    link: 'https://leetcode.com/problems/chalkboard-xor-game/description/',
+                    difficulty: 'Hard',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,Bit manipulation'
+                },
+                {
+                    id: 185,
+                    status: false,
+                    problem: 'can i win',
+                    link: 'https://leetcode.com/problems/can-i-win/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,dynamic programming,bit manipulation'
+                },
+            ]
+        },
         {
             title: 'Array and Hashing',
             problems: [
+                {
+                    id: 150,
+                    status: false,
+                    problem: 'Can Place Flowers ',
+                    link: 'https://leetcode.com/problems/can-place-flowers/description/',
+                    difficulty: 'easy',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,greedy'
+                },
+                {
+                    id: 151,
+                    status: false,
+                    problem: 'Number of laser Beams',
+                    link: 'https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description/',
+                    difficulty: 'Medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,Math,string,matrix'
+                },
+                {
+                    id: 152,
+                    status: false,
+                    problem: 'Design Browser History',
+                    link: 'https://leetcode.com/problems/design-browser-history/',
+                    difficulty: 'Medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,Design'
+                },
                 {
                     id: 1,
                     status: false,
@@ -143,6 +228,26 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'array,two pointers, dp,stack,monotonic stack'
                 },
+                {
+                    id: 166,
+                    status: false,
+                    problem: 'rearrange array elements by sign',
+                    link: 'https://leetcode.com/problems/rearrange-array-elements-by-sign/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,two pointers'
+                },
+                {
+                    id: 167,
+                    status: false,
+                    problem: 'find median from data stream',
+                    link: 'https://leetcode.com/problems/find-median-from-data-stream/description/',
+                    difficulty: 'hard',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,two pointers,design,heap'
+                },
             ]
         },
         {
@@ -208,6 +313,26 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'array,stack,monotonic stack'
                 },
+                 {
+                    id: 168,
+                    status: false,
+                    problem: 'Implement stack using queues',
+                    link: 'https://leetcode.com/problems/implement-stack-using-queues/description/',
+                    difficulty: 'easy',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,stack,queue'
+                },
+                 {
+                    id: 169,
+                    status: false,
+                    problem: 'Online stock span',
+                    link: 'https://leetcode.com/problems/online-stock-span/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,stack,monotonic stack'
+                },
 
             ]
         },
@@ -220,6 +345,56 @@ export let webdata = writable(
                     problem: 'Binary Search',
                     link: 'https://leetcode.com/problems/binary-search/',
                     difficulty: 'easy',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,binary search'
+                },
+                {
+                    id: 161,
+                    status: false,
+                    problem: 'Capacity to ship packages within d days',
+                    link: 'https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,binary search'
+                },
+                {
+                    id: 162,
+                    status: false,
+                    problem: 'Binary Search',
+                    link: 'https://leetcode.com/problems/search-suggestions-system/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,binary search,string'
+                },
+                {
+                    id: 163,
+                    status: false,
+                    problem: 'Minimum days to make m bouquets',
+                    link: 'https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,binary search'
+                },
+                {
+                    id: 164,
+                    status: false,
+                    problem: 'magnetic force between two balls',
+                    link: 'https://leetcode.com/problems/magnetic-force-between-two-balls/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,binary search,sorting'
+                },
+                {
+                    id: 165,
+                    status: false,
+                    problem: 'Minimum time to complete trips',
+                    link: 'https://leetcode.com/problems/minimum-time-to-complete-trips/',
+                    difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
                     tags: 'array,binary search'
@@ -619,6 +794,66 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'String,Tree,depth-first search,breadth-first search,binary tree'
                 },
+                {
+                    id: 170,
+                    status: false,
+                    problem: 'Inorder traversal',
+                    link: 'https://leetcode.com/problems/binary-tree-inorder-traversal/description/',
+                    difficulty: 'easy',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'Tree,,binary tree'
+                },
+                {
+                    id: 171,
+                    status: false,
+                    problem: 'zigzag traversal of binary tree',
+                    link: 'https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'Tree,breadth-first search,binary tree'
+                },
+                {
+                    id: 172,
+                    status: false,
+                    problem: 'binary tree maximum path sum',
+                    link: 'https://leetcode.com/problems/binary-tree-maximum-path-sum/description/',
+                    difficulty: 'hard',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'Dynamic programming,Tree,depth-first search,binary tree'
+                },
+                {
+                    id: 173,
+                    status: false,
+                    problem: 'symmetric binary tree',
+                    link: 'https://leetcode.com/problems/symmetric-tree/description/',
+                    difficulty: 'easy',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'Tree,depth-first search,breadth-first search,binary tree'
+                },
+                {
+                    id: 174,
+                    status: false,
+                    problem: 'flattern binary tree to linked list',
+                    link: 'https://leetcode.com/problems/flatten-binary-tree-to-linked-list/',
+                    difficulty: 'hard',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'Linked list,Tree,depth-first search,breadth-first search,binary tree'
+                },
+                {
+                    id: 175,
+                    status: false,
+                    problem: 'construct binary tree from inorder-and-postorder-traversal',
+                    link: 'https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/',
+                    difficulty: 'hard',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'Tree,depth-first search,breadth-first search,binary tree,divide and conquer'
+                },
 
             ]
         },
@@ -655,6 +890,16 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'string,array,backtracking,trie,matrix'
                 },
+                 {
+                    id: 176,
+                    status: false,
+                    problem: 'maximum xor with an element from array',
+                    link: 'https://leetcode.com/problems/maximum-xor-with-an-element-from-array/description/',
+                    difficulty: 'hard',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,trie,bit manipulation'
+                },
 
             ]
 
@@ -671,6 +916,36 @@ export let webdata = writable(
                     code: 'C++',
                     isblind: true,
                     tags: 'array,backtracking,bit manipluation'
+                },
+                {
+                    id: 153,
+                    status: false,
+                    problem: 'Sudoku Solver',
+                    link: 'https://leetcode.com/problems/sudoku-solver/description/',
+                    difficulty: 'Hard',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'Hash Tabee,array,Hash Table,Matrix'
+                },
+                {
+                    id: 154,
+                    status: false,
+                    problem: 'Fair distribution of cookies',
+                    link: 'https://leetcode.com/problems/fair-distribution-of-cookies/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,backtracking,bit manipluation,Dynamic Programming, bitmask'
+                },
+                {
+                    id: 155,
+                    status: false,
+                    problem: 'closest dessert cost',
+                    link: 'https://leetcode.com/problems/closest-dessert-cost/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,backtracking,dynamic programming'
                 },
                 {
                     id: 60,
@@ -833,6 +1108,76 @@ export let webdata = writable(
             title: 'Graphs',
             problems: [
                 {
+                    id: 75,
+                    status: false,
+                    problem: 'Number of Islands',
+                    link: 'https://leetcode.com/problems/number-of-islands/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,depth-first search,breadth-first search,union find,matrix'
+                },
+                 {
+                    id: 156,
+                    status: false,
+                    problem: 'is Graph bipartite',
+                    link: 'https://leetcode.com/problems/is-graph-bipartite/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,depth-first search,breadth-first search,union find'
+                },
+                 {
+                    id: 157,
+                    status: false,
+                    problem: 'All Paths from source to target',
+                    link: 'https://leetcode.com/problems/all-paths-from-source-to-target/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'depth-first search,breadth-first search,Backtracking,graph'
+                },
+                 {
+                    id: 158,
+                    status: false,
+                    problem: 'Path with maximum Probability',
+                    link: 'https://leetcode.com/problems/path-with-maximum-probability/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,graph,shortest path,breadth-first search'
+                },
+                {
+                    id: 159,
+                    status: false,
+                    problem: 'Find center of star graph',
+                    link: 'https://leetcode.com/problems/find-center-of-star-graph/description/',
+                    difficulty: 'Easy',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'graph'
+                },
+                {
+                    id: 160,
+                    status: false,
+                    problem: 'Find if path exists in graph',
+                    link: 'https://leetcode.com/problems/find-if-path-exists-in-graph/description/',
+                    difficulty: 'Easy',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,graph,shortest path,breadth-first search'
+                },
+                 {
+                    id: 75,
+                    status: false,
+                    problem: 'Number of Islands',
+                    link: 'https://leetcode.com/problems/number-of-islands/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,depth-first search,breadth-first search,union find,matrix'
+                },
+                 {
                     id: 75,
                     status: false,
                     problem: 'Number of Islands',
@@ -1107,7 +1452,7 @@ export let webdata = writable(
             ]
         },
         {
-            title: 'Greddy',
+            title: 'Greedy',
             problems: [
                 {
                     id: 101,
@@ -1329,6 +1674,26 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'array,hash table,counting,design'
                 },
+                {
+                    id: 179,
+                    status: false,
+                    problem: 'count total number of colored cells',
+                    link: 'https://leetcode.com/problems/count-total-number-of-colored-cells/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math'
+                },
+                {
+                    id: 180,
+                    status: false,
+                    problem: 'distinct prime factors of product of array',
+                    link: 'https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,number theory'
+                },
             ]
         },
         {
@@ -1518,6 +1883,26 @@ export let webdata = writable(
                     code: 'C++',
                     isblind: true,
                     tags: 'string,dynamic programming,dp,recursion'
+                },
+                {
+                    id: 177,
+                    status: false,
+                    problem: 'count ways to build good strings',
+                    link: 'https://leetcode.com/problems/count-ways-to-build-good-strings/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'string,dynamic programming,dp,recursion'
+                },
+                {
+                    id: 178,
+                    status: false,
+                    problem: 'word break',
+                    link: 'https://leetcode.com/problems/word-break/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'string,dynamic programming,dp,recursion,memoization,hash table,trie'
                 },
 
             ]
