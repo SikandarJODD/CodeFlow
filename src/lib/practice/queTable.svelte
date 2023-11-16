@@ -96,17 +96,24 @@
 										: ''}"
 								>
 									{#if innerWidth > 600}
-										<Table.Cell class="pl-8  w-20">{row.id}</Table.Cell>
+										<Table.Cell class="pl-8  w-20">{i}</Table.Cell>
 										<Table.Cell class="pl-10  w-20">
 											<!-- <Checkbox bind:checked={row.status} on:click={() => changeStatus(row.id)} /> -->
 											<QueStatus i={row.id} status={row.status} />
 										</Table.Cell>
 									{/if}
 									<Table.Cell
-										class="capitalize md:font-medium text-md md:pl-7 flex items-center gap-x-6 justify-between"
+										class="capitalize md:font-medium text-md md:pl-7 flex items-center gap-x-6 justify-between group"
 									>
 										<div>
-											<a href={row.link} target="_blank">{row.problem}</a>
+											<a href={row.link} target="_blank"
+												>{row.problem}
+												<Badge
+													variant="outline"
+													class="hidden md:inline-block opacity-0 ml-1 group-hover:opacity-90 text-[10px] dark:bg-gray-900 transition-all duration-200 dark:hover:bg-gray-600"
+													>#{row.id}</Badge
+												></a
+											>
 										</div>
 										{#if isTagsVisible}
 											<div

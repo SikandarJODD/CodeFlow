@@ -3,95 +3,12 @@ import { writable, derived } from "svelte/store";
 
 // place files you want to import through the `$lib` alias in this folder.
 export let webdata = writable(
-    [    
-        {
-            title:'Game theory',
-            problems:[
-                {
-                    id: 181,
-                    status: false,
-                    problem: 'sun game',
-                    link: 'https://leetcode.com/problems/sum-game/description/',
-                    difficulty: 'medium',
-                    code: 'C++',
-                    isblind: true,
-                    tags: 'math,game theory,greedy'
-                },
-                {
-                    id: 182,
-                    status: false,
-                    problem: 'guess number higher or lower II',
-                    link: 'https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/',
-                    difficulty: 'medium',
-                    code: 'C++',
-                    isblind: true,
-                    tags: 'math,game theory,dynamic programming'
-                },
-                {
-                    id: 183,
-                    status: false,
-                    problem: 'remove colored pieces',
-                    link: 'https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/',
-                    difficulty: 'medium',
-                    code: 'C++',
-                    isblind: true,
-                    tags: 'math,game theory,string'
-                },
-                {
-                    id: 184,
-                    status: false,
-                    problem: 'chalkboard-xor-game',
-                    link: 'https://leetcode.com/problems/chalkboard-xor-game/description/',
-                    difficulty: 'Hard',
-                    code: 'C++',
-                    isblind: true,
-                    tags: 'math,game theory,Bit manipulation'
-                },
-                {
-                    id: 185,
-                    status: false,
-                    problem: 'can i win',
-                    link: 'https://leetcode.com/problems/can-i-win/description/',
-                    difficulty: 'medium',
-                    code: 'C++',
-                    isblind: true,
-                    tags: 'math,game theory,dynamic programming,bit manipulation'
-                },
-            ]
-        },
+    [
+
         {
             title: 'Array and Hashing',
             problems: [
-                {
-                    id: 150,
-                    status: false,
-                    problem: 'Can Place Flowers ',
-                    link: 'https://leetcode.com/problems/can-place-flowers/description/',
-                    difficulty: 'easy',
-                    code: 'C++',
-                    isblind: true,
-                    tags: 'array,greedy'
-                },
-                {
-                    id: 151,
-                    status: false,
-                    problem: 'Number of laser Beams',
-                    link: 'https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description/',
-                    difficulty: 'Medium',
-                    code: 'C++',
-                    isblind: true,
-                    tags: 'array,Math,string,matrix'
-                },
-                {
-                    id: 152,
-                    status: false,
-                    problem: 'Design Browser History',
-                    link: 'https://leetcode.com/problems/design-browser-history/',
-                    difficulty: 'Medium',
-                    code: 'C++',
-                    isblind: true,
-                    tags: 'array,Design'
-                },
+
                 {
                     id: 1,
                     status: false,
@@ -171,6 +88,36 @@ export let webdata = writable(
                     code: 'C++',
                     isblind: true,
                     tags: 'array,hash table,Union Find'
+                },
+                {
+                    id: 150,
+                    status: false,
+                    problem: 'Can Place Flowers ',
+                    link: 'https://leetcode.com/problems/can-place-flowers/description/',
+                    difficulty: 'easy',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,greedy'
+                },
+                {
+                    id: 151,
+                    status: false,
+                    problem: 'Number of laser Beams',
+                    link: 'https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description/',
+                    difficulty: 'Medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,Math,string,matrix'
+                },
+                {
+                    id: 152,
+                    status: false,
+                    problem: 'Design Browser History',
+                    link: 'https://leetcode.com/problems/design-browser-history/',
+                    difficulty: 'Medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'array,Design'
                 },
             ]
 
@@ -313,7 +260,7 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'array,stack,monotonic stack'
                 },
-                 {
+                {
                     id: 168,
                     status: false,
                     problem: 'Implement stack using queues',
@@ -323,7 +270,7 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'array,stack,queue'
                 },
-                 {
+                {
                     id: 169,
                     status: false,
                     problem: 'Online stock span',
@@ -362,7 +309,7 @@ export let webdata = writable(
                 {
                     id: 162,
                     status: false,
-                    problem: 'Binary Search',
+                    problem: 'Search Suggestion System',
                     link: 'https://leetcode.com/problems/search-suggestions-system/',
                     difficulty: 'medium',
                     code: 'C++',
@@ -890,7 +837,7 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'string,array,backtracking,trie,matrix'
                 },
-                 {
+                {
                     id: 176,
                     status: false,
                     problem: 'maximum xor with an element from array',
@@ -1117,7 +1064,7 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'array,depth-first search,breadth-first search,union find,matrix'
                 },
-                 {
+                {
                     id: 156,
                     status: false,
                     problem: 'is Graph bipartite',
@@ -1127,7 +1074,7 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'array,depth-first search,breadth-first search,union find'
                 },
-                 {
+                {
                     id: 157,
                     status: false,
                     problem: 'All Paths from source to target',
@@ -1137,7 +1084,7 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'depth-first search,breadth-first search,Backtracking,graph'
                 },
-                 {
+                {
                     id: 158,
                     status: false,
                     problem: 'Path with maximum Probability',
@@ -1167,7 +1114,7 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'array,graph,shortest path,breadth-first search'
                 },
-                 {
+                {
                     id: 75,
                     status: false,
                     problem: 'Number of Islands',
@@ -1177,7 +1124,7 @@ export let webdata = writable(
                     isblind: true,
                     tags: 'array,depth-first search,breadth-first search,union find,matrix'
                 },
-                 {
+                {
                     id: 75,
                     status: false,
                     problem: 'Number of Islands',
@@ -1906,7 +1853,62 @@ export let webdata = writable(
                 },
 
             ]
-        }
+        },
+        {
+            title: 'Game theory',
+            problems: [
+                {
+                    id: 181,
+                    status: false,
+                    problem: 'sun game',
+                    link: 'https://leetcode.com/problems/sum-game/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,greedy'
+                },
+                {
+                    id: 182,
+                    status: false,
+                    problem: 'guess number higher or lower II',
+                    link: 'https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,dynamic programming'
+                },
+                {
+                    id: 183,
+                    status: false,
+                    problem: 'remove colored pieces',
+                    link: 'https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,string'
+                },
+                {
+                    id: 184,
+                    status: false,
+                    problem: 'chalkboard-xor-game',
+                    link: 'https://leetcode.com/problems/chalkboard-xor-game/description/',
+                    difficulty: 'Hard',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,Bit manipulation'
+                },
+                {
+                    id: 185,
+                    status: false,
+                    problem: 'can i win',
+                    link: 'https://leetcode.com/problems/can-i-win/description/',
+                    difficulty: 'medium',
+                    code: 'C++',
+                    isblind: true,
+                    tags: 'math,game theory,dynamic programming,bit manipulation'
+                },
+            ]
+        },
     ]
 )
 export let qdata = derived(webdata, ($webdata) => {
