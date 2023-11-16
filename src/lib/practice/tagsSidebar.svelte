@@ -16,11 +16,12 @@
 		'Binary Tree'
 	];
 	import { qdata } from '$lib';
-	let queData = $qdata;
-	import { DataHandler, Datatable, Th, check } from '@vincjo/datatables';
-	import Button from '$ui/button/button.svelte';
 
-	export let handler = new DataHandler(queData, { rowsPerPage: 31 });
+	import { DataHandler } from '@vincjo/datatables';
+	import Button from '$ui/button/button.svelte';
+	export let handler = new DataHandler($qdata, { rowsPerPage: 31 });
+	$: handler.setRows($qdata);
+
 	let filterTopic = (filterText: string) => {
 		console.log('working');
 		handler.filter(filterText, 'tags');

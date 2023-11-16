@@ -12,7 +12,7 @@
 	import { onMount } from 'svelte';
 	import DiffBadge from '$lib/diagrams/sv/DiffBadge.svelte';
 
-	let handler = new DataHandler($qdata, { rowsPerPage: 31 });
+	export let handler = new DataHandler($qdata, { rowsPerPage: 31 });
 	$: rows = handler.getRows();
 	$: handler.setRows($qdata);
 	let getDataQ = () => {
@@ -34,6 +34,9 @@
 	});
 	let innerWidth = 0;
 	let isTagsVisible = true;
+	// let changetoArray = () => {
+	// 	handler.filter('recursion', 'tags');
+	// };
 </script>
 
 <svelte:window bind:innerWidth />
@@ -68,6 +71,7 @@
 				>
 					{isTagsVisible ? 'Remove' : 'Show'} Tags</Button
 				>
+				<!-- <Button size="sm" on:click={changetoArray}>Array</Button> -->
 			</div>
 		</div>
 		<div>
