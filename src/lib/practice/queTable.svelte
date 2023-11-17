@@ -11,12 +11,14 @@
 	import QueStatus from './queStatus.svelte';
 	import { onMount } from 'svelte';
 	import DiffBadge from '$lib/diagrams/sv/DiffBadge.svelte';
+	import Checkbox from '$ui/checkbox/checkbox.svelte';
+	import { CheckSquare2, Gauge } from 'lucide-svelte';
 
 	export let handler = new DataHandler($qdata, { rowsPerPage: 31 });
 	$: rows = handler.getRows();
 	$: handler.setRows($qdata);
 	let getDataQ = () => {
-		let cnt = localStorage.getItem('que') || null;
+		let cnt = localStorage.getItem('allq') || null;
 		let changeQ;
 		if (cnt !== null) {
 			changeQ = JSON.parse(cnt);
@@ -63,14 +65,16 @@
 				>
 					Clear</Button
 				>
-				<Button
-					size="sm"
-					on:click={() => {
-						isTagsVisible = !isTagsVisible;
-					}}
-				>
-					{isTagsVisible ? 'Remove' : 'Show'} Tags</Button
-				>
+				{#if innerWidth > 600}
+					<Button
+						size="sm"
+						on:click={() => {
+							isTagsVisible = !isTagsVisible;
+						}}
+					>
+						{isTagsVisible ? 'Remove' : 'Show'} Tags</Button
+					>
+				{/if}
 				<!-- <Button size="sm" on:click={changetoArray}>Array</Button> -->
 			</div>
 		</div>
@@ -81,10 +85,29 @@
 						<Table.Row>
 							{#if innerWidth > 600}
 								<Th {handler} orderBy="id"><Table.Head>Id</Table.Head></Th>
-								<Th {handler} orderBy="status"><Table.Head>Status</Table.Head></Th>
 							{/if}
+							<Th
+								{handler}
+								orderBy="status"
+								style="max-width:10px; width:10px !important; background:red !important;"
+								><Table.Head style="padding:0; margin:0;">
+									{#if innerWidth > 600}
+										Status
+									{:else}
+										<CheckSquare2 strokeWidth="1.1" size="19" />
+									{/if}
+								</Table.Head></Th
+							>
 							<Th {handler} orderBy="problem"><Table.Head>Title</Table.Head></Th>
-							<Th {handler} orderBy="difficulty"><Table.Head>Difficulty</Table.Head></Th>
+							<Th {handler} orderBy="difficulty"
+								><Table.Head style="padding:0; margin:0;">
+									{#if innerWidth > 600}
+										Level
+									{:else}
+										<Gauge strokeWidth="1.1" size="19" />
+									{/if}
+								</Table.Head></Th
+							>
 						</Table.Row>
 					</Table.Header>
 					<Table.Body>
@@ -96,14 +119,14 @@
 										: ''}"
 								>
 									{#if innerWidth > 600}
-										<Table.Cell class="pl-8  w-20">{i}</Table.Cell>
-										<Table.Cell class="pl-10  w-20">
-											<!-- <Checkbox bind:checked={row.status} on:click={() => changeStatus(row.id)} /> -->
-											<QueStatus i={row.id} status={row.status} />
-										</Table.Cell>
+										<Table.Cell class="pl-8  w-20">{i + 1}</Table.Cell>
 									{/if}
+									<Table.Cell class="md:pl-10 text-center w-20" style="padding:0 14px 0 0px;">
+										<!-- <Checkbox bind:checked={row.status} on:click={() => changeStatus(row.id)} /> -->
+										<QueStatus i={row.id} status={row.status} />
+									</Table.Cell>
 									<Table.Cell
-										class="capitalize md:font-medium text-md md:pl-7 flex items-center gap-x-6 justify-between group"
+										class="capitalize md:font-medium text-md md:pl-7 flex items-center gap-x-6 justify-between group w-40 md:w-full"
 									>
 										<div>
 											<a href={row.link} target="_blank"
@@ -126,7 +149,7 @@
 											</div>
 										{/if}
 									</Table.Cell>
-									<Table.Cell class="pl-8 text-gray-700 cursor-progress text-center w-20">
+									<Table.Cell class="md:pl-8 text-gray-700 cursor-progress text-center w-20">
 										<DiffBadge difficulty={row.difficulty} />
 									</Table.Cell>
 								</Table.Row>

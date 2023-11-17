@@ -11,7 +11,7 @@
 	let handler = new DataHandler($qdata, { rowsPerPage: 31 });
 	$: handler.setRows($qdata);
 	let getDataQ = () => {
-		let cnt = localStorage.getItem('que') || null;
+		let cnt = localStorage.getItem('allq') || null;
 		let changeQ;
 		if (cnt !== null) {
 			changeQ = JSON.parse(cnt);
@@ -20,13 +20,16 @@
 		}
 	};
 	onMount(() => {
+		if (localStorage.getItem('que') !== null) {
+			localStorage.removeItem('que');
+		}
 		getDataQ();
 	});
 </script>
 
 <main class="flex flex-col md:flex-row gap-6 m-3 my-6 md:m-8">
 	<div class="w-full md:w-96">
-		<TagsSidebar  {handler}  />
+		<TagsSidebar {handler} />
 	</div>
 	<div class="w-full">
 		<QueTable {handler} />

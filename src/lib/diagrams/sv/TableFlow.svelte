@@ -56,7 +56,7 @@
 				return k;
 			})
 		);
-		localStorage.setItem('que', JSON.stringify($webdata));
+		localStorage.setItem('allq', JSON.stringify($webdata));
 		$webdata = $webdata;
 	};
 </script>
