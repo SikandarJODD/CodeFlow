@@ -4,7 +4,7 @@
 	import { alltags } from './topics-and-tags';
 </script>
 
-<Card.Root class="md:sticky md:top-5 w-full">
+<Card.Root class="md:sticky md:top-5 w-full md:w-64 lg:w-72">
 	<Card.Header class="pb-3 ">
 		<Card.Title>Learning Topics</Card.Title>
 		<Card.Description>Choose Topics Accordingly</Card.Description>

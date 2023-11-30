@@ -1,7 +1,7 @@
 <script lang="ts">
-	import STLTags from './STLTags.svelte';
-	import SubTopics from './SubTopics.svelte';
-	import { topicsTitle } from './topics-and-tags';
+	import STLTags from '$lib/learnings/STLTags.svelte';
+	import { topicsTitle } from '$lib/learnings/topics-and-tags';
+	import SubTopics from '$lib/learnings/SubTopics.svelte';
 </script>
 
 <main class="flex flex-col md:flex-row gap-6 m-3 my-6 md:m-8">
