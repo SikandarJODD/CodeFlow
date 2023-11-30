@@ -14,7 +14,7 @@
 				return n;
 			});
 		});
-		localStorage.setItem('allq', JSON.stringify($webdata));
+		localStorage.setItem('ans', JSON.stringify($webdata));
 		$webdata = $webdata;
 	};
 </script>

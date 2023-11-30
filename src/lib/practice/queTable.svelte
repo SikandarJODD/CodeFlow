@@ -18,7 +18,7 @@
 	$: rows = handler.getRows();
 	$: handler.setRows($qdata);
 	let getDataQ = () => {
-		let cnt = localStorage.getItem('allq') || null;
+		let cnt = localStorage.getItem('ans') || null;
 		let changeQ;
 		if (cnt !== null) {
 			changeQ = JSON.parse(cnt);
@@ -36,9 +36,6 @@
 	});
 	let innerWidth = 0;
 	let isTagsVisible = true;
-	// let changetoArray = () => {
-	// 	handler.filter('recursion', 'tags');
-	// };
 </script>
 
 <svelte:window bind:innerWidth />

@@ -1,0 +1,25 @@
+<script lang="ts">
+	import * as Card from '$ui/card';
+	import Button from '$ui/button/button.svelte';
+	import { alltags } from './topics-and-tags';
+</script>
+
+<Card.Root class="md:sticky md:top-5 w-full">
+	<Card.Header class="pb-3 ">
+		<Card.Title>Learning Topics</Card.Title>
+		<Card.Description>Choose Topics Accordingly</Card.Description>
+	</Card.Header>
+	<Card.Content>
+		<div class="flex flex-wrap gap-2 h-40 overflow-y-scroll md:h-full md:overflow-auto">
+			{#each $alltags as item}
+				<Button
+					href={item.link}
+					size="sm"
+					variant="outline"
+					class="w-full px-3 py-2 bg-gray-900 text-white dark:hover:bg-gray-800/80 dark:bg-gray-900/40 dark:focus:bg-white dark:focus:text-black"
+					>{item.name}</Button
+				>
+			{/each}
+		</div>
+	</Card.Content>
+</Card.Root>

@@ -1,9 +1,10 @@
 <script>
 	import { fly, slide } from 'svelte/transition';
 	import ThemeMode from './ThemeMode.svelte';
-	import { Flame, GitPullRequest, Menu, Pi, X } from 'lucide-svelte';
+	import { Code, Flame, GitPullRequest, Menu, Pi, X } from 'lucide-svelte';
 	import CppLogo from '$lib/images/cpplogo.svg';
 	import DSALogo from '$lib/images/dsa-stl.png';
+	import Badge from '$ui/badge/badge.svelte';
 	// console.clear();
 
 	let isFlyoutOpen = false;
@@ -36,6 +37,11 @@
 				name: 'Practice',
 				link: '/practice',
 				icon: Flame
+			},
+			{
+				name: 'Learnings',
+				link: '/c',
+				icon: Code
 			}
 		]
 	};
@@ -47,24 +53,7 @@
 		aria-label="Global"
 	>
 		<div class="flex lg:flex-1">
-			<a href="/" class="-m-1.5 p-1.5">
-				<span class="sr-only">Your Company</span>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-pi"
-					><line x1="9" x2="9" y1="4" y2="20" /><path d="M4 7c0-1.7 1.3-3 3-3h13" /><path
-						d="M18 20c-1.7 0-3-1.3-3-3V4"
-					/></svg
-				>
-			</a>
+			<a href="/" class="-m-1.5 p-1.5 font-bold text-xl"> Codeflow. </a>
 		</div>
 		<div class="flex lg:hidden">
 			<button
@@ -137,9 +126,18 @@
 				{/key}
 			</div>
 			{#each navData.navs as item}
-				<a href={item.link} class="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
-					>{item.name}</a
+				<a
+					href={item.link}
+					class=" flex items-center gap-2 text-sm font-semibold leading-6 text-gray-900 dark:text-white"
 				>
+					{item.name}
+					{#if item.link === '/c'}
+						<span
+							class="inline-flex items-center rounded-md bg-green-500/10 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20"
+							>New</span
+						>
+					{/if}
+				</a>
 			{/each}
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -156,7 +154,7 @@
 			<div class="flex items-center justify-between">
 				<a href="/" class="-m-1.5 p-1.5">
 					<span class="sr-only">Your Company</span>
-					<Pi />
+					<a href="/" class="font-bold text-xl">Codeflow.</a>
 				</a>
 				<button
 					type="button"

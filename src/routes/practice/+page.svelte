@@ -11,7 +11,7 @@
 	let handler = new DataHandler($qdata, { rowsPerPage: 31 });
 	$: handler.setRows($qdata);
 	let getDataQ = () => {
-		let cnt = localStorage.getItem('allq') || null;
+		let cnt = localStorage.getItem('ans') || null;
 		let changeQ;
 		if (cnt !== null) {
 			changeQ = JSON.parse(cnt);
@@ -20,8 +20,8 @@
 		}
 	};
 	onMount(() => {
-		if (localStorage.getItem('que') !== null) {
-			localStorage.removeItem('que');
+		if (localStorage.getItem('allq') !== null) {
+			localStorage.removeItem('allq');
 		}
 		getDataQ();
 	});

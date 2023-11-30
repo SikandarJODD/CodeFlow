@@ -10,9 +10,12 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			$ui: "./src/lib/components/ui",
-			$lib: "./src/lib",
+			$ui: './src/lib/components/ui',
+			$lib: './src/lib'
 		}
+	},
+	vitePlugin: {
+		inspector: true
 	}
 };
 

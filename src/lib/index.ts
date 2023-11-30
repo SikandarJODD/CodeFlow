@@ -1115,7 +1115,7 @@ export let webdata = writable(
                     tags: 'array,graph,shortest path,breadth-first search'
                 },
                 {
-                    id: 75,
+                    id: 186,
                     status: false,
                     problem: 'Number of Islands',
                     link: 'https://leetcode.com/problems/number-of-islands/',
@@ -1125,7 +1125,7 @@ export let webdata = writable(
                     tags: 'array,depth-first search,breadth-first search,union find,matrix'
                 },
                 {
-                    id: 75,
+                    id: 187,
                     status: false,
                     problem: 'Number of Islands',
                     link: 'https://leetcode.com/problems/number-of-islands/',
