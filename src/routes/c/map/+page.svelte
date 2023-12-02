@@ -31,8 +31,8 @@
 </script>
 
 <svelte:head>
-	<title>Vector in C++</title>
-	<meta property="og:title" content="Vector in C++" />
+	<title>Map in C++ Codeflow.</title>
+	<meta property="og:title" content="Map in C++ Codeflow." />
 	<meta property="description" content="DSA Roadmap and List of Question with STL Diagrams" />
 	<meta property="og:description" content="DSA Roadmap and List of Question with STL Diagrams" />
 	<meta property="og:url" content="https://roadmap-flow.vercel.app" />
@@ -40,19 +40,9 @@
 		property="og:image"
 		content="https://i.pinimg.com/736x/9e/be/8d/9ebe8db903a77a0a1fa5d2c575686f4e.jpg"
 	/>
-
-	<!-- Twitter  -->
-
-	<meta property="twitter:title" content="Vector in C++" />
-	<meta property="twitter:description" content="Roadmap for Developers & Coders" />
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta
-		property="twitter:image"
-		content="https://i.pinimg.com/736x/9e/be/8d/9ebe8db903a77a0a1fa5d2c575686f4e.jpg"
-	/>
 </svelte:head>
-<div class="">
-	<h1>Vector in C++</h1>
+<div>
+	<h1>Map in C++</h1>
 	<ol class="text-left">
 		<li>
 			Vectors are the same as dynamic arrays with the ability to resize itself automatically when an

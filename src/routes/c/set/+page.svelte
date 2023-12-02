@@ -69,9 +69,68 @@ int main ()
 		{
 			name: 'Clear Elements',
 			code: `set<int>v={10,20,30};\nv.clear(); \n//Output :  no element present\nv.insert(50);\n//Output: 50`
+		},
+		{
+			name: 'Find and Erase Elements in Set',
+			code: `  set<int> myset;
+  set<int> it;
+  // set some initial values:
+  for (int i=1; i<=5; i++) myset.insert(i*10);    // set: 10 20 30 40 50
+
+  it=myset.find(20);
+  myset.erase(it);
+  myset.erase(myset.find(40));
+
+  cout << "myset contains:";
+  for (it=myset.begin(); it!=myset.end(); ++it){
+    cout << ' ' << *it;
+  }
+  // Output : 10 30 50
+
+  // Another way to Find and Erase :
+  it = myset.find(12);
+  if(it!=myset.end()){
+		myset.erase(it);
+  }
+  else{
+	cout<<"Not Present"<<endl;
+  }
+`
+		}
+	];
+	let allques = [
+		{
+			id: 1,
+			title: 'Questions Related to Set',
+			content: [
+				{
+					title: 'Contain Duplicate',
+					q: 'https://leetcode.com/problems/contains-duplicate/description/'
+				},
+				{
+					title: 'Contain Duplicate II',
+					q: 'https://leetcode.com/problems/contains-duplicate-ii/'
+				},
+				{
+					title: 'Distribute Candies',
+					q: 'https://leetcode.com/problems/distribute-candies/'
+				}
+			]
 		}
 	];
 </script>
+
+<svelte:head>
+	<title>Set in C++ Codeflow.</title>
+	<meta property="og:title" content="Set in C++ Codeflow." />
+	<meta property="description" content="DSA Roadmap and List of Question with STL Diagrams" />
+	<meta property="og:description" content="DSA Roadmap and List of Question with STL Diagrams" />
+	<meta property="og:url" content="https://roadmap-flow.vercel.app" />
+	<meta
+		property="og:image"
+		content="https://i.pinimg.com/736x/9e/be/8d/9ebe8db903a77a0a1fa5d2c575686f4e.jpg"
+	/>
+</svelte:head>
 
 <div class="">
 	<h1>Set in C++</h1>
@@ -96,6 +155,6 @@ int main ()
 	</div>
 	<div class="mt-10">
 		<h3>Solve Questions</h3>
-		<AllQuestion />
+		<AllQuestion {allques} />
 	</div>
 </div>

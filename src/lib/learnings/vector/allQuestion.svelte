@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Button from '$ui/button/button.svelte';
 	import * as Accordion from '$ui/ui/accordion';
-	let allques = [
+	export let allques = [
 		{
 			id: 1,
 			title: 'Easy',

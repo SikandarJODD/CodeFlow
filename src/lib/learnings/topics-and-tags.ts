@@ -13,22 +13,18 @@ export let alltags = writable([
         name: 'Set C++',
         link: '/c/set'
     },
-    // {
-    //     name: 'Stack C++',
-    //     link: '/c'
-    // },
-    // {
-    //     name: 'Map C++',
-    //     link: '/c'
-    // },
-    // {
-    //     name: 'STL Functions',
-    //     link: '/c'
-    // },
+    {
+        name: 'Stack C++',
+        link: '/c/stack'
+    },
+    {
+        name: 'Map C++',
+        link: '/c/map'
+    },
 ])
 export let topicsTitle = writable([
     {
-        name: 'Vector STL',
+        name: 'Vector in C++',
         desc: 'Deep Dive into Vector C++ and STL Functions',
         lang: 'C++',
         isupdated: 'Nov 2023',
@@ -36,53 +32,28 @@ export let topicsTitle = writable([
         link: 'c/vector'
     },
     {
-        name: 'Set STL',
+        name: 'Set in C++',
         desc: 'Deep Dive into Set, Unordered Set, Multi Set',
         lang: 'C++',
         isupdated: 'Nov 2023',
         tag: 'easy',
         link: 'c/set'
     },
-    // {
-    //     name: 'Vector STL',
-    //     desc: 'Deep Dive into Vector C++ and STL Functions',
-    //     lang: 'C++',
-    //     isupdated: 'Nov 2023',
-    //     tag: 'hard'
-    // },
-    // {
-    //     name: 'Vector STL',
-    //     desc: 'Deep Dive into Vector C++ and STL Functions',
-    //     lang: 'C++',
-    //     isupdated: 'Nov 2023',
-    //     tag: 'easy'
-    // },
-    // {
-    //     name: 'Vector STL',
-    //     desc: 'Deep Dive into Vector C++ and STL Functions',
-    //     lang: 'C++',
-    //     isupdated: 'Nov 2023',
-    //     tag: 'easy'
-    // },
-    // {
-    //     name: 'Vector STL',
-    //     desc: 'Deep Dive into Vector C++ and STL Functions',
-    //     lang: 'C++',
-    //     isupdated: 'Nov 2023',
-    //     tag: 'easy'
-    // },
-    // {
-    //     name: 'Vector STL',
-    //     desc: 'Deep Dive into Vector C++ and STL Functions',
-    //     lang: 'C++',
-    //     isupdated: 'Nov 2023',
-    //     tag: 'easy'
-    // },
-    // {
-    //     name: 'Vector STL',
-    //     desc: 'Deep Dive into Vector C++ and STL Functions',
-    //     lang: 'C++',
-    //     isupdated: 'Nov 2023',
-    //     tag: 'easy'
-    // },
+    {
+        name: 'Stack in C++',
+        desc: 'Deep Dive into Vector C++ and STL Functions',
+        lang: 'C++',
+        isupdated: 'Nov 2023',
+        tag: 'medium',
+        link: 'c/stack'
+    },
+    {
+        name: 'Map in C++',
+        desc: 'Deep Dive into Vector C++ and STL Functions',
+        lang: 'C++',
+        isupdated: 'Nov 2023',
+        tag: 'easy',
+        link: 'c/map'
+    },
+
 ])
