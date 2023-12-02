@@ -41,13 +41,13 @@
 
 <div class="flex flex-col items-center">
 	<div class="my-2 flex flex-col items-center">
-		<code class=" text-primary">{`vector<int>v;`}</code>
+		<code class=" text-primary"> {`vector<int>v;`}</code>
 		<code class=" text-primary flex gap-2"
-			>Size: {nums.length}
+			>Size:<span class="text-sky-600 dark:text-cyan-400">{nums.length || ''}</span>
 			<Separator orientation="vertical" /> v.front():
-			<span class="text-sky-600 dark:text-cyan-400">{nums[0].num || ' '}</span>
+			<span class="text-sky-600 dark:text-cyan-400">{nums[0].num || ''}</span>
 			<Separator orientation="vertical" /> v.back():
-			<span class="text-sky-600 dark:text-cyan-400">{nums[nums.length - 1].num || ' '}</span>
+			<span class="text-sky-600 dark:text-cyan-400">{nums[nums.length - 1].num || ''}</span>
 		</code>
 	</div>
 	<div class="flex items-center">

@@ -26,7 +26,7 @@
 </script>
 
 {#each allcodes as item, i}
-	<li class="text-left">
+	<li class="text-left px-1">
 		<div class="flex items-center justify-between">
 			{item.name}
 			<BtnCopy code={item.code} />

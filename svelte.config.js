@@ -11,6 +11,9 @@ const config = {
 			$ui: './src/lib/components/ui',
 			$lib: './src/lib'
 		}
+	},
+	vitePlugin: {
+		inspector: true
 	}
 };
 

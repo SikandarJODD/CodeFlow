@@ -25,7 +25,7 @@
 		},
 		{
 			name: 'Reverse a Vector',
-			code: 'reverse(v.begin(),v.end());'
+			code: 'reverse(v.begin(), v.end());'
 		}
 	];
 </script>

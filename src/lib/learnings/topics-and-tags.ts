@@ -9,10 +9,10 @@ export let alltags = writable([
         name: 'Vector C++',
         link: '/c/vector'
     },
-    // {
-    //     name: 'Set C++',
-    //     link: '/'
-    // },
+    {
+        name: 'Set C++',
+        link: '/c/set'
+    },
     // {
     //     name: 'Stack C++',
     //     link: '/c'
@@ -32,15 +32,17 @@ export let topicsTitle = writable([
         desc: 'Deep Dive into Vector C++ and STL Functions',
         lang: 'C++',
         isupdated: 'Nov 2023',
-        tag: 'easy'
+        tag: 'easy',
+        link: 'c/vector'
     },
-    // {
-    //     name: 'Vector STL',
-    //     desc: 'Deep Dive into Vector C++ and STL Functions',
-    //     lang: 'C++',
-    //     isupdated: 'Nov 2023',
-    //     tag: 'medium'
-    // },
+    {
+        name: 'Set STL',
+        desc: 'Deep Dive into Set, Unordered Set, Multi Set',
+        lang: 'C++',
+        isupdated: 'Nov 2023',
+        tag: 'easy',
+        link: 'c/set'
+    },
     // {
     //     name: 'Vector STL',
     //     desc: 'Deep Dive into Vector C++ and STL Functions',

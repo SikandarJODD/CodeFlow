@@ -12,7 +12,7 @@
 	{#key routeID}
 		<div
 			in:fly={{ duration: 300, x: 20 }}
-			class="prose dark:prose-invert lg:max-w-full bg-gray-100 dark:bg-gray-900 rounded-lg border border-primary/20 px-2 md:px-4 py-3 md:py-6 text-center md:text-left"
+			class="prose dark:prose-invert lg:max-w-full bg-gray-50 dark:bg-gray-900 rounded-lg border border-primary/20 px-2 md:px-4 py-3 md:py-6 text-center md:text-left"
 		>
 			<slot />
 		</div>
