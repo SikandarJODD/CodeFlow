@@ -123,9 +123,9 @@ int main() {
 	<ol class="text-left">
 		<li>
 			Stacks are a type of container adaptor, specifically designed to operate in a LIFO context
-			(last-in first-out).
+			(last-in first-out). New element is added at one end (top) and an element is removed from that
+			end only.
 		</li>
-		<li>New element is added at one end (top) and an element is removed from that end only.</li>
 	</ol>
 	<div class="flex justify-center not-prose">
 		<StackPlay />

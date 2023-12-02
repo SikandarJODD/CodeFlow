@@ -1,5 +1,6 @@
 <script>
 	import Button from '$ui/button/button.svelte';
+	import Separator from '$ui/ui/separator/separator.svelte';
 	import { ArrowLeftToLine, ArrowRightToLine, Slice } from 'lucide-svelte';
 	import { flip } from 'svelte/animate';
 	import { quintOut } from 'svelte/easing';
@@ -28,16 +29,15 @@
 
 <div class="flex flex-col items-center">
 	<div class="my-2 flex flex-col items-center mb-6">
-		<code class=" text-primary"> {`vector<int>v;`}</code>
-		<code class=" text-primary flex gap-2"
-			>Size:<span class="text-sky-600 dark:text-cyan-400">{nums.length || '0'}</span>
+		<code class=" text-primary">
+			{`stack<int>v; `}
 		</code>
 		<code class=" text-primary flex gap-2"
 			>v.top():<span class="text-sky-600 dark:text-cyan-400">{nums[0].num || ''}</span>
 		</code>
 	</div>
 
-	<div class="flex items-center gap-5 justify-center">
+	<div class="flex flex-col gap-3">
 		<div
 			class="px-3 pb-2 pt-3 border-b border-l border-r rounded-b-xl border-primary transition-all duration-700 ease-out"
 		>
@@ -56,6 +56,7 @@
 				{/each}
 			</div>
 		</div>
+		<code>v.size(): <span class="text-sky-600 dark:text-cyan-400">{nums.length || '0'}</span></code>
 	</div>
 	<div class="flex gap-4 mt-4 flex-wrap items-center justify-center md:flex-row">
 		<Button
@@ -80,7 +81,3 @@
 		>
 	</div>
 </div>
-s
-
-<style>
-</style>
