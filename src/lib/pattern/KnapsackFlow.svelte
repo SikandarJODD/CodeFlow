@@ -28,7 +28,6 @@
 	const nodes = writable<Node[]>(initialNodes);
 	const edges = writable<Edge[]>(initialEdges);
 	let routeID = $page.route.id?.split('/')[1];
-	console.log(routeID);
 </script>
 
 <!--

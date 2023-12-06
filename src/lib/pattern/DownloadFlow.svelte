@@ -5,6 +5,7 @@
 	import Badge from '$ui/badge/badge.svelte';
 	import { page } from '$app/stores';
 	import { ExternalLink } from 'lucide-svelte';
+	import Button from '$ui/button/button.svelte';
 
 	const nodes = useNodes();
 
@@ -40,10 +41,10 @@
 
 <Panel position="top-right">
 	<div class="flex flex-col gap-3">
-		<Badge on:click={handleClick} size="sm" class="flex items-center justify-center">
+		<Button on:click={handleClick} size="sm" class="flex items-center justify-center">
 			<Image strokeWidth="1.4" size="20" class="mr-1.5" />
 			Download
-		</Badge>
+		</Button>
 		{#if routeID !== 'roadmap'}
 			<a href="/roadmap/knapsack">
 				<Badge size="sm" class="flex items-center justify-center">
