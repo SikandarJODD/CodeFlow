@@ -4,13 +4,13 @@
 	import Navbar from '$lib/home/Navbar.svelte';
 	import '../app.postcss';
 	import { ModeWatcher } from 'mode-watcher';
-	$: routeID = $page.route.id?.split('/');
+	$: routeID = $page.route.id?.split('/') || [''];
 	// $: console.log(routeID);
 </script>
 
 <ModeWatcher />
 <Navbar />
-{#if routeID[1] === 'c'}
+{#if routeID[1] === 'c' || routeID[1] === 'pattern'}
 	<div in:fly={{ duration: 300, x: -100 }}>
 		<slot />
 	</div>

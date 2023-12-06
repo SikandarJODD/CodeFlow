@@ -2,16 +2,19 @@
 	import * as Card from '$ui/card';
 	import Button from '$ui/button/button.svelte';
 	import { alltags } from './topics-and-tags';
+	export let title = 'Learning Topics';
+	export let desc = 'Choose Topics Accordingly';
+	export let tags = $alltags;
 </script>
 
 <Card.Root class="md:sticky md:top-5 w-full md:w-56 lg:w-60 xl:w-72">
 	<Card.Header class="pb-3 ">
-		<Card.Title>Learning Topics</Card.Title>
-		<Card.Description>Choose Topics Accordingly</Card.Description>
+		<Card.Title>{title}</Card.Title>
+		<Card.Description>{desc}</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<div class="flex flex-wrap gap-2 h-40 overflow-y-scroll md:h-full md:overflow-auto">
-			{#each $alltags as item}
+			{#each tags as item}
 				<Button
 					href={item.link}
 					size="sm"

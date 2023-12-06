@@ -42,6 +42,11 @@
 				name: 'Learnings',
 				link: '/c',
 				icon: Code
+			},
+			{
+				name: 'Pattern',
+				link: '/pattern',
+				icon: Code
 			}
 		]
 	};
@@ -131,7 +136,7 @@
 					class=" flex items-center gap-2 text-sm font-semibold leading-6 text-gray-900 dark:text-white"
 				>
 					{item.name}
-					{#if item.link === '/c'}
+					{#if item.link === '/pattern'}
 						<span
 							class="inline-flex items-center rounded-md bg-green-500/10 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20"
 							>New</span

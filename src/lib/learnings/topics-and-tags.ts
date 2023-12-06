@@ -22,6 +22,16 @@ export let alltags = writable([
         link: '/c/map'
     },
 ])
+export let allpatterns = writable([
+    {
+        name: 'Home',
+        link: '/pattern'
+    },
+    {
+        name: '0/1 Knapsack',
+        link: '/pattern/knapsack'
+    },
+])
 export let topicsTitle = writable([
     {
         name: 'Vector in C++',
