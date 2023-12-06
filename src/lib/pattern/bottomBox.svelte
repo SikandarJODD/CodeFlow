@@ -3,7 +3,7 @@
 	import { Brackets, CheckCircle2 } from 'lucide-svelte';
 
 	export let data;
-	export let id = 0;
+	export let id = '';
 
 	const { label, w1, v, sackWeight } = data;
 	// let w1 = [1, 2, 3];
@@ -12,12 +12,12 @@
 </script>
 
 <div>
-	<Handle type="target" position={Position.Top} />
 	<div
-		class="dark:bg-gray-800/50 flex flex-col justify-center items-center bg-gray-100/10 rounded-lg h-24 p-6 {id >=
-			8 && id <= 13
-			? 'opacity-30 cursor-auto'
-			: 'opacity-100'} border border-primary/70"
+		class=" flex flex-col justify-center items-center rounded-lg h-24 p-6 {id === '0'
+			? 'dark:bg-gray-600/10 bg-gray-100/10 border border-primary'
+			: ' border-primary/70 border'} {sackWeight === 0
+			? 'border-green-400 dark:bg-green-900'
+			: ' dark:bg-gray-800/50 bg-gray-100/10'}"
 	>
 		{#if Number(sackWeight) === 0}
 			<h2 class="font-bold mb-1.5 flex items-end gap-1.5">
@@ -51,5 +51,7 @@
 			</div>
 		</div>
 	</div>
-	<Handle type="source" position={Position.Bottom} />
+	{#if id !== '0'}
+		<Handle type="source" position={Position.Bottom} />
+	{/if}
 </div>

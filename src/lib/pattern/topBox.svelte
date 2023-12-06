@@ -14,14 +14,15 @@
 <div>
 	<Handle type="target" position={Position.Top} />
 	<div
-		class="dark:bg-gray-800/50 flex flex-col justify-center items-center bg-gray-100/10 rounded-lg h-24 p-6 {id >=
-			8 && id <= 13
+		class=" flex flex-col justify-center items-center rounded-lg h-24 p-6 {id >= 8 && id <= 13
 			? 'opacity-30 cursor-auto'
-			: 'opacity-100'} border border-primary/70"
+			: 'opacity-100'} border-primary/70 border {sackWeight === 0
+			? 'border-green-400 dark:bg-green-950/40 bg-green-400/50'
+			: ' dark:bg-gray-800/50 bg-gray-100/10'}"
 	>
 		{#if Number(sackWeight) === 0}
-			<h2 class="font-bold mb-1.5 flex items-end gap-1.5">
-				<CheckCircle2 color="#30fd48" /> Sack Weight : {sackWeight}
+			<h2 class="font-bold mb-1.5 flex items-end gap-1.5 text-green-800 dark:text-green-400">
+				<CheckCircle2 /> Sack Weight : {sackWeight}
 			</h2>
 		{:else}
 			<h2 class="font-bold mb-1.5">Sack Weight : {sackWeight}</h2>
@@ -51,5 +52,4 @@
 			</div>
 		</div>
 	</div>
-	<Handle type="source" position={Position.Bottom} />
 </div>

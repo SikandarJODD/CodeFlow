@@ -8,6 +8,7 @@
 		type Edge,
 		MarkerType
 	} from '@xyflow/svelte';
+	import '$lib/style.css';
 
 	import Simple from './Simple.svelte';
 	import BottomEnd from './BottomEnd.svelte';
@@ -377,7 +378,7 @@
 
 <div style="height:90.7vh">
 	<SvelteFlow nodes={nodescode} {edges} {nodeTypes} maxZoom={3} fitView>
-		<Controls showLock={false}  />
+		<Controls showLock={false} />
 		<Background class="dark:bg-gray-900 bg-gray-100" />
 	</SvelteFlow>
 </div>
