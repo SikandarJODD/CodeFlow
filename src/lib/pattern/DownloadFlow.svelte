@@ -2,7 +2,9 @@
 	import { toPng } from 'html-to-image';
 	import { Panel, getNodesBounds, getViewportForBounds, useNodes } from '@xyflow/svelte';
 	import { Image } from 'lucide-svelte';
-	import Button from '$ui/button/button.svelte';
+	import Badge from '$ui/badge/badge.svelte';
+	import { page } from '$app/stores';
+	import { ExternalLink } from 'lucide-svelte';
 
 	const nodes = useNodes();
 
@@ -33,11 +35,21 @@
 			});
 		}
 	}
+	let routeID = $page.route.id?.split('/')[1];
 </script>
 
 <Panel position="top-right">
-	<Button on:click={handleClick} size="sm" class="flex items-center justify-center">
-		<Image strokeWidth="1.4" size="20" class="mr-1.5" />
-		Download
-	</Button>
+	<div class="flex flex-col gap-3">
+		<Badge on:click={handleClick} size="sm" class="flex items-center justify-center">
+			<Image strokeWidth="1.4" size="20" class="mr-1.5" />
+			Download
+		</Badge>
+		{#if routeID !== 'roadmap'}
+			<a href="/roadmap/knapsack">
+				<Badge size="sm" class="flex items-center justify-center">
+					Visit <ExternalLink strokeWidth="1.4" size="17" class="ml-1.5" />
+				</Badge>
+			</a>
+		{/if}
+	</div>
 </Panel>

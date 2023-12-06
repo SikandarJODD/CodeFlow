@@ -1,9 +1,10 @@
 <script>
 	import { fly, slide } from 'svelte/transition';
 	import ThemeMode from './ThemeMode.svelte';
-	import { Code, Flame, GitPullRequest, Menu, Pi, X } from 'lucide-svelte';
+	import { Binary, Code, Flame, GitPullRequest, Menu, Pi, X } from 'lucide-svelte';
 	import CppLogo from '$lib/images/cpplogo.svg';
 	import DSALogo from '$lib/images/dsa-stl.png';
+	import KnapSackImage from '$lib/images/version-control.svg';
 	import Badge from '$ui/badge/badge.svelte';
 	// console.clear();
 
@@ -30,6 +31,12 @@
 				desc: 'Roadmap of Data Structures in Detail',
 				mobileIcon: DSALogo,
 				link: '/roadmap/stl'
+			},
+			{
+				name: '0/1 Knapsack',
+				desc: 'Detail Understanding of 0/1 Knapsack Problem',
+				mobileIcon: KnapSackImage,
+				link: '/roadmap/knapsack'
 			}
 		],
 		navs: [
@@ -46,7 +53,7 @@
 			{
 				name: 'Pattern',
 				link: '/pattern',
-				icon: Code
+				icon: Binary
 			}
 		]
 	};

@@ -23,16 +23,22 @@
 	import { initialNodes, initialEdges } from './pattern-nodes-edges';
 	import TopBox from './topBox.svelte';
 	import BottomBox from './bottomBox.svelte';
+	import { page } from '$app/stores';
 
 	const nodes = writable<Node[]>(initialNodes);
 	const edges = writable<Edge[]>(initialEdges);
+	let routeID = $page.route.id?.split('/')[1];
+	console.log(routeID);
 </script>
 
 <!--
 👇 By default, the Svelte Flow container has a height of 100%.
 This means that the parent container needs a height to render the flow.
 -->
-<div style:height="500px" class="rounded-2xl my-4 overflow-hidden">
+<div
+	style:height={routeID === 'roadmap' ? '90.7vh' : '500px'}
+	class="rounded-2xl {routeID === 'roadmap' ? '' : 'my-4 rounded-2xl  overflow-hidden'}"
+>
 	<SvelteFlow {nodes} {edges} fitView {nodeTypes} maxZoom={4} minZoom={-10}>
 		<DownloadFlow />
 		<Controls showLock={false} />
