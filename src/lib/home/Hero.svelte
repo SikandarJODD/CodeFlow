@@ -14,12 +14,23 @@
 			class="gap-4 flex flex-col bg-sky-700/10 lg:border border-gray-500 dark:border-gray-300/50 rounded-2xl lg:rounded-xl dark:bg-gradient-to-r dark:from-gray-950/10 dark:to-gray-900/90 dark:shadow-lg px-8 py-8 w-full group"
 		>
 			<h1
-				class="text-4xl font-bold lg:text-3xl xl:text-6xl text-left drop-shadow-md dark:group-hover:text-sky-500 transition-all duration-150"
+				class="text-4xl font-bold lg:text-3xl xl:text-6xl text-left drop-shadow-md transition-all duration-150"
 			>
 				CodeFlow.
 			</h1>
-			<p class="lg:pl-1 text-2xl xl:text-3xl font-bold text-gray-900 dark:text-gray-200 text-left">
+			<!-- <p class="lg:pl-1 text-2xl xl:text-3xl font-bold text-gray-900 dark:text-gray-200 text-left">
 				Learn to Think and Code Better.
+			</p> -->
+			<p class="dark:text-gray-600 text-lg">
+				Introducing new things on codeflow <a
+					href="/c/snippets"
+					class=" text-primary hover:underline transition-all duration-200 underline-offset-2"
+					>Snippets</a
+				>
+				and
+				<a href="/roadmap/knapsack" class="text-primary hover:underline underline-offset-2"
+					>0/1 Knapsack</a
+				>
 			</p>
 			<div class="flex flex-wrap flex-col md:flex-row gap-3 mt-4 md:items-start">
 				<Button size="lg" href="/roadmap/dsa">

@@ -6,6 +6,10 @@ export let alltags = writable([
         link: '/c'
     },
     {
+        name: 'C++ Snippets',
+        link: '/c/snippets'
+    },
+    {
         name: 'Vector C++',
         link: '/c/vector'
     },

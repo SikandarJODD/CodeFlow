@@ -7,15 +7,16 @@
 			code: 'cd'
 		}
 	];
+	export let lang = 'cpp';
 	let getcode = () => {
 		allcodes.map((k, i) => {
 			shiki
 				.getHighlighter({
 					theme: 'dracula-soft',
-					langs: ['cpp']
+					langs: ['cpp', 'json']
 				})
 				.then((highlighter) => {
-					const code = highlighter.codeToHtml(k.code, { lang: 'cpp' });
+					const code = highlighter.codeToHtml(k.code, { lang: lang || 'cpp' });
 					document.getElementById(`code-${i}`).innerHTML = code;
 				});
 		});

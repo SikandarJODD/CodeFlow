@@ -36,7 +36,7 @@
 	"type": "module",
 	"dependencies": {
 		"@xyflow/svelte": "^0.0.28",
-		"bits-ui": "^0.9.8",
+		"bits-ui": "^0.9.9",
 		"clsx": "^2.0.0",
 		"cmdk-sv": "^0.0.5",
 		"html-to-image": "^1.11.11",
