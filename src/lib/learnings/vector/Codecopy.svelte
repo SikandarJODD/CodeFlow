@@ -1,37 +1,21 @@
-<script>
-	import { onMount } from 'svelte';
-	import BtnCopy from './btnCopy.svelte';
+<script lang="ts">
+	import { CodeBlock } from 'svhighlight';
+
+	import 'highlight.js/styles/github-dark-dimmed.min.css';
 	export let allcodes = [
 		{
 			name: 'Initializing a Vector',
 			code: 'cd'
 		}
 	];
-	export let lang = 'cpp';
-	let getcode = () => {
-		allcodes.map((k, i) => {
-			shiki
-				.getHighlighter({
-					theme: 'dracula-soft',
-					langs: ['cpp', 'json']
-				})
-				.then((highlighter) => {
-					const code = highlighter.codeToHtml(k.code, { lang: lang || 'cpp' });
-					document.getElementById(`code-${i}`).innerHTML = code;
-				});
-		});
-	};
-	onMount(() => {
-		getcode();
-	});
+	export let lang: string = 'cpp';
 </script>
 
-{#each allcodes as item, i}
-	<li class="text-left px-1">
+{#each allcodes as { code, name }}
+	<li class="text-left px-1 mb-2">
 		<div class="flex items-center justify-between">
-			{item.name}
-			<BtnCopy code={item.code} />
+			{name}
 		</div>
-		<div class="-my-4" id="code-{i}" />
+		<CodeBlock rounded="rounded-sm" language={lang} {code} />
 	</li>
 {/each}

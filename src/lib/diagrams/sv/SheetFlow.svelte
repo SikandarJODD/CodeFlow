@@ -18,8 +18,8 @@
 
 <Handle type="target" position={Position.Top} />
 
-<div >
-	<Sheet.Root >
+<div>
+	<Sheet.Root>
 		<Sheet.Trigger class="outline-none border-none">
 			<div
 				{style}

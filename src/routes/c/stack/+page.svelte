@@ -5,10 +5,7 @@
 	let allcodes = [
 		{
 			name: 'Simple Push and Pop in Stack',
-			code: `#include <iostream> 
-#include <stack>
-using namespace std;
-int main() {
+			code: `
     stack<int> s;
 	// Push Operations 
     s.push(10);  
@@ -22,7 +19,7 @@ int main() {
         s.pop();
     }
 	// Output : 40 10
-}`
+`
 		},
 		{
 			name: 'Empty and Size in Stack',
@@ -133,7 +130,9 @@ int main() {
 	<div>
 		<h2>Code</h2>
 		<ol>
-			<Codecopy {allcodes} />
+			<div class="not-prose">
+				<Codecopy {allcodes} />
+			</div>
 		</ol>
 	</div>
 	<div class="mt-10">

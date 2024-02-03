@@ -39,12 +39,14 @@
 		"bits-ui": "^0.9.9",
 		"clsx": "^2.0.0",
 		"cmdk-sv": "^0.0.5",
+		"highlight.js": "^11.9.0",
 		"html-to-image": "^1.11.11",
 		"lucide-svelte": "^0.292.0",
 		"mode-watcher": "^0.0.7",
 		"radix-icons-svelte": "^1.2.1",
 		"shiki": "^0.14.5",
 		"svelte-copy": "^1.4.1",
+		"svhighlight": "^0.7.1",
 		"tailwind-merge": "^2.0.0",
 		"tailwind-variants": "^0.1.18"
 	}

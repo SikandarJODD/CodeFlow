@@ -102,7 +102,7 @@
 </script>
 
 <div>
-	<h1>Snippets</h1>
+	<h1>C++ Snippets</h1>
 	<ol class="text-left">
 		<li>
 			C++ Snippets offer a convenient way to compose more extensive sections of code in just 3-4
@@ -141,6 +141,8 @@
         </code>
     </pre> -->
 	<ol>
-		<Codecopy {allcodes} lang="json" />
+		<div class="not-prose">
+			<Codecopy {allcodes} lang="json" />
+		</div>
 	</ol>
 </div>

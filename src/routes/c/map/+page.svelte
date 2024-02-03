@@ -6,9 +6,9 @@
 	let allcodes = [
 		{
 			name: 'Initializing a Map',
-			code: ` map<int,int>a; \n map<string,int>b;\n map<int,vector<int>>nums; 
- a.insert({2,4});
- a.insert({1,1});
+			code: ` map<int,int>a; \nmap<string,int>b; \nmap<int,vector<int>>nums; \n
+a.insert({2,4});
+a.insert({1,1});
 
  // another way of inserting into map - Frequency Count 
  vector<int>allnums = {1,2,3,2};
@@ -189,7 +189,9 @@
 	<div>
 		<h2>Code</h2>
 		<ol>
-			<Codecopy {allcodes} />
+			<div class="not-prose">
+				<Codecopy {allcodes} />
+			</div>
 		</ol>
 	</div>
 	<div class="mt-10">

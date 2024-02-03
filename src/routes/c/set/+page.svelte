@@ -150,7 +150,9 @@ int main ()
 	<div>
 		<h2>Code</h2>
 		<ol>
-			<Codecopy {allcodes} />
+			<div class="not-prose">
+				<Codecopy {allcodes} />
+			</div>
 		</ol>
 	</div>
 	<div class="mt-10">
