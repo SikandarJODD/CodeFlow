@@ -1,12 +1,22 @@
 <script>
 	import { fly, slide } from 'svelte/transition';
 	import ThemeMode from './ThemeMode.svelte';
-	import { Binary, Code, Flame, GitPullRequest, Menu, Pi, X } from 'lucide-svelte';
+	import {
+		Binary,
+		Code,
+		Flame,
+		GitPullRequest,
+		Menu,
+		Pi,
+		X,
+		FileCode2,
+		DatabaseZap
+	} from 'lucide-svelte';
 	import CppLogo from '$lib/images/cpplogo.svg';
 	import DSALogo from '$lib/images/dsa-stl.png';
 	import KnapSackImage from '$lib/images/version-control.svg';
-	import Badge from '$ui/badge/badge.svelte';
-	// console.clear();
+	import LearningImg from '$lib/images/learnings.svg';
+	import CppImage from '$lib/images/cppimg.svg';
 
 	let isFlyoutOpen = false;
 	let isMobileFlyoutOpen = true;
@@ -37,23 +47,35 @@
 				desc: 'Detail Understanding of 0/1 Knapsack Problem',
 				mobileIcon: KnapSackImage,
 				link: '/roadmap/knapsack'
+			},
+			{
+				name: 'Learnings',
+				desc: 'Detail Understanding of Data Structures',
+				mobileIcon: LearningImg,
+				link: '/c'
+			},
+			{
+				name: 'Practice',
+				desc: 'Solve Leetcode Topic wise Questions',
+				mobileIcon: CppImage,
+				link: '/practice'
 			}
 		],
 		navs: [
 			{
-				name: 'Practice',
-				link: '/practice',
-				icon: Flame
-			},
-			{
-				name: 'Learnings',
-				link: '/c',
-				icon: Code
-			},
-			{
 				name: 'Pattern',
 				link: '/pattern',
 				icon: Binary
+			},
+			{
+				name: 'Frontend',
+				link: '/frontend',
+				icon: FileCode2
+			},
+			{
+				name: 'Backend',
+				link: '/backend',
+				icon: DatabaseZap
 			}
 		]
 	};
@@ -104,7 +126,9 @@
 				{#key isFlyoutOpen}
 					<!-- svelte-ignore a11y-no-static-element-interactions -->
 					<div
-						on:mouseleave={() => (isFlyoutOpen = false)}
+						on:mouseleave={() => {
+							isFlyoutOpen = false;
+						}}
 						in:fly={{ duration: 300, y: 30 }}
 						out:fly={{ duration: 300, y: 30 }}
 						class="{isFlyoutOpen
