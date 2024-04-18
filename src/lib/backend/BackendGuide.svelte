@@ -34,7 +34,7 @@
 			</a>
 			<a
 				in:fly={{ y: 100, duration: 300, delay: 500 }}
-				href="/fullstack/concepts"
+				href="/databases/d"
 				class="div2 box border dark:bg-orange-800/20 dark:border-orange-500 border-sky-600 bg-sky-600/30"
 			>
 				<FileBadge class="mr-1" size="30" strokeWidth="1.8" />
@@ -42,7 +42,7 @@
 			</a>
 			<a
 				in:fly={{ x: 100, duration: 300, delay: 1000 }}
-				href="/fullstack/interview"
+				href="/databases/tools"
 				class="div3 box border bg-emerald-500/30 dark:bg-emerald-800/20 border-emerald-500 bg"
 			>
 				<svg
@@ -67,9 +67,9 @@
 		</div>
 	{:else}
 		<div class="flex flex-wrap gap-2 mt-5 justify-center">
-			<Button size="lg" href="/fullstack/frameworks">Databases</Button>
-			<Button size="lg" href="/fullstack/concepts">Concepts</Button>
-			<Button size="lg" href="/fullstack/interview">Tools</Button>
+			<Button size="lg" href="/databases/d">Databases</Button>
+			<Button size="lg" href="/databases/d">Concepts</Button>
+			<Button size="lg" href="/databases/tools">Tools</Button>
 		</div>
 	{/if}
 </div>
