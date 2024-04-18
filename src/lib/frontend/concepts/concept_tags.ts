@@ -7,19 +7,19 @@ export let concept_tags = writable([
     },
     {
         name: 'Fetch API',
-        link: '/fullstack/concepts/virtualization'
+        link: '/fullstack/concepts/fetch-api'
     },
     {
         name: 'Flex vs Grid CSS',
-        link: '/fullstack/concepts/virtualization'
+        link: '/fullstack/concepts/flex-vs-grid'
     },
     {
         name: 'Form Submission',
-        link: '/fullstack/concepts/virtualization'
+        link: '/fullstack/concepts/form-submission'
     },
     {
         name: 'Client Caching',
-        link: '/fullstack/concepts/virtualization'
+        link: '/fullstack/concepts/client-caching'
     },
     // {
     //     name: 'Routing and Dynamic Routes',
@@ -33,7 +33,6 @@ export let concept_tags = writable([
     //     name: 'Paging',
     //     link: '/fullstack/concepts/virtualization'
     // },
-
 ])
 
 export let conceptsTitle = writable([
@@ -43,7 +42,7 @@ export let conceptsTitle = writable([
         lang: 'JS',
         isupdated: 'March 2024',
         tag: 'easy',
-        link: 'c/vector'
+        link: '/fullstack/concepts/fetch-api'
     },
     {
         name: 'Form Submission',
@@ -51,7 +50,7 @@ export let conceptsTitle = writable([
         lang: 'Svelte',
         isupdated: 'March 2024',
         tag: 'easy',
-        link: 'c/set'
+        link: '/fullstack/concepts/form-submission'
     },
     {
         name: 'Flex vs Grid CSS',
@@ -59,7 +58,7 @@ export let conceptsTitle = writable([
         lang: 'C++',
         isupdated: 'March 2024',
         tag: 'easy',
-        link: 'c/stack'
+        link: '/fullstack/concepts/flex-vs-grid'
     },
     {
         name: 'Client Caching',
@@ -67,7 +66,7 @@ export let conceptsTitle = writable([
         lang: 'Svelte',
         isupdated: 'March 2024',
         tag: 'easy',
-        link: 'c/map'
+        link: '/fullstack/concepts/client-caching'
     },
 
 ])
