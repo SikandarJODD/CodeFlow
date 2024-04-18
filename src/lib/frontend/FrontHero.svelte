@@ -1,34 +1,53 @@
 <script>
 	import Button from '$ui/button/button.svelte';
+	import { onMount } from 'svelte';
+	import { blur, fade, fly, scale } from 'svelte/transition';
 
 	let screenWidth = 0;
-	$: console.log(screenWidth, 'screen width');
+	// let textCode = 'Frontend';
+	// onMount(() => {
+	// 	setInterval(() => {
+	// 		if (textCode === 'Frontend') textCode = 'FullStack';
+	// 		else textCode = 'Frontend';
+	// 	}, 3000);
+	// });
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} />
 <div class="flex flex-col justify-center items-center h-[84vh] md:h-[90vh] relative px-2 md:px-0">
 	<div class="text-center">
-		<h1 class="font-semibold head_title text-3xl md:text-5xl">Frontend Guide.</h1>
-		<p class="mt-1.5 text-lg text-primary/70 head_para">
-			Simple guide to Frontend Development with Interview Questions
+		<h1 class="font-semibold head_title text-3xl md:text-5xl">
+			<!-- {#key textCode}
+				<span in:blur>{textCode}</span>
+			{/key} -->
+			Frontend Guide.
+		</h1>
+		<p class="mt-1.5 md:mt-3 text-lg text-primary/70 head_para">
+			Simple guide to <span class=" text-primary dark:text-cyan-400 underline underline-offset-2"
+				>Web Development</span
+			>
+			with Interview Questions
 		</p>
 	</div>
 	{#if screenWidth > 768}
 		<div class="parent mt-5">
 			<a
-				href="/frontend/frameworks"
+				in:fly={{ x: -100, duration: 300 }}
+				href="/fullstack/frameworks"
 				class="div1 box border bg-orange-400/30 border-orange-500 dark:border-sky-400 dark:bg-sky-800/20"
 			>
 				Frameworks
 			</a>
 			<a
-				href="/frontend/concepts"
+				in:fly={{ y: 100, duration: 300, delay: 500 }}
+				href="/fullstack/concepts"
 				class="div2 box border dark:bg-orange-800/20 dark:border-orange-500 border-sky-600 bg-sky-600/30"
 			>
 				Concepts
 			</a>
 			<a
-				href="/frontend/interview"
+				in:fly={{ x: 100, duration: 300, delay: 1000 }}
+				href="/fullstack/interview"
 				class="div3 box border bg-emerald-500/30 dark:bg-emerald-800/20 border-emerald-500 bg"
 			>
 				Interview</a
@@ -36,9 +55,9 @@
 		</div>
 	{:else}
 		<div class="flex flex-wrap gap-2 mt-5 justify-center">
-			<Button size="lg" href="/frontend/frameworks">Frameworks</Button>
-			<Button size="lg" href="/frontend/concepts">Concepts</Button>
-			<Button size="lg" href="/frontend/interview">Interview</Button>
+			<Button size="lg" href="/fullstack/frameworks">Frameworks</Button>
+			<Button size="lg" href="/fullstack/concepts">Concepts</Button>
+			<Button size="lg" href="/fullstack/interview">Interview</Button>
 		</div>
 	{/if}
 </div>

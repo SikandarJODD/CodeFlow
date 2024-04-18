@@ -68,13 +68,13 @@
 				icon: Binary
 			},
 			{
-				name: 'Frontend',
-				link: '/frontend',
+				name: 'Full-Stack',
+				link: '/fullstack',
 				icon: FileCode2
 			},
 			{
-				name: 'Backend',
-				link: '/backend',
+				name: 'Databases',
+				link: '/databases',
 				icon: DatabaseZap
 			}
 		]

@@ -11,15 +11,15 @@
 	let nodeTypes = {
 		framework: FrameworkNode
 	};
-	const nodes = writable<Node[]>(frameNodes);
-	const edges = writable<Edge[]>(frameEdges);
+	const nodes = writable(frameNodes);
+	const edges = writable(frameEdges);
 	import { useSvelteFlow } from '@xyflow/svelte';
 	import { onMount } from 'svelte';
 
-	const { setZoom, zoomOut } = useSvelteFlow();
+	const { setZoom } = useSvelteFlow();
 	onMount(() => {
 		setTimeout(() => {
-			setZoom(0.9, { duration: 300 });
+			setZoom(0.97, { duration: 300 });
 		}, 800);
 	});
 </script>

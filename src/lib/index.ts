@@ -104,7 +104,7 @@ export let webdata = writable(
                     status: false,
                     problem: 'Number of laser Beams',
                     link: 'https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description/',
-                    difficulty: 'Medium',
+                    difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
                     tags: 'array,Math,string,matrix'
@@ -114,7 +114,7 @@ export let webdata = writable(
                     status: false,
                     problem: 'Design Browser History',
                     link: 'https://leetcode.com/problems/design-browser-history/',
-                    difficulty: 'Medium',
+                    difficulty: 'medium',
                     code: 'C++',
                     isblind: true,
                     tags: 'array,Design'
@@ -869,7 +869,7 @@ export let webdata = writable(
                     status: false,
                     problem: 'Sudoku Solver',
                     link: 'https://leetcode.com/problems/sudoku-solver/description/',
-                    difficulty: 'Hard',
+                    difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
                     tags: 'Hash Tabee,array,Hash Table,Matrix'
@@ -1099,7 +1099,7 @@ export let webdata = writable(
                     status: false,
                     problem: 'Find center of star graph',
                     link: 'https://leetcode.com/problems/find-center-of-star-graph/description/',
-                    difficulty: 'Easy',
+                    difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
                     tags: 'graph'
@@ -1109,7 +1109,7 @@ export let webdata = writable(
                     status: false,
                     problem: 'Find if path exists in graph',
                     link: 'https://leetcode.com/problems/find-if-path-exists-in-graph/description/',
-                    difficulty: 'Easy',
+                    difficulty: 'easy',
                     code: 'C++',
                     isblind: true,
                     tags: 'array,graph,shortest path,breadth-first search'
@@ -1892,7 +1892,7 @@ export let webdata = writable(
                     status: false,
                     problem: 'chalkboard-xor-game',
                     link: 'https://leetcode.com/problems/chalkboard-xor-game/description/',
-                    difficulty: 'Hard',
+                    difficulty: 'hard',
                     code: 'C++',
                     isblind: true,
                     tags: 'math,game theory,Bit manipulation'
