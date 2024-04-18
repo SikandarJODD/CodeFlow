@@ -18,8 +18,8 @@
 				<KnapsackFlow />
 			</div>
 		</Card.Content>
-		<Card.Footer>
+		<!-- <Card.Footer>
 			<p>Card Footer</p>
-		</Card.Footer>
+		</Card.Footer> -->
 	</Card.Root>
 </div>

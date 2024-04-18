@@ -22,10 +22,3 @@
 		</div>
 	{/key}
 </main>
-<!-- md:min-w-max -->
-<!-- <div
-			in:fly={{ duration: 300, x: 20 }}
-			class="lg:w-full bg-gray-50 dark:bg-gray-900 rounded-lg border border-primary/20 px-2 md:px-6 py-3 md:py-6 text-center md:text-left"
-		>
-			<slot />
-		</div> -->

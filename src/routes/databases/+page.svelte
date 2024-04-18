@@ -1,10 +1,10 @@
 <script>
-	import FrontHero from '$lib/frontend/FrontHero.svelte';
+	import BackendGuide from '$lib/backend/BackendGuide.svelte';
 </script>
 
 <svelte:head>
-	<title>Frontend</title>
-	<meta name="description" content="Codeflow - Frontend Frameworks" />
+	<title>Backend Guide</title>
+	<meta name="description" content="Codeflow - Backend Guide" />
 </svelte:head>
 
-<FrontHero />
+<BackendGuide />
