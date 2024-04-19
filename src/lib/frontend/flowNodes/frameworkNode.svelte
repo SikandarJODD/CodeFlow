@@ -37,8 +37,8 @@
 					{label}</Button
 				>
 			</Sheet.Trigger>
-			<Sheet.Content side="frame">
-				<Sheet.Header>
+			<Sheet.Content side="frame" class="px-3 md:px-8">
+				<Sheet.Header class="mb-2">
 					<a href={link} target="_blank">
 						<Sheet.Title class="md:text-2xl flex items-center font-bold">
 							{#if icon}
@@ -49,42 +49,42 @@
 							{label}</Sheet.Title
 						>
 					</a>
-					<Separator />
-					<Sheet.Description class="text-primary/80 md:text-lg">{desc}</Sheet.Description>
-					<div class="starter_code">
-						{#if starter_code}
-							<h3 class="text-xl mb-2 font-bold">Installation</h3>
-							<div class="dark:bg-gray-800 flex flex-col p-2 rounded-md">
-								{#each starter_code.split('\n') as item}
-									<code class="">
-										{item}
-									</code>
-								{/each}
-							</div>
-						{/if}
-					</div>
-					<div class="important_Links">
-						<h3 class="text-xl mt-2 font-bold">Important Links</h3>
-						<div class="prose dark:prose-a:text-primary/90">
-							<ul>
-								<li>
-									<a href={docs} target="_blank" class="">Docs</a>
-								</li>
-
-								{#if examples}
-									<li>
-										<a href={examples} target="_blank" class="">Examples</a>
-									</li>
-								{/if}
-								{#if playground}
-									<li>
-										<a href={playground} target="_blank" class="">Playground</a>
-									</li>
-								{/if}
-							</ul>
-						</div>
-					</div>
 				</Sheet.Header>
+				<Separator />
+				<Sheet.Description class="text-primary/80 md:text-lg text-left">{desc}</Sheet.Description>
+				<div class="starter_code text-left">
+					{#if starter_code}
+						<h3 class="text-xl my-2 font-bold">Installation</h3>
+						<div class="dark:bg-gray-800 flex flex-col p-2 rounded-md">
+							{#each starter_code.split('\n') as item}
+								<code class="">
+									{item}
+								</code>
+							{/each}
+						</div>
+					{/if}
+				</div>
+				<div class=" text-left">
+					<h3 class="text-xl mt-2 font-bold">Important Links</h3>
+					<div class="prose dark:prose-a:text-primary/90">
+						<ul>
+							<li>
+								<a href={docs} target="_blank" class="">Docs</a>
+							</li>
+
+							{#if examples}
+								<li>
+									<a href={examples} target="_blank" class="">Examples</a>
+								</li>
+							{/if}
+							{#if playground}
+								<li>
+									<a href={playground} target="_blank" class="">Playground</a>
+								</li>
+							{/if}
+						</ul>
+					</div>
+				</div>
 			</Sheet.Content>
 		</Sheet.Root>
 	</div>

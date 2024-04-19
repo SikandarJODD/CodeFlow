@@ -1,13 +1,6 @@
 <script lang="ts">
 	import { writable } from 'svelte/store';
-	import {
-		SvelteFlow,
-		Controls,
-		Background,
-		type Node,
-		type Edge,
-		MarkerType
-	} from '@xyflow/svelte';
+	import { SvelteFlow, Controls, Background, type Node, type Edge } from '@xyflow/svelte';
 	import '$lib/style.css';
 
 	import Simple from './Simple.svelte';
@@ -379,6 +372,6 @@
 <div style="height:90.7vh">
 	<SvelteFlow nodes={nodescode} {edges} {nodeTypes} maxZoom={3} fitView>
 		<Controls showLock={false} />
-		<Background class="dark:bg-gray-900 bg-gray-100" />
+		<Background class="dark:bg-[#04081a] bg-sky-200" />
 	</SvelteFlow>
 </div>

@@ -130,6 +130,7 @@
 }
 
 .svelte-flow__handle.source {
+	all: none;
 	right: -10px;
 }
 

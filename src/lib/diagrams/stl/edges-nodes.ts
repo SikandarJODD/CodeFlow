@@ -183,47 +183,55 @@ export let initialnode = [
     }
 ];
 export let initialEdges: Edge[] = [
-    { id: '1-2', source: '1', target: '2', },
-    { id: '1-3', source: '1', target: '3' },
+    { id: '1-2', source: '1', target: '2', style: 'stroke-width: 2px; stroke: #1C77FFFF' },
+    { id: '1-3', source: '1', target: '3', style: 'stroke-width: 2px; stroke: #1C77FFFF' },
     {
         id: '2-4',
         source: '2',
-        target: '4'
+        target: '4',
+        style: 'stroke-width: 2px; stroke: #1C77FFFF'
     },
     {
         id: '2-5',
         source: '2',
-        target: '5'
+        target: '5',
+        style: 'stroke-width: 2px; stroke: #1C77FFFF'
     },
     {
         id: '4-6',
         source: '4',
-        target: '6'
+        target: '6',
+        style: 'stroke-width: 2px; stroke: #1C77FFFF'
     },
     {
         id: '5-7',
         source: '5',
-        target: '7'
+        target: '7',
+        style: 'stroke-width: 2px; stroke: #1C77FFFF'
     },
     {
         id: '5-8',
         source: '5',
-        target: '8'
+        target: '8',
+        style: 'stroke-width: 2px; stroke: #1C77FFFF'
     },
     {
         id: '5-9',
         source: '5',
-        target: '9'
+        target: '9',
+        style: 'stroke-width: 2px; stroke: #1C77FFFF'
     },
     {
         id: '3-10',
         source: '3',
-        target: '10'
+        target: '10',
+        style: 'stroke-width: 2px; stroke: #1C77FFFF'
     },
     {
         id: '3-11',
         source: '3',
-        target: '11'
+        target: '11',
+        style: 'stroke-width: 2px; stroke: #1C77FFFF'
     }
 ]
 export let mobile: Node[] = [

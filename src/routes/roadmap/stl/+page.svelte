@@ -1,5 +1,9 @@
 <script>
 	import FlowStl from '$lib/diagrams/stl/FlowSTL.svelte';
+	import { onMount } from 'svelte';
+	onMount(() => {
+		console.clear();
+	});
 </script>
 
 <svelte:head>

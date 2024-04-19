@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { writable } from 'svelte/store';
 	import { SvelteFlow, Controls, Background, BackgroundVariant } from '@xyflow/svelte';
-	// import '$lib/style.css';
 	import '@xyflow/svelte/dist/style.css';
-	import './turbo.css';
+	import '$lib/backend/tools/turbo.css';
 
 	let nodeTypes = {
 		turbo: ToolsFrameNode
@@ -21,6 +20,7 @@
 
 	const { setZoom } = useSvelteFlow();
 	onMount(() => {
+		// window.location.reload();
 		setTimeout(() => {
 			setZoom(0.82, { duration: 300 });
 		}, 800);
@@ -32,7 +32,15 @@
 </script>
 
 <div style:height="90vh">
-	<SvelteFlow {nodes} {edges} fitView {nodeTypes} {edgeTypes} {defaultEdgeOptions}>
+	<SvelteFlow
+		{nodes}
+		{edges}
+		fitView
+		{nodeTypes}
+		{edgeTypes}
+		{defaultEdgeOptions}
+		class="dark:bg-[#04081a]"
+	>
 		<Controls />
 		<svg>
 			<defs>

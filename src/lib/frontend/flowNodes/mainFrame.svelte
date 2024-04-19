@@ -25,8 +25,8 @@
 </script>
 
 <div style:height="90vh">
-	<SvelteFlow {nodes} {edges} fitView {nodeTypes}>
+	<SvelteFlow {nodes} {edges} fitView {nodeTypes} id="mint">
 		<Controls />
-		<Background variant={BackgroundVariant.Dots} gap={18} />
+		<Background class="dark:bg-[#04081a] bg-sky-200" variant={BackgroundVariant.Dots} gap={18} />
 	</SvelteFlow>
 </div>

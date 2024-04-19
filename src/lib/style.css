@@ -30,3 +30,12 @@
 .svelte-flow__attribution {
 	display: none;
 }
+/* 
+.svelte-flow__handle.source {
+	all: none;
+} */
+
+.svelte-flow__handle.target {
+	all: unset;
+	left: 50%;
+}
