@@ -1,7 +1,6 @@
 <script>
 	import Button from '$ui/button/button.svelte';
-	import { DatabaseZap, FileBadge } from 'lucide-svelte';
-	import { fly } from 'svelte/transition';
+	import { fly, slide } from 'svelte/transition';
 
 	let screenWidth = 0;
 </script>
@@ -13,64 +12,53 @@
 			<!-- {#key textCode}
 				<span in:blur>{textCode}</span>
 			{/key} -->
-			Backend Guide.
+			Coding Guide.
 		</h1>
 		<p class="mt-1.5 md:mt-3 text-lg text-primary/70 head_para">
-			Simple guide to <span class=" text-primary dark:text-cyan-400 underline underline-offset-2"
-				>Backend Development</span
-			>
-			with Interview Questions
+			Simple guide to Web Development & Competitive Coding with Interview Questions
 		</p>
 	</div>
 	{#if screenWidth > 768}
 		<div class="parent mt-5">
 			<a
-				in:fly={{ x: -100, duration: 300 }}
-				href="/databases/d"
+				in:slide={{ duration: 300 }}
+				href="/roadmap/stl"
 				class="div1 box border bg-orange-400/30 border-orange-500 dark:border-sky-400 dark:bg-sky-800/20"
 			>
-				<DatabaseZap class="mr-1" size="30" strokeWidth="1.8" />
-				Databases
+				DSA
 			</a>
 			<a
 				in:fly={{ y: 100, duration: 300, delay: 500 }}
-				href="/databases/concept"
+				href="/databases/d"
 				class="div2 box border dark:bg-orange-800/20 dark:border-orange-500 border-sky-600 bg-sky-600/30"
 			>
-				<FileBadge class="mr-1" size="30" strokeWidth="1.8" />
-				Concepts
+				Databases
 			</a>
 			<a
 				in:fly={{ x: 100, duration: 300, delay: 1000 }}
-				href="/databases/tools"
-				target="_blank"
+				href="/fullstack"
 				class="div3 box border bg-emerald-500/30 dark:bg-emerald-800/20 border-emerald-500 bg"
 			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="28"
-					height="28"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="1.8"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="mr-1.5"
-					><path
-						d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"
-					/><path d="m14 7 3 3" /><path d="M5 6v4" /><path d="M19 14v4" /><path d="M10 2v2" /><path
-						d="M7 8H3"
-					/><path d="M21 16h-4" /><path d="M11 3H9" /></svg
-				>
-				Tools</a
+				Full-stack</a
 			>
+			<div
+				class="div4 box border bg-gray-100 border-gray-600 dark:border-cyan-800/50 dark:bg-cyan-800/10"
+			/>
+			<div
+				class="div5 box border bg-gray-100 border-gray-600 dark:border-gray-800 dark:bg-gray-800/10"
+			/>
+			<div
+				class="div6 box border bg-gray-100 border-gray-600 dark:border-gray-800 dark:bg-gray-800/10"
+			/>
+			<div
+				class="div7 box border bg-gray-100 border-gray-600 dark:border-cyan-800/50 dark:bg-cyan-800/10"
+			/>
 		</div>
 	{:else}
 		<div class="flex flex-wrap gap-2 mt-5 justify-center">
-			<Button size="lg" href="/databases/d">Databases</Button>
-			<Button size="lg" href="/databases/d">Concepts</Button>
-			<Button size="lg" href="/databases/tools">Tools</Button>
+			<Button size="lg" href="/fullstack/frameworks">Frameworks</Button>
+			<Button size="lg" href="/fullstack/concepts">Concepts</Button>
+			<Button size="lg" href="/fullstack/interview">Interview</Button>
 		</div>
 	{/if}
 </div>
@@ -88,7 +76,7 @@
 	.head_para {
 		font-family: 'Sora', sans-serif;
 	}
-	.parent {
+	/* .parent {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
@@ -112,7 +100,7 @@
 		height: 310px;
 		width: 320px;
 		grid-area: 1 / 2 / 3 / 3;
-	}
+	} */
 	.box {
 		display: flex;
 		align-items: center;
@@ -120,5 +108,35 @@
 		padding: 30px;
 		border-radius: 15px;
 		font-size: 2rem;
+	}
+	.parent {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	.div1 {
+		grid-area: 1 / 2 / 4 / 4;
+	}
+	.div2 {
+		grid-area: 1 / 4 / 7 / 6;
+	}
+	.div3 {
+		grid-area: 4 / 2 / 7 / 4;
+	}
+	.div4 {
+		grid-area: 1 / 6 / 5 / 7;
+	}
+	.div5 {
+		grid-area: 5 / 6 / 7 / 7;
+	}
+	.div6 {
+		grid-area: 1 / 1 / 3 / 2;
+	}
+	.div7 {
+		grid-area: 3 / 1 / 7 / 2;
 	}
 </style>

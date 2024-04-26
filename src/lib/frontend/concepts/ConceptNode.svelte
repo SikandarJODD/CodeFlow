@@ -9,9 +9,10 @@
 	export let id: $$Props['data'];
 	const { label, icon, src, desc, link, starter_code, docs, examples, playground } = data;
 	export let isConnectable: $$Props['isConnectable'];
-	console.log(id);
 </script>
 
+<Handle type="source" position={Position.Bottom} {isConnectable} />
+<Handle type="target" position={Position.Top} {isConnectable} />
 {#if label === 'Frontend Frameworks' || label === 'Full Stack Frameworks'}
 	<Button class="font-bold">
 		{#if icon}
@@ -87,7 +88,4 @@
 			</Sheet.Content>
 		</Sheet.Root>
 	</div>
-	<!-- content here -->
 {/if}
-<Handle type="target" position={Position.Top} {isConnectable} />
-<Handle type="source" position={Position.Bottom} {isConnectable} />

@@ -1,4 +1,5 @@
 <script>
+	import GuideDev from '$lib/home/GuideDev.svelte';
 	import Hero from '$lib/home/Hero.svelte';
 	import AllFeature from '$lib/home/allFeature.svelte';
 </script>
@@ -25,7 +26,8 @@
 	/>
 </svelte:head>
 
-<main>
+<main class="dark:bg-gray-950">
 	<Hero />
+	<GuideDev />
 	<AllFeature />
 </main>

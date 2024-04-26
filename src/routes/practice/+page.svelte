@@ -2,8 +2,6 @@
 	import QueTable from '$lib/practice/queTable.svelte';
 	import TagsSidebar from '$lib/practice/tagsSidebar.svelte';
 	import { qdata, webdata } from '$lib';
-	import * as Card from '$ui/card';
-	import * as Table from '$ui/table/';
 
 	import { DataHandler } from '@vincjo/datatables';
 	import { onMount } from 'svelte';

@@ -1,9 +1,7 @@
 <script>
 	import { CodeBlock } from 'svhighlight';
-	import { onMount } from 'svelte';
 
 	import 'highlight.js/styles/base16/dracula.css';
-	import Button from '$ui/button/button.svelte';
 
 	let insideCode = `
 	<form method='POST'>

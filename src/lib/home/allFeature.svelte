@@ -62,7 +62,7 @@
 	];
 </script>
 
-<div class="mx-3 mt-20 md:mt-20  md:mx-20 flex justify-center flex-col items-center">
+<div class="mx-3 mt-20 md:mt-20 md:mx-20 flex justify-center flex-col items-center">
 	<h1 class="text-3xl lg:text-5xl font-bold">Features</h1>
 	<div class="flex flex-wrap gap-5 md:gap-x-10 my-4 lg:my-10 justify-center">
 		{#each features as { name, desc, sub }}

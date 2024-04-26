@@ -20,7 +20,6 @@
 
 	const { setZoom } = useSvelteFlow();
 	onMount(() => {
-		// window.location.reload();
 		setTimeout(() => {
 			setZoom(0.82, { duration: 300 });
 		}, 800);
