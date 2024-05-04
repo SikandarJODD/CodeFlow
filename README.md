@@ -30,3 +30,16 @@ Learn to Think and Code Better.
 | CSS Framework      | Shadcn-svelte, Tailwind CSS |
 | Roadmap            | Svelte-flow                 |
 | Hosted             | Vercel                      |
+
+| BAAS                        | Supabase | Appwrite | Xata.io |
+| --------------------------- | -------- | -------- | ------- |
+| Database                    | ✓        | ✓        | ✓       |
+| Authentication              | ✓        | ✓        |         |
+| Edge Functions              | ✓        | ✓        |         |
+| Storage                     | ✓        | ✓        |         |
+| Realtime                    | ✓        | ✓        |         |
+| Vector                      | ✓        | ✓        |         |
+| File Storage without Bucket |          |          | ✓       |
+| Branching                   |          |          | ✓       |
+| Full Text Search            |          |          | ✓       |
+| Chat GPT                    |          |          | ✓       |

@@ -7,7 +7,7 @@
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} />
-<div class="flex flex-col justify-center items-center h-[84vh] md:h-[90vh] relative px-2 md:px-0">
+<div class="flex flex-col justify-center items-center h-[84vh] md:h-[92vh] relative px-2 md:px-0">
 	<div class="text-center">
 		<h1 class="font-semibold head_title text-3xl md:text-5xl">
 			<!-- {#key textCode}
