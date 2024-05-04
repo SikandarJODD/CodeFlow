@@ -54,11 +54,11 @@
 <div class="prose dark:prose-invert min-w-full">
 	<h1 class="text-center mb-4">Features Comparison</h1>
 	<div
-		class="w-2/3 mx-auto dark:bg-gray-800/30 shadow-xl dark:shadow-slate-950 rounded-2xl prose-table:my-2 border border-primary"
+		class="md:w-2/3 mx-auto dark:bg-gray-800/30 shadow-xl dark:shadow-slate-950 rounded-2xl prose-table:my-2 border border-primary"
 	>
 		<SvelteMarkdown source={markdown} />
 	</div>
-	<div class="w-2/3 mx-auto mt-20">
+	<div class="md:w-2/3 mx-auto mt-20">
 		<h1 class="text-center mb-5">Price Comparison - Free Tier</h1>
 		<div
 			class="dark:bg-gray-800/30 shadow-xl dark:shadow-slate-950 rounded-2xl prose-table:my-2 border border-primary prose-td:font-mono"
@@ -66,7 +66,7 @@
 			<SvelteMarkdown source={freeTier} />
 		</div>
 	</div>
-	<div class="w-2/3 mx-auto mt-20">
+	<div class="md:w-2/3 mx-auto mt-20">
 		<h1 class="text-center mb-5">Price Comparison - Pro Tier</h1>
 		<div
 			class="dark:bg-gray-800/30 shadow-xl dark:shadow-slate-950 rounded-2xl prose-table:my-2 border border-primary prose-td:font-mono"
@@ -74,7 +74,7 @@
 			<SvelteMarkdown source={proTier} />
 		</div>
 	</div>
-	<div class="w-2/3 mx-auto my-20">
+	<div class="md:w-2/3 mx-auto my-20">
 		<h1 class="text-center mb-5">Features</h1>
 		<div
 			class="dark:bg-gray-800/30 shadow-xl dark:shadow-slate-950 rounded-2xl prose-table:my-2 border border-primary prose-td:font-mono"

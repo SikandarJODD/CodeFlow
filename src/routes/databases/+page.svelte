@@ -10,5 +10,7 @@
 </svelte:head>
 
 <BackendGuide />
-<ToolsTabs />
-<ToolsCompare />
+<div class="px-2 md:px-0">
+	<ToolsTabs />
+	<ToolsCompare />
+</div>

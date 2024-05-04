@@ -7,6 +7,7 @@
 	import XataIoIcon from '$lib/images/backend/xataio.svg';
 	import PocektbaseIcon from '$lib/images/backend/pocket-base.svg';
 	import TursoIcon from '$lib/images/backend/turso.svg';
+	import { fade, scale } from 'svelte/transition';
 	let dbtools = [
 		{
 			name: 'Supabase',
@@ -90,12 +91,27 @@
 			]
 		}
 	];
+	let value = 'Supabase';
+	let i = 0;
+	let changeValue = setInterval(() => {
+		value = dbtools[i].name;
+		i++;
+		if (i === dbtools.length) {
+			i = 0;
+		}
+	}, 2000);
 </script>
 
-<Tabs.Root value="Supabase" class="w-2/3 mx-auto mb-10">
-	<Tabs.List class="grid w-fit grid-cols-5  mx-auto">
+<Tabs.Root {value} class="md:w-2/3 mx-auto mb-10">
+	<Tabs.List class="flex flex-wrap h-full w-fit md:grid  md:w-fit  md:grid-cols-5 mx-auto">
 		{#each dbtools as item}
-			<Tabs.Trigger value={item.name}>
+			<Tabs.Trigger
+				value={item.name}
+				on:click={() => {
+					clearInterval(changeValue);
+					value = item.name;
+				}}
+			>
 				<img src={item.icon} class="h-4 w-5 mr-1.5" alt="supasbe Icon" />
 				{item.name}</Tabs.Trigger
 			>
@@ -105,7 +121,7 @@
 		<Tabs.Content value={item.name}>
 			<Card.Root>
 				<Card.Header class="pb-3">
-					<a href={item.link} target="_blank">
+					<a href={item.link} target="_blank" e>
 						<Card.Title tag="h3" class="text-xl flex items-center ">
 							<img src={item.icon} class="w-5 h-5 mr-1.5" alt="" />
 							{item.name}</Card.Title
