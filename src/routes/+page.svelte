@@ -1,4 +1,5 @@
 <script>
+	import FeaturesBentoGrid from '$lib/home/FeaturesBentoGrid.svelte';
 	import GuideDev from '$lib/home/GuideDev.svelte';
 	import Hero from '$lib/home/Hero.svelte';
 	import AllFeature from '$lib/home/allFeature.svelte';
@@ -26,8 +27,9 @@
 	/>
 </svelte:head>
 
-<main class="dark:bg-gray-950">
+<main class="dark:bg-gray-950/70 bg-sky-100">
 	<Hero />
 	<GuideDev />
+	<FeaturesBentoGrid />
 	<AllFeature />
 </main>
