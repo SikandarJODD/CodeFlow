@@ -1,5 +1,4 @@
 <script>
-	import { conceptsTitle } from '$lib/frontend/concepts/concept_tags';
 	import { interviewTitle } from '$lib/frontend/interview/interview_qt';
 	import SubTopics from '$lib/learnings/SubTopics.svelte';
 </script>

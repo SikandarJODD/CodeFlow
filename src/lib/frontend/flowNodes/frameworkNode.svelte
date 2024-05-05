@@ -50,7 +50,9 @@
 					</a>
 				</Sheet.Header>
 				<Separator />
-				<Sheet.Description class="text-primary/80 md:text-lg text-left">{desc}</Sheet.Description>
+				<Sheet.Description class="text-primary/80 md:text-lg text-left mt-2 font-normal"
+					>{desc}</Sheet.Description
+				>
 				<div class="starter_code text-left">
 					{#if starter_code}
 						<h3 class="text-xl my-2 font-bold">Installation</h3>
