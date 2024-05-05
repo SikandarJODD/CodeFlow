@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="md:px-32 lg:w-2/3 md:mx-auto h-[100vh] flex flex-col items-center justify-center gap-10"
+	class="px-2 md:px-32 lg:w-2/3 md:mx-auto md:h-[100vh] flex flex-col items-center justify-center gap-10"
 >
 	<div>
 		<h1 class="font-bold text-3xl md:text-5xl">Features</h1>
@@ -61,7 +61,7 @@
 					<div>
 						<Badge>Interview</Badge>
 						<Badge>Forms & API's</Badge>
-						<Badge>Replication & Storage</Badge>
+						<Badge>Replication</Badge>
 					</div>
 					<p class="text-sm mt-2">
 						Concepts related to programming and development. It includes topics like API's, Form
@@ -136,6 +136,10 @@
 		}
 		.div5 {
 			grid-area: 5 / 1 / 6 / 2;
+		}
+		.box {
+			border-radius: 12px;
+			padding: 10px;
 		}
 	}
 </style>
